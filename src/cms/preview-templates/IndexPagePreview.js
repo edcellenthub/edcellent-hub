@@ -5,7 +5,7 @@ import { IndexPageTemplate } from '../../templates/index-page'
 const IndexPagePreview = ({ entry, getAsset }) => {
   const entryBlurbs = entry.getIn(['data', 'intro', 'blurbs'])
   const blurbs = entryBlurbs ? entryBlurbs.toJS() : []
-
+  
   return (
     <IndexPageTemplate
       image={entry.getIn(['data', 'image'])}

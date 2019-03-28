@@ -1,5 +1,4 @@
 @import "~bulma/sass/utilities/initial-variables"
-
 // Config vars
 // Kaldi logo brand color: #FD461E
 $kaldi-red: #D64000
@@ -8,7 +7,13 @@ $kaldi-red-invert: #fff
 $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
 $body-color: #333
-$black: #2b2523
+$black: #333333
+$dark-grey: #424650
+$bright-gold: #f5cf78
+$dark-gold: #DEBC70
+$light-grey: #F3F3F3
+
+//-->> main
 
 .navbar .navbar-menu
   box-shadow:none !important
@@ -28,7 +33,133 @@ $black: #2b2523
     margin-bottom: 1.5rem
     margin-top: 0
 
-// Helper Classes
+
+//-->> fonts and text
+
+@font-face
+  font-family: 'arno-pro'
+  src: url('../../static/fonts/ArnoPro-Regular.otf')
+
+@font-face
+  font-family: 'arno-pro-bold'
+  src: url('../../static/fonts/ArnoPro-Bold.otf')
+
+@font-face
+  font-family: 'arno-pro-smbd'
+  src: url('../../static/fonts/ArnoPro-Smbd.otf')
+
+@font-face
+  font-family: 'arno-pro-icap'
+  src: url('../../static/fonts/ArnoPro-SmbdItalicCaption.otf')
+
+.f-nunito
+  font-family: 'Nunito', sans-serif
+
+.f-arnopro-r
+  font-family: arno-pro, sans-serif
+  letter-spacing: 2px
+
+.f-arnopro-b
+  font-family: arno-pro-bold, sans-serif
+  letter-spacing: 2px
+
+.f-arnopro-s
+  font-family: arno-pro-smbd, sans-serif
+  letter-spacing: 2px
+
+.f-arnopro-c
+  font-family: arno-pro-icap, sans-serif
+  letter-spacing: 2px
+
+.fas
+  font-size: 1.5rem
+
+
+.text-center
+  text-align: center
+
+.text-small
+  font-size: 1rem
+
+.text-medium-small
+  font-size: 1.2rem
+
+.text-medium
+   font-size: 1.5rem
+
+.text-large
+   font-size: 2.5rem
+
+.subtitle-h2
+  font-size: 2.3rem
+  margin-bottom: 40px
+
+.subtitle-h3
+  font-size: 2rem
+  margin-bottom: 40px
+
+.subtitle-h4
+  font-size: 1.5rem
+  color: black
+  margin-bottom: 50px
+  padding: 25px 25px 25px 0
+  width: max-content
+
+//-->> Helper Classes
+.gold-color
+  color: $bright-gold
+
+.dark-overlay
+  background-color: rgba(0,0,0,0.5)
+  width: 100%
+  height: 100%
+
+.date-horizontal-line
+  border-bottom: 1px solid black
+  width: 50px
+  height: 30px
+  position: relative
+  bottom: 15px
+  margin-right: 15px
+
+.title-horizontal-line
+  border-bottom: 1px solid black
+  width: 50%
+  height: 40px
+  position: relative
+  bottom: 15px
+  margin-left: 10px
+
+.section-horizontal-line
+  border-bottom: 1px solid $dark-gold
+  width: 100%
+  height: 60px
+  position: relative
+  bottom: 15px
+
+.flex-row
+  display: flex
+
+.flex-column
+  display: flex
+  flex-direction: column
+
+.flex-row-end
+  justify-content: flex-end
+
+.flex-center
+  justify-content: center
+  align-items: center
+
+.space-around
+  justify-content: space-around
+
+.space-between
+  justify-content: space-between
+
+.flex-1
+  flex: 1
+
 .full-width-image-container
   width: 100vw
   height: 400px
@@ -51,28 +182,85 @@ $black: #2b2523
     justify-content: center
     align-items: center
 
-.btn
-    display: inline-block
-    padding: 12px 16px 10px
-    font-size: 18px
-    font-size: 1rem
+.padding-5
+    padding: 5%
+
+.padding-3
+    padding: 3%
+
+.nobox-btn
+    font-family: arno-pro, sans-serif
+    letter-spacing: 2px;
     line-height: 1.25
-    background-color: #fff
-    border-radius: .25rem
+    display: inline-block
+    background-color: transparent
     text-decoration: none
-    font-weight: 700
-    color: #CC3700
+    color: $dark-gold
     text-align: center
-    -webkit-box-shadow: inset 0 0 0 2px #CC3700
-    box-shadow: inset 0 0 0 2px #f40
+    font-size: 1.8rem
+    margin-top: 40px
+    border: none
+
+.btn
+    font-family: arno-pro, sans-serif
+    letter-spacing: 2px;
+    display: inline-block
+    padding: 20px 40px
+    font-size: 1.5rem
+    line-height: 1.25
+    background-color: transparent
+    text-decoration: none
+    border: solid 2px $bright-gold
+    color: $bright-gold
+    text-align: center
     -webkit-transition: all .15s ease
     transition: all .15s ease
+    margin-top: 15px
+
+.btn-black
+    font-family: arno-pro, sans-serif
+    letter-spacing: 2px;
+    display: inline-block
+    padding: 20px 40px
+    font-size: 1.5rem
+    line-height: 1.25
+    background-color: transparent
+    text-decoration: none
+    border: solid 2px black
+    text-align: center
+    -webkit-transition: all .15s ease
+    transition: all .15s ease
+    margin-top: 15px
 
 .margin-top-0
   margin-top: 0 !important
 
+.margin-bottom-2
+  margin-bottom: 20px
+
+.margin-bottom-4
+  margin-bottom: 40px
+
+.margin-bottom-8
+  margin-bottom: 80px
+
+.margi-bottom-10
+  margin-bottom: 100px
+
+.margin-bottom-12
+  margin-bottom: 120px
+
+.margin-bottom-15
+  margin-bottom: 150px
+
+.width-20
+  width: 20%
+
+.white-color
+  color: white
+
 .navbar-item .icon
-  color: $primary
+  color: white
 // Override for use of svg's from https://simpleicons.org/
 .icon svg
   width: 1.5rem
@@ -80,13 +268,10 @@ $black: #2b2523
   fill: currentColor
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
-footer.footer
-  padding: 3rem 0rem 0rem
-  background-color: transparent
 
 //Menu overrides
-$menu-item-color: $white-ter
-$menu-item-hover-color: $black !important
+$menu-item-color: whiter
+$menu-item-hover-color: white !important
 $menu-item-hover-background-color: $black
 $menu-item-active-color: $kaldi-red-invert
 $menu-item-active-background-color:	$kaldi-red-invert
@@ -111,5 +296,165 @@ $menu-label-color: $white-ter
     height: 1em
     vertical-align: middle
     display: inline
+
+//landing-page
+
+.landing-top-banner-container
+    width: 100vw
+    height: 850px
+    background-size: cover
+    background-position: center
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+
+.landing-top-banner-info-box
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    font-size: 1.8rem
+    color: white
+    padding: 75px 120px
+    outline: solid 2px $bright-gold
+
+.landing-philo-bait
+    padding: 5% 25px 25px 25px
+
+.landing-philo-description
+    padding: 25px
+
+.landing-gold-title
+    font-size: 4rem
+    color: $bright-gold
+
+.landing-darkgold-title
+    padding-top: 50px
+    font-size: 2.8rem
+    color: $dark-gold
+
+.landing-about-us
+    background-color: white
+    padding: 5%
+
+.philo-description-title
+    width: 100%
+
+.offer-1
+    background-image: url('../../static/img/landing-blog-image-1.jpg')
+    background-cover: cover
+    background-repeat: no-repeat
+    background-size: cover
+    height: 450px
+    margin: 50px 35px 50px 0
+
+.offer-2
+    background-image: url('../../static/img/landing-blog-image-2.jpg')
+    background-cover: cover
+    background-repeat: no-repeat
+    background-color: orange
+    background-size: cover
+    height: 450px
+    margin: 50px 0 50px 35px
+
+.offer-box
+    border: solid 2px white
+    color: white
+    width: 100%
+    height: 100%
+    padding: 10%
+    align-self: center
+
+.landing-testimonial-container
+    width: 100vw
+    height: 850px
+    background-size: cover
+    background-position: center
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+
+.landing-testimonial-info-box
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    font-size: 1.8rem
+    color: white
+    padding: 75px 120px
+    outline: solid 2px $bright-gold
+
+.landing-blog
+    margin: 5%
+    width: 100%
+
+.landing-blog-title-contaier
+    width: 50%
+
+.landing-blog-item
+    width: 30%
+    margin: 10px
+    position: relative
+    height: 600px
+
+
+.blog-item-image
+    width: 80%
+    height: 300px
+    position: absolute
+    top: 0
+    left: 30px
+
+.blog-item-details
+    background-color: $light-grey
+    height: 300px
+    width: 70%
+    position: absolute
+    top: 250px
+    left: 0
+
+.landing-blog-title
+    font-size: 1.8rem
+
+.landing-visitor-redirect
+    background-color: $bright-gold
+    padding: 1.5%
+    height: 750px
+
+.landing-visitor-redirect-container
+    border: solid 2px white
+    height: 100%
+    width: 100%
+    padding: 5%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+.landing-visitor-redirect-info, .landing-visitor-redirect-links
+    width: 60%
+    justify-content: space-around
+    margin: 40px 0
+
+
+//-->> footer
+
+footer.footer
+  padding: 5%
+  width: 100%
+
+.has-background-black
+    background-color: $dark-grey
+
+.has-text-white-ter
+    color: white
+
+.container
+    width: 100%
+    display: inline-block
+    margin: auto
+
 
 @import "~bulma"

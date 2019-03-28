@@ -10,103 +10,53 @@ import vimeo from '../img/social/vimeo.svg'
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-background-black has-text-white-ter">
-        <div className="content has-text-centered">
-          <img
-            src={logo}
-            alt="Kaldi"
-            style={{ width: '14em', height: '10em' }}
-          />
-        </div>
-        <div className="content has-text-centered has-background-black has-text-white-ter">
-          <div className="container has-background-black has-text-white-ter">
-            <div className="columns">
-              <div className="column is-4">
-                <section className="menu">
-                  <ul className="menu-list">
-                    <li>
-                      <Link to="/" className="navbar-item">
-                        Home
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/about">
-                        About
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/products">
-                        Products
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact/examples">
-                        Form Examples
-                      </Link>
-                    </li>
-                    <li>
-                      <a
-                        className="navbar-item"
-                        href="/admin/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Admin
-                      </a>
-                    </li>
-                  </ul>
-                </section>
+      <footer className="footer has-background-black has-text-white-ter flex-column flex-center">
+          <div className="container display-column flex-column flex-center">
+              <div className="footer-contact flex-row space-between margin-botto-8">
+                    <div className="footer-address">
+                        <p className="text-medium-small gold-color f-nunito margin-bottom-2">ADDRESS</p>
+                        <p className="text-medium f-arnopro-b">PO BOX 5 Geelong. Victoria 3220 Australia</p>
+                    </div>
+                    <div className="footer-phone">
+                        <p className="text-medium-small f-nunito gold-color margin-bottom-2">PHONE</p>
+                        <p className="text-medium f-arnopro-b">+61 352 263 111</p>
+                    </div>
+                    <div className="footer-email">
+                        <p className="text-medium-small f-nunito gold-color margin-bottom-2">EMAIL</p>
+                        <p className="text-medium f-arnopro-b">info@edcellent.vic.au</p>
+                    </div>
               </div>
-              <div className="column is-4">
-                <section>
-                  <ul className="menu-list">
-                    <li>
-                      <Link className="navbar-item" to="/blog">
-                        Latest Stories
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact">
-                        Contact
-                      </Link>
-                    </li>
-                  </ul>
-                </section>
+              <div className="section-horizontal-line margin-bottom-8">
               </div>
-              <div className="column is-4 social">
-                <a title="facebook" href="https://facebook.com">
-                  <img
-                    src={facebook}
-                    alt="Facebook"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="twitter" href="https://twitter.com">
-                  <img
-                    className="fas fa-lg"
-                    src={twitter}
-                    alt="Twitter"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="instagram" href="https://instagram.com">
-                  <img
-                    src={instagram}
-                    alt="Instagram"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="vimeo" href="https://vimeo.com">
-                  <img
-                    src={vimeo}
-                    alt="Vimeo"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
+              <div className="footer-links flex-row space-between margin-bottom-15">
+                    <div className="footer-links-about-us width-20">
+                        <p className="text-medium-small gold-color f-nunati margin-bottom-4">ABOUT EDCELLENT</p>
+                        <p className="text-medium f-arnopro-r margin-bottom-4">Our Vision & Mission</p>
+                        <p className="text-medium f-arnopro-r margin-bottom-4">Our Pedagogy</p>
+                    </div>
+                    <div className="footer-link-offers width-20">
+                        <p className="text-medium-small gold-color f-nunati margin-bottom-4">OUR OFFERS</p>
+                        <p className="text-medium f-arnopro-r margin-bottom-4">One-to-one & small group coaching</p>
+                        <p className="text-medium f-arnopro-r margin-bottom-4">Personalised School Program</p>
+                    </div>
+                    <div className="footer-links-content width-20">
+                        <p className="text-medium-small gold-color f-nunati margin-bottom-4">CONTENT</p>
+                        <p className="text-medium f-arnopro-r margin-bottom-4">Medea</p>
+                        <p className="text-medium f-arnopro-r margin-bottom-4">Romeo & Juliet</p>
+                        <p className="text-medium f-arnopro-r margin-bottom-4">Macbeth</p>
+                                    <p className="text-medium f-arnopro-r margin-bottom-4">Rear Window</p>
+                    </div>
+                    <div className="footer-links-social width-20">
+                        <p className="text-medium-small gold-color f-nunati margin-bottom-4">WHERE TO FIND US</p>
+                        <p className="text-medium f-arnopro-r margin-bottom-4">Facebook</p>
+                        <p className="text-medium f-arnopro-r margin-bottom-4">Instagram</p>
+                        <p className="text-medium f-arnopro-r margin-bottom-4">Youtube</p>
+                    </div>
               </div>
-            </div>
+              <div className="footer-copyright flex-row flex-center">
+                    <p className="f-nunati text-small">&copy; Copyright Edcellent Digital Hub 2019. All rigths reserved.</p>
+              </div>
           </div>
-        </div>
       </footer>
     )
   }
