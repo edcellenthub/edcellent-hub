@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import github from "../img/github-icon.svg";
-import logo from "../img/logo.svg";
+import logo from "../img/ed-logo.png";
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -35,11 +35,27 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-transparent"
+        className="navbar"
         role="navigation"
         aria-label="main-navigation"
+        style={{
+            backgroundColor:'transparent',
+            position: 'absolute',
+            top:'0',
+            left:'0',
+            color: 'white !important',
+            height: '150px',
+            fontSize: '1.2rem',
+            padding:'0 5%'
+        }}
       >
-        <div className="container">
+          <div
+              className="container"
+              style={{
+                 display:'flex',
+                 justifyContent:'space-between'
+              }}
+          >
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
               <img src={logo} alt="Kaldi" style={{ width: "88px" }} />
@@ -59,34 +75,28 @@ const Navbar = class extends React.Component {
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
-                About
-              </Link>
-              <Link className="navbar-item" to="/products">
-                Products
+              <div className="navbar-start has-text-centered"
+                style={{
+                    display:'flex',
+                    justifyContent:'flex-end',
+                    color:'white'
+                }}
+              >
+              <Link className="navbar-item white-color" to="/about">
+                ABOUT
               </Link>
               <Link className="navbar-item" to="/blog">
-                Blog
+                BLOG
               </Link>
               <Link className="navbar-item" to="/contact">
-                Contact
+                CONTENT
               </Link>
               <Link className="navbar-item" to="/contact/examples">
-                Form Examples
+                PREMIUM
               </Link>
-            </div>
-            <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
+              <Link className="navbar-item" to="/contact/examples">
+                PORTAL LOGIN
+              </Link>
             </div>
           </div>
         </div>
