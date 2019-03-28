@@ -17,6 +17,22 @@ export const IndexPageTemplate = ({
   main,
 }) => (
   <div>
+      <section className="landing-top-banner">
+
+      </section>
+      <section className="landing-about-us">
+
+      </section>
+      <section className="landing-testimonial">
+
+      </section>
+      <section className="landing-blog">
+
+      </section>
+      <section className="landing-visitor-redirect">
+
+      </section>
+{/* actual site page above here */ }
     <div
       className="full-width-image margin-top-0"
       style={{
@@ -102,7 +118,7 @@ export const IndexPageTemplate = ({
                   <BlogRoll />
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/blog">
-                      Read more
+                      Whooot
                     </Link>
                   </div>
                 </div>
@@ -129,7 +145,6 @@ IndexPageTemplate.propTypes = {
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-
   return (
     <Layout>
       <IndexPageTemplate
