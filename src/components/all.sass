@@ -1,5 +1,4 @@
 @import "~bulma/sass/utilities/initial-variables"
-
 // Config vars
 // Kaldi logo brand color: #FD461E
 $kaldi-red: #D64000
@@ -8,7 +7,55 @@ $kaldi-red-invert: #fff
 $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
 $body-color: #333
-$black: #2b2523
+$black: #333333
+$dark-blue: #424650
+$bright-gold: #f5cf78
+$dark-gold: #DEBC70
+$light-grey: #F3F3F3
+
+
+//-->> fonts and text
+
+@font-face 
+  font-family: 'arno-pro'
+  src: url('../../static/fonts/ArnoPro-Regular.otf')
+
+@font-face 
+  font-family: 'arno-pro-bold'
+  src: url('../../static/fonts/ArnoPro-Bold.otf')
+  
+@font-face 
+  font-family: 'arno-pro-smbd'
+  src: url('../../static/fonts/ArnoPro-Smbd.otf')
+  
+@font-face 
+  font-family: 'arno-pro-icap'
+  src: url('../../static/fonts/ArnoPro-SmbdItalicCaption.otf')
+  
+
+.text-center
+  text-align: center
+
+.text-small
+  font-size: 1rem
+
+.f-nunito 
+  font-family: 'Nunito', sans-serif
+
+.f-arnopro-r 
+  font-family: arno-pro, sans-serif  
+
+.f-arnopro-b
+  font-family: arno-pro-bold, sans-serif  
+
+.f-arnopro-s
+  font-family: arno-pro-smbd, sans-serif  
+
+.f-arnopro-c
+  font-family: arno-pro-icap, sans-serif  
+
+
+//-->> main 
 
 .navbar .navbar-menu
   box-shadow:none !important
@@ -28,7 +75,8 @@ $black: #2b2523
     margin-bottom: 1.5rem
     margin-top: 0
 
-// Helper Classes
+//-->> Helper Classes
+
 .full-width-image-container
   width: 100vw
   height: 400px
@@ -71,6 +119,9 @@ $black: #2b2523
 .margin-top-0
   margin-top: 0 !important
 
+.margin-bottom-2
+  margin-bottom: 20px
+
 .navbar-item .icon
   color: $primary
 // Override for use of svg's from https://simpleicons.org/
@@ -112,4 +163,33 @@ $menu-label-color: $white-ter
     vertical-align: middle
     display: inline
 
+//landing-page
+
+.landing-top-banner-container
+    width: 100vw
+    height: 800px
+    background-size: cover
+    background-position: center
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+
+.landing-top-banner-info-box
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    font-size: 1.8rem
+    color: white
+    padding: 75px 120px
+    outline: solid 2px $bright-gold
+
+.landing-gold-title 
+    font-size: 4rem
+    color: $bright-gold
+
 @import "~bulma"
+
+ 
+

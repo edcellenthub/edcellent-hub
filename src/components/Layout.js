@@ -37,6 +37,7 @@ const TemplateWrapper = ({ children }) => {
           href="/img/safari-pinned-tab.svg"
           color="#ff4400"
         />
+        
         <meta name="theme-color" content="#fff" />
 
         <meta property="og:type" content="business.business" />
@@ -45,7 +46,7 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:image" content="/img/og-image.jpg" />
       </Helmet>
       <Navbar />
-      <div>{children}</div>
+      <div className="f-nunito">{children}</div>
       <Footer />
     </div>
   )

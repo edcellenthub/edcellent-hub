@@ -18,19 +18,59 @@ export const IndexPageTemplate = ({
 }) => (
   <div>
       <section className="landing-top-banner">
-
+          <div 
+            className="landing-top-banner-container"
+            style={{
+              backgroundImage: `url(
+                https://www.biography.com/.image/t_share/MTM5MjAwODE0ODIzNTE1ODkx/robert_downey_jr_iron_man_3_courtesy_marvel_studios_disneyjpg.jpg
+              )`,
+              backgroundPosition: `center`,
+              backgroundAttachment: `fixed`,
+            }}
+          >
+            <div className="landing-top-banner-info-box text-center f-arnopro-r">
+              <h1 className="f-arnopro-b landing-gold-title">
+                edcellent
+              </h1>
+              <div className="margin-bottom-2">
+                  <p className="text-small">adjective</p>
+                  <p>organic, holistic, global</p>
+              </div>
+              <div className="margin-bottom-2">
+                  <p className="text-small">noun</p>
+                  <p>authenticity, inspiration, insight</p>
+              </div>
+              <div className="margin-bottom-2">
+                  <p className="text-small">verb</p>
+                  <p>engage, empower, educate</p>
+              </div>
+              <button>
+                  LEARN MORE <i>3</i>
+              </button>
+            </div>
+          </div>
       </section>
       <section className="landing-about-us">
-
+          <div className="landing-about-us-philo">
+          </div>
+          <div className="landing-about-us-offer"> 
+          </div>
       </section>
       <section className="landing-testimonial">
-
+          <div className="landing-testimonial-background-video">
+          </div>
+          <div className="landing-testimonial-info-box">
+          </div>
       </section>
       <section className="landing-blog">
-
+          <div className="landing-blog-item">
+          </div>
       </section>
       <section className="landing-visitor-redirect">
-
+          <div className="landing-visitor-redirect-info">
+          </div>
+          <div className="landing-visitor-redirect-links">
+          </div>
       </section>
 {/* actual site page above here */ }
     <div
