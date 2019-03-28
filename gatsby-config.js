@@ -14,7 +14,7 @@ module.exports = {
           {
             family: `Nunito`,
             variants: [`400`, `700`]
-          }
+          },
         ],
       },
     },

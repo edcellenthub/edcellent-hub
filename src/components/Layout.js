@@ -37,7 +37,14 @@ const TemplateWrapper = ({ children }) => {
           href="/img/safari-pinned-tab.svg"
           color="#ff4400"
         />
-        
+
+        <link 
+          rel="stylesheet" 
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
+          crossorigin="anonymous"
+        />
+
         <meta name="theme-color" content="#fff" />
 
         <meta property="og:type" content="business.business" />
