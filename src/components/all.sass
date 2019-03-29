@@ -15,10 +15,30 @@ $light-grey: #F3F3F3
 
 //-->> main
 
-.navbar .navbar-menu
-  box-shadow:none !important
+.nav-main
+  background-color: transparent
+  height: 30px
+  position: absolute
+  top: 30px
+  left: 0
+  width: 100%
+  padding: 0 50px
+  z-index: 3
 
-.content .taglist
+.nav-container
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.nav-item
+  color: #FFF
+  padding: 20px 40px
+
+.nav-item:hover
+  background-color: $bright-gold
+  color: $black
+
+content .taglist
   list-style: none
   margin-bottom: 0
   margin-left: 0
@@ -259,25 +279,11 @@ $light-grey: #F3F3F3
 .white-color
   color: white
 
-.navbar-item .icon
-  color: white
 // Override for use of svg's from https://simpleicons.org/
 .icon svg
   width: 1.5rem
   height: 1.5rem
   fill: currentColor
-.navbar-brand .navbar-item.logo
-  padding: 0 1rem
-
-//Menu overrides
-$menu-item-color: whiter
-$menu-item-hover-color: white !important
-$menu-item-hover-background-color: $black
-$menu-item-active-color: $kaldi-red-invert
-$menu-item-active-background-color:	$kaldi-red-invert
-$menu-list-border-left: 1px solid $kaldi-red-invert
-$menu-label-color: $white-ter
-
 
 .menu-label
   font-size: 1em !important
@@ -311,9 +317,9 @@ $menu-label-color: $white-ter
 
 .landing-top-banner-info-box
     position: absolute
-    top: 50%
+    top: 52%
     left: 50%
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -48%)
     font-size: 1.8rem
     color: white
     padding: 75px 120px
