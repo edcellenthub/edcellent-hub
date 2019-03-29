@@ -1,0 +1,39 @@
+.nav-main {
+  background-color: transparent;
+  height: 30px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  padding: 0 50px;
+  z-index: 3;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  color: #FFF;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 2px;
+  font-size: 0.7rem;
+  padding: 20px 30px;  
+}
+
+.nav-item:hover {
+  background-color: $bright-gold;
+  color: $black;
+}
+
+.nav-item-box {
+  color: #FFF;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 2px;
+  font-size: 0.7rem;
+  padding: 20px 20px;  
+  background-color: rgba(66, 70, 80, 0.75);
+}
+

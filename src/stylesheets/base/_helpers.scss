@@ -1,0 +1,143 @@
+.container {
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+}
+
+.gold-color {
+  color: $bright-gold
+}
+
+.dark-overlay {
+  background-color: rgba(66, 70, 80, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.date-horizontal-line {
+  border-bottom: 1px solid black;
+  width: 25%; 
+  position: relative;
+  bottom: 15px;
+  margin-right: 15px;
+  padding-top: 25px;
+}
+
+.title-horizontal-line {
+  border-bottom: 1px solid black;
+  width: 50%;
+  height: 30px;
+  position: relative;
+  bottom: 15px;
+  margin-left: 25px;
+}
+
+.section-horizontal-line {
+  border-bottom: 1px solid $dark-gold;
+  width: 100%;
+  height: 60px;
+  position: relative;
+  bottom: 15px;
+}
+
+.flex-row {
+  display: flex
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row-end {
+  justify-content: flex-end;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.space-around {
+  justify-content: space-around
+}
+
+.space-between {
+  justify-content: space-between
+}
+
+.flex-1 {
+  flex: 40%
+}
+
+.flex-2 {
+  flex: 60%
+}
+
+.full-width-image-container {
+  width: 100vw;
+  height: 400px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin: 2em -50vw;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-width-image {
+    width: 100vw;
+    height: 400px;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.padding-5 {
+    padding: 5%
+}
+
+.padding-3 {
+    padding: 3%
+}
+
+.margin-top-0 {
+  margin-top: 0 !important
+}
+
+.margin-bottom-2 {
+  margin-bottom: 20px
+}
+
+.margin-bottom-4 {
+  margin-bottom: 40px
+}
+
+.margin-bottom-8 {
+  margin-bottom: 80px
+}
+
+.margi-bottom-10 {
+  margin-bottom: 100px
+}
+
+.margin-bottom-12 {
+  margin-bottom: 120px
+}
+
+.margin-bottom-15 {
+  margin-bottom: 150px
+}
+
+.width-20 {
+  width: 20%
+}
+
+.white-color {
+  color: white;
+}

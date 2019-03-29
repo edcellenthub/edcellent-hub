@@ -1,0 +1,46 @@
+.nobox-btn {
+    font-family: arno-pro, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 2px;;
+    line-height: 1.25;
+    display: inline-block;
+    background-color: transparent;
+    text-decoration: none;
+    color: $dark-gold;
+    text-align: center;    
+    margin-top: 40px;
+    padding-left: 0;
+    border: none;
+}
+
+.btn {
+    font-family: arno-pro, sans-serif;
+    letter-spacing: 5px;;
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 1rem;
+    line-height: 1.25;
+    background-color: transparent;
+    text-decoration: none;
+    border: solid 1px $bright-gold;
+    color: $bright-gold;
+    text-align: center;
+    -webkit-transition: all .15s ease;
+    transition: all .15s ease;    
+}
+
+.btn-black {
+    font-family: arno-pro, sans-serif;
+    letter-spacing: 5px;
+    display: inline-block;
+    padding: 20px 30px;
+    font-size: 1rem;
+    line-height: 1.25;
+    background-color: transparent;
+    text-decoration: none;
+    border: solid 1px black;
+    text-align: center;
+    -webkit-transition: all .15s ease;
+    transition: all .15s ease;
+    margin-top: 15px;
+}
