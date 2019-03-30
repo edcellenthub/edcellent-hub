@@ -1,6 +1,12 @@
 .nav-logo {
   display: inline-block;  
 }
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
   
 @media (min-width: 1024px) {
   .nav-main {
@@ -13,11 +19,6 @@
     padding: 0 50px;
     z-index: 3;
   } 
-  .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
   .navbar-burger {
     display: none;
     justify-content: flex-end;
@@ -48,13 +49,7 @@
     left: 0;
     width: 100%;
     z-index: 3;
-  } 
-  .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
+  }   
   .navbar-burger {
     color: #fff;    
     display: inline-block; 
