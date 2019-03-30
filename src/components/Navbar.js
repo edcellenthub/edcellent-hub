@@ -39,7 +39,6 @@ const Navbar = class extends React.Component {
           role="navigation"
           aria-label="main-navigation"
         >
-        <div className="topnav">
             <div className="nav-container">
                 <div className="nav-logo">
                   <Link to="/" className="" title="Logo">
@@ -56,7 +55,6 @@ const Navbar = class extends React.Component {
                     <span></span>
                     <span></span> 
                   </div>
-                 
                 <div id="navMenu" className={`${this.state.navBarActiveClass}`} >
                     <div className="nav-items">
                         <Link className="nav-item" to="/about">
@@ -76,9 +74,8 @@ const Navbar = class extends React.Component {
                         </Link>
                     </div>
                 </div>        
-                  
               </div>
-            </div>
+  
         </nav>
     );
   }
