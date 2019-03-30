@@ -69,7 +69,7 @@ const Navbar = class extends React.Component {
                       <Link className="nav-item" to="/contact/examples">
                         PREMIUM
                       </Link>
-                      <Link className="nav-item" to="/contact/examples">
+                      <Link className="nav-item-box" to="/contact/examples">
                         PORTAL LOGIN
                       </Link>
                   </div>
