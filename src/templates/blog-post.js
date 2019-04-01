@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-
+import jumbotron from '../../static/img/home-jumbotron.jpg'
 export const BlogPostTemplate = ({
   content,
   contentComponent,
@@ -17,28 +17,37 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
-    <section className="section">
+    <section className="blog-container">
       {helmet || ''}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-            <p>{description}</p>
-            <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map(tag => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
+      <div className="blog-featured-img"></div>
+      <div className="blog-flex">
+          <div className="blog-content content">
+            <div className="columns">
+              <div className="column is-10 is-offset-1">
+                  <p className="text-center margin-bottom-4">BY <strong>CAMERON SIEVERS</strong> <span className="text-spacing gold-color">|</span> <strong>31 MARCH 2019</strong></p>
+                <h1 className="text-xlarge text-center f-arnopro-r">
+                  {title}
+                </h1>
+                <p>{description}</p>
+                <PostContent content={content} />
+                <div className="blog-social-share">
+                    <a href="#" target="_blank"> <i className="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i className="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"> <i className="fab fa-twitter"></i></a>
+                </div>
+                <div className="blog-horizontal-line"></div>
+                {tags && tags.length ? (
+                  <div>
+                    <ul className="blog-taglist">
+                      {tags.map((tag, index) => (
+                        <li key={tag + `tag`}>
+                            {index === 0 ? '' : <span className='blog-tag-divider'>|</span>} <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : null}
               </div>
-            ) : null}
           </div>
         </div>
       </div>
@@ -74,6 +83,7 @@ const BlogPost = ({ data }) => {
         }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        date={post.frontmatter.date}
       />
     </Layout>
   )

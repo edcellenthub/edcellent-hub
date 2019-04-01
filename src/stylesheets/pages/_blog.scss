@@ -15,16 +15,43 @@ content .taglist {
   }
 }
 
-.blog-img-container {   
-    padding-left: 30px;    
+.blog-img-container {
+    padding-left: 30px;
     height: 55%;
     position: absolute;
-    overflow: hidden;     
+    overflow: hidden;
     background-size: cover;
-    background-position: center;     
+    background-position: center;
 }
 
-.blog-item-image { 
+.blog-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.text-spacing {
+    margin: 0 100px;
+}
+
+.blog-content {
+    position: relative;
+    top: -100px;
+    width: 80%;
+    max-width: 1200px;
+    padding: 5%;
+    background-color: white;
+
+}
+
+.blog-featured-img {
+    background-image: url('../../static/img/home-jumbotron.jpg');
+    background-cover: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100vw;
+}
+
+.blog-item-image {
     object-fit: cover;
     width: auto;
     height: 100%;
@@ -40,3 +67,46 @@ content .taglist {
     padding: 30px;
 }
 
+ul.blog-taglist {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+}
+
+ul.blog-taglist > li {
+    margin-right: 15px;
+    line-height: 1.2rem;
+    margin: 0;
+}
+
+.blog-tag-divider {
+    margin: 0 15px;
+}
+
+ul.blog-taglist > li > a {
+    color: black;
+}
+
+ul.blog-taglist > li > a:hover {
+    color: $dark-gold;
+}
+
+.blog-social-share {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 2.5rem;
+}
+
+.blog-social-share > a > i {
+    font-size: 1.2rem;
+    color: grey;
+    margin: 0 10px;
+}
+
+.blog-social-share > a > i:hover {
+    color: $dark-gold;
+}

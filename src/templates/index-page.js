@@ -75,7 +75,7 @@ export const IndexPageTemplate = ({
           <div className="section-horizontal-line"/>
           <div className="landing-about-us-offer">
               <h3 className="landing-darkgold-title text-center f-arnopro-b">WHAT WE OFFER</h3>
-              <div className="offer-container flex-row">
+              <div className="offer-container">
                   <div className="offer-1 flex-1">
                       <div className="dark-overlay padding-3">
                           <div className="offer-box flex-column flex-center">
@@ -153,24 +153,7 @@ export const IndexPageTemplate = ({
                 VIEW ALL  &nbsp; &#10230;
           </button>
       </section>
-      <section className="landing-visitor-redirect flex-row flex-center">
-          <div className="landing-visitor-redirect-container f-arnopro-r">
-              <div className="landing-visitor-redirect-info text-md-md f-arnopro-s text-center">
-                  <p>Contact us to enquire about our range of personalised and differentiated VCE/IB educational products and services that engage studetns through visual and physical learning</p>
-              </div>
-              <div className="landing-visitor-redirect-links flex-row">
-                  <div className="visitor-student-container text-center">
-                        <p className="text-medium-small spaced f-arnopro-b">STUDENT</p>
-                        <button class="btn-black">I'M INTERESTED &nbsp; &#10230;</button>
-                  </div>
-                  <div className="visitor-student-container text-center">
-                        <p className="text-medium-small spaced f-arnopro-b">SCHOOL</p>
-                        <button class="btn-black">I'M INTERESTED &nbsp; &#10230;</button>
-                  </div>
-              </div>
-          </div>
-      </section>
-  </div>
+    </div>
 )
 
 IndexPageTemplate.propTypes = {

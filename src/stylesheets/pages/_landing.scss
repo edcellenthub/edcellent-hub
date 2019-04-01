@@ -49,6 +49,10 @@
     width: 100%;
 }
 
+.offer-container {
+    display: flex;
+}
+
 .offer-1 {
     background-image: url('../../static/img/landing-blog-image-1.jpg');   
     background-repeat: no-repeat;
