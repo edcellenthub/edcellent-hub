@@ -16,27 +16,42 @@ content .taglist {
 }
 
 .blog-img-container {   
-    padding-left: 30px;    
-    height: 55%;
-    position: absolute;
-    overflow: hidden;     
-    background-size: cover;
-    background-position: center;     
+  padding-left: 30px;    
+  height: 55%;
+  position: absolute;
+  overflow: hidden;     
+  background-size: cover;
+  background-position: center;     
 }
 
 .blog-item-image { 
-    object-fit: cover;
-    width: auto;
-    height: 100%;
+  object-fit: cover;
+  width: auto;
+  height: 100%;
 }
 
-.blog-item-details {
-    background-color: $light-grey;
-    height: 250px;
-    width: 90%;
-    position: absolute;
-    top: 200px;
-    left: 0;
-    padding: 30px;
+
+@media (min-width: 1025px) {
+  .blog-item-details {
+      background-color: $light-grey;
+      height: 250px;
+      width: 90%;
+      position: absolute;
+      top: 200px;
+      left: 0;
+      padding: 30px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .blog-item-details {
+      background-color: $light-grey;
+      height: 190px;
+      width: 90%;
+      position: absolute;
+      top: 200px;
+      left: 0;
+      padding: 30px;
+  }
 }
 

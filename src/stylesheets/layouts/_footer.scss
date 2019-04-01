@@ -12,3 +12,63 @@
     color: white
 }
 
+@media (min-width: 600px) {
+  .footer-contact {
+    display: flex;
+  }
+  .footer-address {
+    width: 80%;
+  }
+  .footer-phone-email {
+    width: 20%;
+    margin-right: 30px;
+  }
+  .footer-links {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .footer-links-about-us {
+    width: 25%;
+    margin-right: 30px;
+  }
+  .footer-links-offers {
+    width: 25%;
+    margin-right: 30px;
+  }
+  .footer-links-content {
+    width: 20%;
+    margin-right: 30px;
+  }
+  .footer-links-social {
+    width: 25%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 599px) {
+  .footer-address {
+    width: 100%;
+    margin: 30px 0;
+    text-align: center;
+  }
+  .footer-phone-email {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-links-about-us {
+    margin-bottom: 80px;
+    text-align: center;
+  }
+  .footer-links-offers {
+    margin-bottom: 80px;
+    text-align: center;
+  }
+  .footer-links-content {
+    margin-bottom: 80px;
+    text-align: center;
+  }
+  .footer-links-social {
+    margin-bottom: 80px;
+    text-align: center;
+  }
+}

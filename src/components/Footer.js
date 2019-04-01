@@ -13,45 +13,50 @@ const Footer = class extends React.Component {
     return (
       <footer className="footer has-background-darkgrey has-text-white-ter flex-column">
           <div className="container display-column flex-column">
-              <div className="footer-contact flex-row space-between margin-botto-8">
+              <div className="footer-contact space-between margin-bottom-8">
                     <div className="footer-address">
-                        <p className="text-small spaced gold-color f-nunito margin-bottom-2">ADDRESS</p>
-                        <p className="text-medium-small f-arnopro-b">PO BOX 5 Geelong. Victoria 3220 Australia</p>
+                        <p className="text-small spaced gold-color f-nunito margin-bottom-1">ADDRESS</p>
+                        <p className="text-small f-arnopro-r">CBD Campus</p>
+                        <p className="text-medium-small f-arnopro-b margin-bottom-2">Level 4, 180 Bourke Street, Melbourne, Victoria 3000, Australia</p>
+                        <p className="text-small f-arnopro-r">Boxhill Campus</p>
+                        <p className="text-medium-small f-arnopro-b">5 Court Street, Box Hill, Victoria 3128, Australia</p>
                     </div>
-                    <div className="footer-phone">
-                        <p className="text-small spaced f-nunito gold-color margin-bottom-2">PHONE</p>
-                        <p className="text-medium-small f-arnopro-b">+61 352 263 111</p>
-                    </div>
-                    <div className="footer-email">
-                        <p className="text-small spaced f-nunito gold-color margin-bottom-2">EMAIL</p>
-                        <p className="text-medium-small f-arnopro-b">info@edcellent.vic.au</p>
+                    <div className="footer-phone-email flex-column">
+                        <div className="footer-phone margin-bottom-1">
+                            <p className="text-small spaced f-nunito gold-color margin-bottom-1">PHONE</p>
+                            <p className="text-medium-small f-arnopro-b">+61 417 313 116
+                            </p>
+                        </div>
+                        <div className="footer-email">
+                            <p className="text-small spaced f-nunito gold-color margin-bottom-1">EMAIL</p>
+                            <p className="text-medium-small f-arnopro-b">carlynk@edcellent.com</p>
+                        </div>
                     </div>
               </div>
-              <div className="section-horizontal-line margin-bottom-8">
+              <div className="section-horizontal-line margin-bottom-2">
               </div>
-              <div className="footer-links flex-row space-between margin-bottom-12">
-                    <div className="footer-links-about-us width-20">
-                        <p className="text-small spaced gold-color f-nunati margin-bottom-4">ABOUT EDCELLENT</p>
-                        <p className="text-medium-small f-arnopro-r margin-bottom-4">Our Vision & Mission</p>
-                        <p className="text-medium-small f-arnopro-r margin-bottom-4">Our Pedagogy</p>
+              <div className="footer-links space-between margin-bottom-12">
+                    <div className="footer-links-about-us">
+                        <p className="text-small spaced gold-color f-nunati margin-bottom-2">ABOUT EDCELLENT</p>
+                        <p className="text-medium-small f-arnopro-r margin-bottom-2">Our Mission & Our Team</p>
+                        <p className="text-medium-small f-arnopro-r margin-bottom-2">Our Students</p>
                     </div>
-                    <div className="footer-link-offers width-20">
-                        <p className="text-small spaced gold-color f-nunati margin-bottom-4">OUR OFFERS</p>
-                        <p className="text-medium-small f-arnopro-r margin-bottom-4">One-to-one & small group coaching</p>
-                        <p className="text-medium-small f-arnopro-r margin-bottom-4">Personalised School Program</p>
+                    <div className="footer-links-offers">
+                        <p className="text-small spaced gold-color f-nunati margin-bottom-2">OUR OFFERS</p>
+                        <p className="text-medium-small f-arnopro-r margin-bottom-2">One-to-one & small group coaching</p>
+                        <p className="text-medium-small f-arnopro-r margin-bottom-2">Personalised School Program</p>
                     </div>
-                    <div className="footer-links-content width-20">
-                        <p className="text-small spaced gold-color f-nunati margin-bottom-4">CONTENT</p>
-                        <p className="text-medium-small f-arnopro-r margin-bottom-4">Medea</p>
-                        <p className="text-medium-small f-arnopro-r margin-bottom-4">Romeo & Juliet</p>
-                        <p className="text-medium-small f-arnopro-r margin-bottom-4">Macbeth</p>
-                        <p className="text-medium-small f-arnopro-r margin-bottom-4">Rear Window</p>
+                    <div className="footer-links-content">
+                        <p className="text-small spaced gold-color f-nunati margin-bottom-2">CONTENT</p>
+                        <p className="text-medium-small f-arnopro-r margin-bottom-2">Medea</p>
+                        <p className="text-medium-small f-arnopro-r margin-bottom-2">Romeo & Juliet</p>
+                        <p className="text-medium-small f-arnopro-r margin-bottom-2">Macbeth</p>
+                        <p className="text-medium-small f-arnopro-r margin-bottom-2">Rear Window</p>
                     </div>
-                    <div className="footer-links-social width-20">
-                        <p className="text-small spaced gold-color f-nunati margin-bottom-4">WHERE TO FIND US</p>
-                        <p className="text-medium-small f-arnopro-r margin-bottom-4">Facebook</p>
-                        <p className="text-medium-small f-arnopro-r margin-bottom-4">Instagram</p>
-                        <p className="text-medium-small f-arnopro-r margin-bottom-4">Youtube</p>
+                    <div className="footer-links-social">
+                        <p className="text-small spaced gold-color f-nunati margin-bottom-2">WHERE TO FIND US</p>
+                        <p className="text-medium-small f-arnopro-r margin-bottom-2">Facebook</p>
+                        <p className="text-medium-small f-arnopro-r margin-bottom-2">Youtube</p>
                     </div>
               </div>
               <div className="footer-copyright flex-row flex-center">

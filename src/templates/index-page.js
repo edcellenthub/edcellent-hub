@@ -53,13 +53,13 @@ export const IndexPageTemplate = ({
           </div>
       </section>
       <section className="landing-about-us">
-          <div className="landing-about-us-philo flex-row">
-              <div className="landing-philo-bait flex-1">
+          <div className="landing-about-us-philo">
+              <div className="landing-philo-bait">
                   <h2 className="subtitle-h2-italic">What is intelligence, really?</h2>
                   <h2 className="subtitle-h2-italic">What is our role as educator?</h2>
                   <h2 className="subtitle-h2-italic">What can we do to guarantee a more positive and inspired experience of student success?</h2>
               </div>
-              <div className="landing-philo-description flex-2">
+              <div className="landing-philo-description">
                   <div className="flex-row philo-description-title" >
                       <h4 className="subtitle-h4 f-arnopro-b">OUR PHILOSOPHY</h4>
                       <div className="title-horizontal-line"></div>
@@ -75,15 +75,15 @@ export const IndexPageTemplate = ({
           <div className="section-horizontal-line"/>
           <div className="landing-about-us-offer">
               <h3 className="landing-darkgold-title text-center f-arnopro-b">WHAT WE OFFER</h3>
-              <div className="offer-container flex-row">
-                  <div className="offer-1 flex-1">
+              <div className="offer-container">
+                  <div className="offer-1">
                       <div className="dark-overlay padding-3">
                           <div className="offer-box flex-column flex-center">
                               <h1 className="text-center text-large f-arnopro-b">One-to-one & small group coaching</h1>
                           </div>
                       </div>
                   </div>
-                  <div className="offer-2 flex-1">
+                  <div className="offer-2">
                       <div className="dark-overlay padding-3">
                           <div className="offer-box flex-column flex-center">
                               <h1 className="text-center text-large f-arnopro-b">Personalised school program</h1>
@@ -106,7 +106,7 @@ export const IndexPageTemplate = ({
           >
             <div className="dark-overlay">
                 <div className="landing-testimonial-info-box text-center f-arnopro-r">
-                  <h2 className="f-arnopro-s gold-color text-medium margin-bottom-2">
+                  <h2 className="f-arnopro-s gold-color text-medium margin-bottom-1">
                     Hear what our students have to say about us
                   </h2>
                   <button className="btn">
@@ -121,13 +121,13 @@ export const IndexPageTemplate = ({
                 <h4 className="subtitle-h4 f-arnopro-b">LATEST FROM OUR BLOG</h4>
                 <div className="title-horizontal-line"></div>
           </div>
-          <div className="landing-blog-items flex-row">
+          <div className="landing-blog-items">
                 <div className="landing-blog-item">
                   <div className="blog-img-container">
                     <img className="blog-item-image" src="/img/landing-blog-image-1.jpg" alt="blog image" />
                   </div>
                     <div className="blog-item-details padding-5 flex-column">
-                        <div className="landing-blog-date flex-row margin-bottom-1">
+                        <div className="landing-blog-date flex-row">
                             <div className="date-horizontal-line"></div>
                             <p class="f-arnopro-s text-small">22 MAR 2019</p>
                         </div>
@@ -140,7 +140,7 @@ export const IndexPageTemplate = ({
                     <img className="blog-item-image" src="/img/landing-blog-image-2.jpg" alt="blog image" />
                   </div>
                     <div className="blog-item-details flex-column">
-                        <div className="landing-blog-date flex-row margin-bottom-1">
+                        <div className="landing-blog-date flex-row">
                             <div className="date-horizontal-line"></div>
                             <p class="f-arnopro-s text-small">22 MAR 2019</p>
                         </div>
@@ -153,17 +153,17 @@ export const IndexPageTemplate = ({
                 VIEW ALL  &nbsp; &#10230;
           </button>
       </section>
-      <section className="landing-visitor-redirect flex-row flex-center">
+      <section className="landing-visitor-redirect flex-center">
           <div className="landing-visitor-redirect-container f-arnopro-r">
               <div className="landing-visitor-redirect-info text-md-md f-arnopro-s text-center">
                   <p>Contact us to enquire about our range of personalised and differentiated VCE/IB educational products and services that engage studetns through visual and physical learning</p>
               </div>
-              <div className="landing-visitor-redirect-links flex-row">
-                  <div className="visitor-student-container text-center">
-                        <p className="text-medium-small spaced f-arnopro-b">STUDENT</p>
+              <div className="landing-visitor-redirect-links">
+                  <div className="visitor-student-container">
+                        <div className="text-medium-small spaced f-arnopro-b">STUDENT</div>
                         <button class="btn-black">I'M INTERESTED &nbsp; &#10230;</button>
                   </div>
-                  <div className="visitor-student-container text-center">
+                  <div className="visitor-school-container">
                         <p className="text-medium-small spaced f-arnopro-b">SCHOOL</p>
                         <button class="btn-black">I'M INTERESTED &nbsp; &#10230;</button>
                   </div>
