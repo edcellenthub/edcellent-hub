@@ -23,13 +23,38 @@
   padding-top: 25px;
 }
 
-.title-horizontal-line {
-  border-bottom: 1px solid black;
-  width: 50%;
-  height: 30px;
-  position: relative;
-  bottom: 15px;
-  margin-left: 25px;
+
+@media (min-width: 769px) {
+  .title-horizontal-line {
+    border-bottom: 1px solid black;
+    width: 45%;
+    height: 30px;
+    position: relative;
+    bottom: 15px;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .title-horizontal-line {
+    border-bottom: 1px solid black;
+    width: 35%;
+    height: 25px;
+    position: relative;
+    bottom: 15px;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 599px) {
+  .title-horizontal-line {
+    border-bottom: 1px solid black;
+    width: 10%;
+    height: 25px;
+    position: relative;
+    bottom: 15px;
+    margin-left: 20px;
+  }
 }
 
 .section-horizontal-line {
@@ -66,13 +91,17 @@
   justify-content: space-between
 }
 
+
 .flex-1 {
-  flex: 40%
-}
+    flex: 40%
+  }
 
 .flex-2 {
   flex: 60%
 }
+
+
+
 
 .full-width-image-container {
   width: 100vw;
@@ -110,28 +139,33 @@
   margin-top: 0 !important
 }
 
+.margin-bottom-1 {
+  margin-bottom: 1.5rem
+}
+
+
 .margin-bottom-2 {
-  margin-bottom: 20px
+  margin-bottom: 2rem
 }
 
 .margin-bottom-4 {
-  margin-bottom: 40px
+  margin-bottom: 4rem
 }
 
-.margin-bottom-8 {
-  margin-bottom: 80px
+.margin-bottom-6 {
+  margin-bottom: 6rem
 }
 
 .margi-bottom-10 {
-  margin-bottom: 100px
+  margin-bottom: 10rem
 }
 
 .margin-bottom-12 {
-  margin-bottom: 120px
+  margin-bottom: 12rem
 }
 
 .margin-bottom-15 {
-  margin-bottom: 150px
+  margin-bottom: 15rem
 }
 
 .width-20 {

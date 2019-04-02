@@ -9,35 +9,317 @@
     position: relative;
 }
 
-.landing-top-banner-info-box {
-    position: absolute;
-    top: 52%;
-    left: 52%;
-    transform: translate(-50%, -48%);
-    font-size: 1.4rem;
-    color: white;
-    padding: 40px 60px;
-    outline: solid 1px $bright-gold;
+@media (min-width: 1025px) {
+    .landing-top-banner-info-box {
+        position: absolute;
+        top: 52%;
+        left: 52%;
+        transform: translate(-50%, -48%);
+        font-size: 1.4rem;
+        color: white;
+        padding: 40px 60px;
+        outline: solid 1px $bright-gold;
+    }
+    .landing-gold-title {
+        font-size: 2.8rem;
+        color: $bright-gold;
+    } 
+    .landing-philo-bait {
+        width: 40%;
+        display: inline-block;
+        padding: 25px;
+    }
+    .landing-philo-description {
+        width: 60%;
+        display: inline-block;
+        padding: 25px;        
+    }   
+    
+    .landing-darkgold-title {
+        padding-top: 50px;
+        font-size: 1.5rem;
+        letter-spacing: 4px;
+        color: $dark-gold;
+    }
+    .offer-container {
+        display: flex;
+        
+    }
+    .offer-1 {
+        background-image: url('../../static/img/landing-blog-image-1.jpg');   
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        margin: 50px 35px 50px 0;
+        width: 43%;
+        display: inline-block;    
+    }
+    .offer-2 {
+        background-image: url('../../static/img/landing-blog-image-2.jpg');  
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        margin: 50px 0 50px 35px;
+        width: 43%;
+        display: inline-block;      
+    }    
+    
+    .landing-testimonial-info-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);    
+        color: white;
+        padding: 40px 70px;
+        width: 35%;
+        outline: solid 1px $bright-gold;
+    }
+    
+    .landing-blog-title {
+        font-size: 1.8rem
+    }    
+    
+    .landing-blog-title-container {
+        width: 70%
+    }
+
+    .landing-blog-item {
+        width: 30%;    
+        position: relative;
+        height: 460px;
+        margin-right: 30px;
+        display: inline-block;
+    }    
+    
+    .visitor-student-container {        
+        text-align: center;
+        display: inline-block;
+    }
+
+    .visitor-school-container {        
+        display: inline-block;
+        text-align: center;
+    }
+
+    .landing-visitor-redirect-info, .landing-visitor-redirect-links {
+        width: 65%;
+        justify-content: space-around;
+        margin: 30px 0;     
+        display: flex;
+    } 
 }
 
-.landing-philo-bait {
-    padding: 25px
+@media (min-width: 768px) and (max-width:1024px) {
+    .landing-top-banner-info-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -48%);
+        font-size: 1.2rem;
+        color: white;
+        padding: 40px 60px;
+        outline: solid 1px $bright-gold;
+    }
+
+    .landing-gold-title {
+        font-size: 2.8rem;
+        color: $bright-gold;
+    }
+
+    .landing-philo-bait {
+        width: 40%;
+        display: inline-block;
+        padding: 25px;
+    }
+
+    .landing-philo-description {
+        width: 60%;
+        display: inline-block;
+        padding: 25px;        
+    }
+
+    .offer-container {
+        display: flex;
+    }
+
+    .landing-darkgold-title {
+        padding-top: 50px;
+        font-size: 1.2rem;
+        letter-spacing: 4px;
+        color: $dark-gold;
+    }
+    
+    .offer-1 {
+        background-image: url('../../static/img/landing-blog-image-1.jpg');   
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        margin: 50px 35px 50px 0;
+        width: 43%;
+        display: inline-block;    
+    }
+    
+    .offer-2 {
+        background-image: url('../../static/img/landing-blog-image-2.jpg');  
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        margin: 50px 0 50px 35px;
+        width: 43%;
+        display: inline-block;      
+    }
+
+    .landing-testimonial-info-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);    
+        color: white;
+        padding: 40px 40px;
+        width: 35%;
+        outline: solid 1px $bright-gold;
+    }
+
+    .landing-blog-title-container {
+        width: 70%
+    }
+
+    .landing-blog-title {
+        font-size: 1.3rem
+    }    
+
+    .landing-blog-item {
+        width: 42%;    
+        position: relative;
+        height: 400px;
+        margin-right: 30px;
+        display: inline-block;
+    }
+
+    .landing-blog-title {
+        font-size: 1.3rem
+    } 
+
+    .visitor-student-container {        
+        text-align: center;
+        display: inline-block;
+    }
+
+    .visitor-school-container {        
+        display: inline-block;
+        text-align: center;
+    }
+
+    .landing-visitor-redirect-info, .landing-visitor-redirect-links {
+        width: 90%;
+        justify-content: space-around;
+        margin: 30px 0;     
+        display: flex;
+    } 
+
 }
 
-.landing-philo-description {
-    padding: 25px
-}
+@media (min-width: 320px) and (max-width:767px) {
+    .landing-top-banner-info-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 0.8rem;        
+        color: white;
+        padding: 30px 40px;
+        outline: solid 1px $bright-gold;
+    }
+    .landing-gold-title {
+        font-size: 2rem;
+        color: $bright-gold;
+    }
+    
+    .landing-darkgold-title {
+        padding-top: 50px;
+        font-size: 1rem;
+        letter-spacing: 4px;
+        color: $dark-gold;
+    }
+    .landing-testimonial-info-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);    
+        color: white;
+        padding: 30px 30px;
+        width: 65%;
+        outline: solid 1px $bright-gold;
+    }
+    .landing-philo-bait {
+        width: 100%;
+        display: block;
+        padding: 25px;
+    }
+    
+    .landing-philo-description {
+        width: 100%;
+        display: block;   
+        padding: 25px;     
+    }
+    
+    .offer-1 {
+        background-image: url('../../static/img/landing-blog-image-1.jpg');   
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        margin: 50px 0;
+        width: 100%;
+        display: block;    
+    }
+    
+    .offer-2 {
+        background-image: url('../../static/img/landing-blog-image-2.jpg');  
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        margin: 50px 0 ;
+        width: 100%;
+        display: block;
+    }
+        
+    .landing-blog-title-container {
+        margin-top: 30px;
+        width: 100%
+    }
 
-.landing-gold-title {
-    font-size: 2.8rem;
-    color: $bright-gold;
-}
+    .landing-blog {
+        padding-right: 30px;
+    }
 
-.landing-darkgold-title {
-    padding-top: 50px;
-    font-size: 1.5rem;
-    letter-spacing: 4px;
-    color: $dark-gold;
+    .landing-blog-item {
+        width: 100%;    
+        position: relative;
+        height: 400px;
+        margin: 0 30px 30px 0;        
+    }
+
+    .landing-blog-title {
+        font-size: 1rem
+    } 
+
+    .visitor-student-container {        
+        text-align: center;
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .visitor-school-container {        
+        display: block;
+        text-align: center;
+    }
+
+    .landing-visitor-redirect-info, .landing-visitor-redirect-links {
+        width: 75%;
+        margin: 30px 0;     
+        
+    }  
+        
 }
 
 .landing-about-us {
@@ -45,25 +327,9 @@
     padding: 5%;
 }
 
-.philo-description-title {
-    width: 100%;
-}
 
-.offer-1 {
-    background-image: url('../../static/img/landing-blog-image-1.jpg');   
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px;
-    margin: 50px 35px 50px 0;
-}
 
-.offer-2 {
-    background-image: url('../../static/img/landing-blog-image-2.jpg');  
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px;
-    margin: 50px 0 50px 35px;
-}
+
 
 .offer-box {
     border: solid 1px white;
@@ -85,36 +351,14 @@
     position: relative;
 }
 
-.landing-testimonial-info-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);    
-    color: white;
-    padding: 40px 70px;
-    width: 35%;
-    outline: solid 1px $bright-gold;
-}
+
 
 .landing-blog {
     margin: 5%;
-    width: 100%
+    width: 100%;
+    flex-wrap: wrap;
 }
 
-.landing-blog-title-container {
-    width: 70%
-}
-
-.landing-blog-item {
-    width: 30%;    
-    position: relative;
-    height: 460px;
-    margin-right: 30px;
-}
-
-.landing-blog-title {
-    font-size: 1.8rem
-}
 
 .landing-blog-date {
     align-items: center;
@@ -127,6 +371,7 @@
     height: 80%;
 }
 
+
 .landing-visitor-redirect-container {
     border: solid 1px white;
     height: 80%;
@@ -136,10 +381,4 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.landing-visitor-redirect-info, .landing-visitor-redirect-links {
-    width: 65%;
-    justify-content: space-around;
-    margin: 30px 0;
 }
