@@ -1,6 +1,7 @@
 @import "~bulma";
 @import "~bulma/sass/utilities/initial-variables";
 
+
 @import "base/colors";
 @import "base/fonts";
 @import "base/helpers";
@@ -9,8 +10,13 @@
 
 @import "components/buttons";
 
+@import "layouts/contact";
 @import "layouts/footer";
 @import "layouts/navigation";
+@import "layouts/form";
+
 
 @import "pages/blog";
 @import "pages/landing";
+
+

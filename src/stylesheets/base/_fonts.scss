@@ -4,6 +4,11 @@
   }
   
   @font-face {
+    font-family: 'arno-pro-i';
+    src: url('../../static/fonts/ArnoPro-Italic.otf');
+  }
+
+  @font-face {
     font-family: 'arno-pro-bold';
     src: url('../../static/fonts/ArnoPro-Bold.otf');
   }
@@ -15,5 +20,10 @@
   
   @font-face {
     font-family: 'arno-pro-icap';
+    src: url('../../static/fonts/ArnoPro-ItalicCaption.otf');
+  }
+
+  @font-face {
+    font-family: 'arno-pro-smbdicap';
     src: url('../../static/fonts/ArnoPro-SmbdItalicCaption.otf');
   }
