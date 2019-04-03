@@ -1,0 +1,90 @@
+.form-container {
+    display: flex;
+    padding: 50px 0;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.form-content {
+    width: 60vw;
+    
+}
+
+.input, .textarea, .select select {
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid $dark-gold;
+    outline: 0;
+    box-shadow: none;
+    font-family: 'arno-pro-r';
+    font-size: 0.9rem;
+    margin-bottom: 2rem;    
+}
+
+.select select:before, .select select:after {
+    border-color: $dark-gold;
+    color: $dark-gold;
+}
+
+@media (min-width: 1024px) {
+    .name-field, .subject-year-field, .marketing-field, .select {
+        display: flex;
+    }
+
+    .firstname, .subject, .hear, .email {
+        width: 59%;
+        display: inline-block;
+        margin-right: 35px;
+    }
+
+    .password-field {
+        width: 60%
+    }
+
+    .lastname, .year, .others, .role{
+        width: 35%;
+        display: inline-block;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .name-field, .subject-year-field, .marketing-field, .select {
+        display: flex;
+    }
+
+    .firstname, .subject, .hear, .email {
+        width: 57%;
+        display: inline-block;
+        margin-right: 35px;
+    }
+
+    .password-field {
+        width: 60%
+    }
+
+    .lastname, .year, .others, .role{
+        width: 35%;
+        display: inline-block;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .firstname, .subject, .hear, .email {
+        width: 100%;
+    }
+
+    .subject-year-field, .password-field, .email-role-field {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .lastname, .year, .others, .role{
+        width: 100%;
+        display: block;
+    }
+
+}
+

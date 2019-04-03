@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
+import Contact from '../components/Contact'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 
@@ -153,23 +154,7 @@ export const IndexPageTemplate = ({
                 VIEW ALL  &nbsp; &#10230;
           </button>
       </section>
-      <section className="landing-visitor-redirect flex-center">
-          <div className="landing-visitor-redirect-container f-arnopro-r">
-              <div className="landing-visitor-redirect-info text-md-md f-arnopro-s text-center">
-                  <p>Contact us to enquire about our range of personalised and differentiated VCE/IB educational products and services that engage studetns through visual and physical learning</p>
-              </div>
-              <div className="landing-visitor-redirect-links">
-                  <div className="visitor-student-container">
-                        <div className="text-medium-small spaced f-arnopro-b">STUDENT</div>
-                        <button class="btn-black">I'M INTERESTED &nbsp; &#10230;</button>
-                  </div>
-                  <div className="visitor-school-container">
-                        <p className="text-medium-small spaced f-arnopro-b">SCHOOL</p>
-                        <button class="btn-black">I'M INTERESTED &nbsp; &#10230;</button>
-                  </div>
-              </div>
-          </div>
-      </section>
+      <Contact />
   </div>
 )
 

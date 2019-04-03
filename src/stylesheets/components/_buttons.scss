@@ -142,3 +142,24 @@
     }
 
 }
+
+.btn-black:hover {
+    background-color: black;
+    color: white;
+  }
+
+.btn-gold {
+    background-color: $bright-gold;
+    color: $black;
+    font-family: 'arno-pro-smbd', serif;
+    letter-spacing: 5px;
+    display: inline-block;
+    padding: 20px 30px;
+    font-size: 0.9rem;
+    line-height: 1.25;
+    box-shadow: none;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    margin-top: 15px;
+}
