@@ -34,7 +34,7 @@ export const IndexPageTemplate = ({
             <h4 className="subtitle-h4 f-arnopro-b">OUR PHILOSOPHY</h4>
             <div className="title-horizontal-line" />
           </div>
-          <p className="text-small justified">
+          <p className="text-small justified desc">
             At Edcellent Education, we have developed a pedagogy that
             communicates the essential nature of visual and physical
             intelligence, in order to more effectively inspire a holistic
@@ -55,27 +55,43 @@ export const IndexPageTemplate = ({
         </h3>
         <div className="offer-container">
           <div className="offer-1">
-            <div className="dark-overlay padding-3">
-              <div className="offer-box flex-column flex-center">
+            <div className="offer-inner">
+              <div className="offer-box flex-column flex-center front">
                 <h1 className="text-center text-large f-arnopro-b">
                   One-to-one & small group coaching
                 </h1>
               </div>
+              <div className="offer-box back">
+                <h3 className="text-medium f-arnopro-b">One-to-one & small group coaching</h3>
+                <div className="f-arnopro-r">
+                  <p>• VCE English / EAL</p>
+                  <p>• VCE English Language</p>
+                  <p>• VCE English Literature</p>
+                  <p>• IB Language & Literature</p>
+                </div>
+              </div>
             </div>
           </div>
           <div className="offer-2">
-            <div className="dark-overlay padding-3">
-              <div className="offer-box flex-column flex-center">
+            <div className="offer-inner">
+              <div className="offer-box flex-column flex-center front">
                 <h1 className="text-center text-large f-arnopro-b">
-                  Personalised school program
+                Personalised school program
                 </h1>
+              </div>
+              <div className="offer-box back">
+                <h3 className="text-medium f-arnopro-b">Personalised school program</h3>
+                <div className="f-arnopro-r">
+                  <p>• Incursion on VCE / IB texts</p>
+                  <p>• Workshops for students and teachers</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section className="landing-testimonial">
+    {/* <section className="landing-testimonial">
       <div
         className="landing-testimonial-container"
         style={{
@@ -98,7 +114,7 @@ export const IndexPageTemplate = ({
           </div>
         </div>
       </div>
-    </section>
+    </section> */}
 
     {/* <section className="landing-blog">
           <div className="landing-blog-title-container flex-row">

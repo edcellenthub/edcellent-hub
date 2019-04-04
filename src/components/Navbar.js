@@ -16,7 +16,7 @@ const Navbar = class extends React.Component {
     // toggle the active boolean in the state
     this.setState(
       {
-        active: !this.state.active,        
+        active: !this.state.active,
       },
       // after state has been updated,
       () => {
@@ -42,18 +42,18 @@ const Navbar = class extends React.Component {
             <div className="nav-container">
                 <div className="nav-logo">
                   <Link to="/" className="" title="Logo">
-                    <img src={logo} alt="Edcellent Digital Hub" style={{ width: "100px" }} />
-                  </Link>               
+                    <img src={logo} alt="Edcellent Digital Hub" style={{ width: "130px" }} />
+                  </Link>
                 </div>
                 {/* Hamburger menu */}
                   <div
                   className={`navbar-burger ${this.state.navBarActiveClass}`}
                   data-target="navMenu"
                   onClick={() => this.toggleHamburger()}
-                  >                 
+                  >
                     <span></span>
                     <span></span>
-                    <span></span> 
+                    <span></span>
                   </div>
                 <div id="navMenu" className={`${this.state.navBarActiveClass}`} >
                     <div className="nav-items">
@@ -73,9 +73,9 @@ const Navbar = class extends React.Component {
                           PORTAL LOGIN
                         </Link>
                     </div>
-                </div>        
+                </div>
               </div>
-  
+
         </nav>
     );
   }

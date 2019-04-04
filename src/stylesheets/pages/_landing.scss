@@ -6,7 +6,7 @@
 
   &,
   video,
-  .viewport-header {
+  .video-overlay {
     width: 100vw;
     height: 100vh;
     max-height: 100vh;
@@ -25,7 +25,7 @@
     }
   }
 
-  .viewport-header {
+  .video-overlay {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,20 +51,167 @@
   }
 }
 
+.landing-top-banner-info-box {
+  .play-video-btn {
+    cursor: pointer;
+    font-family: arno-pro, sans-serif;
+    padding: 10px 30px;
+    font-size: 1rem;
+    line-height: 1.25;
+    background-color: transparent;
+    text-decoration: none;
+    border: solid 1px $bright-gold;
+    color: $bright-gold;
+    text-align: center;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      line-height: 1em;
+      margin-right: 0.5em;
+      margin-top: 0.3em; // temp hardcoded fix
+    }
+
+    i.fas {
+      font-size: 1.5em;
+    }
+
+    &:hover {
+      background: $bright-gold;
+      span, i.fas {
+        color: white;
+      }
+    }
+  }
+}
+
+section.landing-about-us {
+  .landing-about-us-philo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .landing-philo-description {
+    h4.subtitle-h4 {
+      font-size: 1.6em;
+    }
+
+    p.desc {
+      font-size: 1.1em;
+    }
+  }
+
+  h3.landing-darkgold-title {
+    font-size: 1.8em;
+  }
+
+  .offer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .offer-1, .offer-2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin: 50px 35px;
+    width: 40%;
+    perspective: 1000px;
+    // transition: background 1.6s;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      margin: 20px;
+    }
+
+    &:hover {
+      background: $dark-gold;
+
+      .offer-inner {
+        transform: rotateY(180deg);
+        background-color: transparent;
+      }
+    }
+  }
+
+  .offer-1 {
+    background-image: url('../../static/img/landing-blog-image-1.jpg');
+  }
+  .offer-2 {
+    background-image: url('../../static/img/landing-blog-image-2.jpg');
+  }
+
+  .offer-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(66, 70, 80, 0.5);
+  }
+
+  .offer-box {
+    position: absolute;
+    backface-visibility: hidden;
+    border: solid 1px white;
+    color: white;
+    width: 95%;
+    height: 95%;
+    padding: 10%;
+    align-self: center;
+
+    &.back {
+      background-color: $dark-gold;
+      color: white;
+      transform: rotateY(180deg);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+
+      h3 {
+        font-size: 2.3em;
+        margin-bottom: 1em;
+      }
+      p {
+        font-size: 1.3em;
+        margin-bottom: .3em;
+      }
+    }
+  }
+
+}
+
+
+
+
 @media (min-width: 1025px) {
   .landing-top-banner-info-box {
     position: absolute;
-    top: 52%;
-    left: 52%;
-    transform: translate(-50%, -48%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 1.4rem;
     color: white;
     padding: 40px 60px;
     outline: solid 1px $bright-gold;
   }
   .landing-gold-title {
-    font-size: 2.8rem;
+    font-size: 3rem;
     color: $bright-gold;
+    letter-spacing: 0.1em;
+    font-weight: 700;
   }
   .landing-philo-bait {
     width: 40%;
@@ -79,30 +226,8 @@
 
   .landing-darkgold-title {
     padding-top: 50px;
-    font-size: 1.5rem;
     letter-spacing: 4px;
     color: $dark-gold;
-  }
-  .offer-container {
-    display: flex;
-  }
-  .offer-1 {
-    background-image: url('../../static/img/landing-blog-image-1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px;
-    margin: 50px 35px 50px 0;
-    width: 43%;
-    display: inline-block;
-  }
-  .offer-2 {
-    background-image: url('../../static/img/landing-blog-image-2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px;
-    margin: 50px 0 50px 35px;
-    width: 43%;
-    display: inline-block;
   }
 
   .landing-testimonial-info-box {
@@ -162,35 +287,10 @@
     padding: 25px;
   }
 
-  .offer-container {
-    display: flex;
-  }
-
   .landing-darkgold-title {
     padding-top: 50px;
-    font-size: 1.2rem;
     letter-spacing: 4px;
     color: $dark-gold;
-  }
-
-  .offer-1 {
-    background-image: url('../../static/img/landing-blog-image-1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px;
-    margin: 50px 35px 50px 0;
-    width: 43%;
-    display: inline-block;
-  }
-
-  .offer-2 {
-    background-image: url('../../static/img/landing-blog-image-2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px;
-    margin: 50px 0 50px 35px;
-    width: 43%;
-    display: inline-block;
   }
 
   .landing-testimonial-info-box {
@@ -243,7 +343,6 @@
 
   .landing-darkgold-title {
     padding-top: 50px;
-    font-size: 1rem;
     letter-spacing: 4px;
     color: $dark-gold;
   }
@@ -313,15 +412,6 @@
 .landing-about-us {
   background-color: white;
   padding: 5%;
-}
-
-.offer-box {
-  border: solid 1px white;
-  color: white;
-  width: 100%;
-  height: 100%;
-  padding: 10%;
-  align-self: center;
 }
 
 .landing-testimonial-container {

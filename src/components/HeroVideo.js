@@ -25,12 +25,12 @@ export default class HeroVideo extends React.Component {
           controls={isPlaying}
           src="https://s3-ap-southeast-1.amazonaws.com/liren-permission-test/WHY+EDCELLENT+(without+Logo).mp4"
           autoPlay
+          playsInline
           loop
           muted={!isPlaying}
         />
         <div
-          className={`viewport-header ${isPlaying && 'hide-overlay'}`}
-          onClick={this.playVideo}
+          className={`video-overlay ${isPlaying && 'hide-overlay'}`}
         >
           <div
             style={{ display: isPlaying ? 'none' : 'block' }}
@@ -49,9 +49,10 @@ export default class HeroVideo extends React.Component {
               <p className="nunito-text-small">verb</p>
               <p>engage, empower, educate</p>
             </div>
-            <button className="btn">
-              LEARN MORE &nbsp; &nbsp;
+            <button className="play-video-btn" onClick={this.playVideo}>
+              <span>WATCH VIDEO</span>
               <i class="fas fa-caret-right" />
+              {/* <img src={require('../img/video.svg')} alt="play" /> */}
             </button>
           </div>
         </div>
