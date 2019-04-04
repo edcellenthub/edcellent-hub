@@ -22,6 +22,17 @@
   letter-spacing: 2px;
 }
 
+.f-arnopro-i {
+  font-family: arno-pro-i, serif;  
+}
+
+.f-arnopro-si {
+  font-family: arno-pro-smbdicap, sans-serif;
+  letter-spacing: 2px;
+}
+
+
+
 @media (min-width: 1025px) {
   .nunito-text-small {
     font-family: 'Nunito', sans-serif;
@@ -57,7 +68,7 @@
   }
 
   .subtitle-h2-italic {
-    font-family: 'arno-pro-icap';
+    font-family: 'arno-pro-smbdicap', serif;
     font-size: 1.8rem;
     line-height: 2.3rem;
     margin-bottom: 40px;
@@ -105,9 +116,12 @@
     font-size: 2.7rem;
     line-height: 3.3rem;
   }
+  .text-x-large {
+    font-size: 3.8rem;
+  }
 
   .subtitle-h2-italic {
-    font-family: 'arno-pro-smbdicap';
+    font-family: 'arno-pro-smbdicap', serif;
     font-size: 1.6rem;
     line-height: 2.3rem;
     margin-bottom: 40px;
@@ -155,9 +169,12 @@
     font-size: 2.2rem;
     line-height: 2.8rem;
   }
+  .text-x-large {
+    font-size: 3.8rem;
+  }
 
   .subtitle-h2-italic {
-    font-family: 'arno-pro-smbdicap';
+    font-family: 'arno-pro-smbdicap', serif;
     font-size: 1.22rem;
     line-height: 1.95rem;
     margin-bottom: 40px;
@@ -183,7 +200,7 @@
   }  
 
   .text-small {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     letter-spacing: 0.8px;
   }
 
@@ -202,12 +219,15 @@
   }
 
   .text-large {
-    font-size: 2.2rem;
+    font-size: 2rem;
     line-height: 2.8rem;
+  }
+  .text-x-large {
+    font-size: 3.2rem;
   }
 
   .subtitle-h2-italic {
-    font-family: 'arno-pro-smbdicap';
+    font-family: 'arno-pro-smbdicap', serif;
     font-size: 1rem;
     line-height: 1.5rem;
     margin-bottom: 40px;
