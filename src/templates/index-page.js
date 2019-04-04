@@ -1,154 +1,106 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import Contact from '../components/Contact'
-import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
+import HeroVideo from '../components/HeroVideo'
 
-class IndexPageTemplate extends React.Component {
-  state = {
-    isPlaying: false
-  }
-
-  playVideo = () => this.setState({ isPlaying: true })
-
-  stopVideo = () => {
-    this.setState({ isPlaying: false })
-  }
-
-  render() {
-    const { isPlaying } = this.state
-    return (
-      <>
-        <header id="landing-hero-video">
-          <video
-            onClick={this.stopVideo}
-            controls={isPlaying}
-            src="https://s3-ap-southeast-1.amazonaws.com/liren-permission-test/WHY+EDCELLENT+(without+Logo).mp4"
-            autoPlay
-            loop
-            muted={!isPlaying}
-          />
-          <div
-            className="viewport-header"
-            onClick={this.playVideo}
-            style={{
-              height: isPlaying ? '95px' : '100vh'
-            }}
-          >
-            <div
-              style={{ display: isPlaying ? 'none' : 'block' }}
-              className="landing-top-banner-info-box text-center f-arnopro-r"
-            >
-              <h1 className="f-arnopro-b landing-gold-title">edcellent</h1>
-              <div className="margin-bottom-2">
-                <p className="nunito-text-small">adjective</p>
-                <p>organic, holistic, global</p>
-              </div>
-              <div className="margin-bottom-2">
-                <p className="nunito-text-small">noun</p>
-                <p>authenticity, inspiration, insight</p>
-              </div>
-              <div className="margin-bottom-2">
-                <p className="nunito-text-small">verb</p>
-                <p>engage, empower, educate</p>
-              </div>
-              <button className="btn">
-                LEARN MORE &nbsp; &nbsp;
-                <i class="fas fa-caret-right" />
-              </button>
-            </div>
+export const IndexPageTemplate = ({
+  // image,
+  // title,
+  // heading,
+  // description,
+  // intro,
+  // main,
+  // testimonials,
+  // fullImage,
+  // pricing
+}) => (
+  <>
+    <HeroVideo />
+    <section style={{ marginTop: '100vh' }} className="landing-about-us">
+      <div className="landing-about-us-philo">
+        <div className="landing-philo-bait">
+          <h2 className="subtitle-h2-italic">What is intelligence, really?</h2>
+          <h2 className="subtitle-h2-italic">What is our role as educator?</h2>
+          <h2 className="subtitle-h2-italic">
+            What can we do to guarantee a more positive and inspired experience
+            of student success?
+          </h2>
+        </div>
+        <div className="landing-philo-description">
+          <div className="flex-row philo-description-title">
+            <h4 className="subtitle-h4 f-arnopro-b">OUR PHILOSOPHY</h4>
+            <div className="title-horizontal-line" />
           </div>
-        </header>
-
-        <section style={{ marginTop: '100vh' }} className="landing-about-us">
-          <div className="landing-about-us-philo">
-            <div className="landing-philo-bait">
-              <h2 className="subtitle-h2-italic">
-                What is intelligence, really?
-              </h2>
-              <h2 className="subtitle-h2-italic">
-                What is our role as educator?
-              </h2>
-              <h2 className="subtitle-h2-italic">
-                What can we do to guarantee a more positive and inspired
-                experience of student success?
-              </h2>
-            </div>
-            <div className="landing-philo-description">
-              <div className="flex-row philo-description-title">
-                <h4 className="subtitle-h4 f-arnopro-b">OUR PHILOSOPHY</h4>
-                <div className="title-horizontal-line" />
-              </div>
-              <p className="text-small justified">
-                At Edcellent Education, we have developed a pedagogy that
-                communicates the essential nature of visual and physical
-                intelligence, in order to more effectively inspire a holistic
-                understanding of texts, issues, speeches and comparative study.
-                This is crucial to the growth of contemporary students in VCE
-                (English/EAL and Literature), IB (Language and Literature) and
-                middle-school English. By assimilating areas of study through a
-                more visceral and organic pedagogy, we educators are empowering
-                studetns to build empathy, critical thinking and strategic
-                life-skills.
-              </p>
-              <button className="nobox-btn">LEARN MORE &nbsp; &#10230;</button>
-            </div>
-          </div>
-          <div className="section-horizontal-line" />
-          <div className="landing-about-us-offer">
-            <h3 className="landing-darkgold-title text-center f-arnopro-b">
-              WHAT WE OFFER
-            </h3>
-            <div className="offer-container">
-              <div className="offer-1">
-                <div className="dark-overlay padding-3">
-                  <div className="offer-box flex-column flex-center">
-                    <h1 className="text-center text-large f-arnopro-b">
-                      One-to-one & small group coaching
-                    </h1>
-                  </div>
-                </div>
-              </div>
-              <div className="offer-2">
-                <div className="dark-overlay padding-3">
-                  <div className="offer-box flex-column flex-center">
-                    <h1 className="text-center text-large f-arnopro-b">
-                      Personalised school program
-                    </h1>
-                  </div>
-                </div>
+          <p className="text-small justified">
+            At Edcellent Education, we have developed a pedagogy that
+            communicates the essential nature of visual and physical
+            intelligence, in order to more effectively inspire a holistic
+            understanding of texts, issues, speeches and comparative study. This
+            is crucial to the growth of contemporary students in VCE
+            (English/EAL and Literature), IB (Language and Literature) and
+            middle-school English. By assimilating areas of study through a more
+            visceral and organic pedagogy, we educators are empowering studetns
+            to build empathy, critical thinking and strategic life-skills.
+          </p>
+          <button className="nobox-btn">LEARN MORE &nbsp; &#10230;</button>
+        </div>
+      </div>
+      <div className="section-horizontal-line" />
+      <div className="landing-about-us-offer">
+        <h3 className="landing-darkgold-title text-center f-arnopro-b">
+          WHAT WE OFFER
+        </h3>
+        <div className="offer-container">
+          <div className="offer-1">
+            <div className="dark-overlay padding-3">
+              <div className="offer-box flex-column flex-center">
+                <h1 className="text-center text-large f-arnopro-b">
+                  One-to-one & small group coaching
+                </h1>
               </div>
             </div>
           </div>
-        </section>
-        <section className="landing-testimonial">
-          <div
-            className="landing-testimonial-container"
-            style={{
-              backgroundImage: `url(
+          <div className="offer-2">
+            <div className="dark-overlay padding-3">
+              <div className="offer-box flex-column flex-center">
+                <h1 className="text-center text-large f-arnopro-b">
+                  Personalised school program
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section className="landing-testimonial">
+      <div
+        className="landing-testimonial-container"
+        style={{
+          backgroundImage: `url(
                     https://www.biography.com/.image/t_share/MTM5MjAwODE0ODIzNTE1ODkx/robert_downey_jr_iron_man_3_courtesy_marvel_studios_disneyjpg.jpg
                   )`,
-              backgroundPosition: `center`,
-              backgroundAttachment: `fixed`
-            }}
-          >
-            <div className="dark-overlay">
-              <div className="landing-testimonial-info-box text-center f-arnopro-r">
-                <h2 className="f-arnopro-s gold-color text-medium margin-bottom-1">
-                  Hear what our students have to say about us
-                </h2>
-                <button className="btn">
-                  WATCH VIDEO &nbsp; &nbsp;
-                  <i className="fas fa-caret-right" />
-                </button>
-              </div>
-            </div>
+          backgroundPosition: `center`,
+          backgroundAttachment: `fixed`
+        }}
+      >
+        <div className="dark-overlay">
+          <div className="landing-testimonial-info-box text-center f-arnopro-r">
+            <h2 className="f-arnopro-s gold-color text-medium margin-bottom-1">
+              Hear what our students have to say about us
+            </h2>
+            <button className="btn">
+              WATCH VIDEO &nbsp; &nbsp;
+              <i className="fas fa-caret-right" />
+            </button>
           </div>
-        </section>
-        <section className="landing-blog">
+        </div>
+      </div>
+    </section>
+
+    {/* <section className="landing-blog">
           <div className="landing-blog-title-container flex-row">
             <h4 className="subtitle-h4 f-arnopro-b">LATEST FROM OUR BLOG</h4>
             <div className="title-horizontal-line" />
@@ -194,12 +146,10 @@ class IndexPageTemplate extends React.Component {
             </div>
           </div>
           <button className="nobox-btn">VIEW ALL &nbsp; &#10230;</button>
-        </section>
-        <Contact />
-      </>
-    )
-  }
-}
+        </section> */}
+    <Contact />
+  </>
+)
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -239,7 +189,6 @@ IndexPage.propTypes = {
 }
 
 export default IndexPage
-export { IndexPageTemplate }
 
 export const pageQuery = graphql`
   query IndexPageTemplate {

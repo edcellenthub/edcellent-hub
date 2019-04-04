@@ -26,11 +26,28 @@
   }
 
   .viewport-header {
-    transition: 1s;
     display: flex;
     align-items: center;
     justify-content: center;
     transform: scale(1);
+  }
+
+  @-webkit-keyframes fadeOut {
+      0% { opacity: 1;}
+      99% { opacity: 0.01;width: 100%; height: 100%;}
+      100% { opacity: 0;width: 0; height: 0;}
+  }
+  @keyframes fadeOut {
+      0% { opacity: 1;}
+      99% { opacity: 0.01;width: 100%; height: 100%;}
+      100% { opacity: 0;width: 0; height: 0;}
+  }
+
+  .hide-overlay {
+      display: block;
+      -webkit-animation: fadeOut 1s;
+      animation: fadeOut 1s;
+      animation-fill-mode: forwards;
   }
 }
 
