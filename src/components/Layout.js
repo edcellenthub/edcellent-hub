@@ -13,35 +13,24 @@ const TemplateWrapper = ({ children }) => {
         <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
-
         <link
           rel="apple-touch-icon"
-          sizes="180x180"
-          href="/img/apple-touch-icon.png"
+          href="/img/ed_favicon.ico"
         />
         <link
           rel="icon"
-          type="image/png"
-          href="/img/favicon-32x32.png"
-          sizes="32x32"
+          type="image/x-icon"
+          href="/img/ed_favicon.ico"
         />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/img/favicon-16x16.png"
-          sizes="16x16"
-        />
-
         <link
           rel="mask-icon"
-          href="/img/safari-pinned-tab.svg"
-          color="#ff4400"
+          href="/img/ed_favicon.ico"
+          color="#f5cf78"
         />
-
-        <link 
-          rel="stylesheet" 
-          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
-          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
           crossorigin="anonymous"
         />
 
