@@ -5,19 +5,23 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Contact from '../components/Contact'
 import HeroVideo from '../components/HeroVideo'
+import Navbar from '../components/Navbar'
 
-export const IndexPageTemplate = ({
-  // image,
-  // title,
-  // heading,
-  // description,
-  // intro,
-  // main,
-  // testimonials,
-  // fullImage,
-  // pricing
-}) => (
+export const IndexPageTemplate = (
+  {
+    // image,
+    // title,
+    // heading,
+    // description,
+    // intro,
+    // main,
+    // testimonials,
+    // fullImage,
+    // pricing
+  }
+) => (
   <>
+    <Navbar />
     <HeroVideo />
     <section style={{ marginTop: '100vh' }} className="landing-about-us">
       <div className="landing-about-us-philo">
@@ -62,7 +66,9 @@ export const IndexPageTemplate = ({
                 </h1>
               </div>
               <div className="offer-box back">
-                <h3 className="text-medium f-arnopro-b">One-to-one & small group coaching</h3>
+                <h3 className="text-medium f-arnopro-b">
+                  One-to-one & small group coaching
+                </h3>
                 <div className="f-arnopro-r">
                   <p>• VCE English / EAL</p>
                   <p>• VCE English Language</p>
@@ -76,11 +82,13 @@ export const IndexPageTemplate = ({
             <div className="offer-inner">
               <div className="offer-box flex-column flex-center front">
                 <h1 className="text-center text-large f-arnopro-b">
-                Personalised school program
+                  Personalised school program
                 </h1>
               </div>
               <div className="offer-box back">
-                <h3 className="text-medium f-arnopro-b">Personalised school program</h3>
+                <h3 className="text-medium f-arnopro-b">
+                  Personalised school program
+                </h3>
                 <div className="f-arnopro-r">
                   <p>• Incursion on VCE / IB texts</p>
                   <p>• Workshops for students and teachers</p>

@@ -8,8 +8,12 @@
   align-items: center;
 }
 
-.nav-item {
-  font-size: .9em;
+.nav-item, .nav-item-box {
+  font-size: .8em;
+
+  &.black {
+    color: black;
+  }
 }
 
 @media (min-width: 1025px) {

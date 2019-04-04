@@ -1,6 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
+import Navbar from '../../components/Navbar'
 
 function encode(data) {
   return Object.keys(data)
@@ -26,8 +27,8 @@ export default class Index extends React.Component {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
         'form-name': form.getAttribute('name'),
-        ...this.state,
-      }),
+        ...this.state
+      })
     })
       .then(() => navigate(form.getAttribute('action')))
       .catch(error => alert(error))
@@ -36,7 +37,8 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <section className="section">
+        <Navbar hasLightBg />
+        <section style={{ marginTop: '70px' }} className="section">
           <div className="container">
             <div className="content">
               <h1>Contact</h1>

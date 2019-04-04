@@ -6,7 +6,7 @@ const Contact = class extends React.Component {
     return (
       <section className="visitor-redirect flex-center">
         <div className="visitor-redirect-container f-arnopro-r">
-          <div className="visitor-redirect-info text-md f-nunito text-center">
+          <div className="visitor-redirect-info text-m f-nunito text-center">
             <p>
               Contact us to enquire about our range of personalised and
               differentiated VCE/IB educational products and services that

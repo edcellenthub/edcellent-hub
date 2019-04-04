@@ -18,12 +18,12 @@ const Footer = class extends React.Component {
               <p className=" spaced gold-color f-nunito margin-bottom-1">
                 ADDRESS
               </p>
-              <p className="text-md f-arnopro-r">CBD Campus</p>
-              <p className="text-md f-arnopro-r margin-bottom-2">
+              <p className="text-m f-arnopro-r">CBD Campus</p>
+              <p className="text-m f-arnopro-r margin-bottom-2">
                 Level 4, 180 Bourke Street, Melbourne, Victoria 3000, Australia
               </p>
-              <p className="text-md f-arnopro-r">Boxhill Campus</p>
-              <p className="text-md f-arnopro-r">
+              <p className="text-m f-arnopro-r">Boxhill Campus</p>
+              <p className="text-m f-arnopro-r">
                 5 Court Street, Box Hill, Victoria 3128, Australia
               </p>
             </div>
@@ -32,13 +32,13 @@ const Footer = class extends React.Component {
                 <p className=" spaced f-nunito gold-color margin-bottom-1">
                   PHONE
                 </p>
-                <p className="text-md f-arnopro-r">+61 417 313 116</p>
+                <p className="text-m f-arnopro-r">+61 417 313 116</p>
               </div>
               <div className="footer-email">
                 <p className=" spaced f-nunito gold-color margin-bottom-1">
                   EMAIL
                 </p>
-                <p className="text-md f-arnopro-r">carlynk@edcellent.com</p>
+                <p className="text-m f-arnopro-r">carlynk@edcellent.com</p>
               </div>
             </div>
           </div>

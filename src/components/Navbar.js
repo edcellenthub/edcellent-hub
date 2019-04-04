@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
 import github from "../img/github-icon.svg";
-import logo from "../img/logo-white.png";
+import whiteLogo from "../img/logo-white.png";
+import grayLogo from "../img/logo-gray.png"
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -33,6 +34,7 @@ const Navbar = class extends React.Component {
   };
 
   render() {
+    const { hasLightBg } = this.props
     return (
         <nav
           className="nav-main"
@@ -42,7 +44,11 @@ const Navbar = class extends React.Component {
             <div className="nav-container">
                 <div className="nav-logo">
                   <Link to="/" className="" title="Logo">
-                    <img src={logo} alt="Edcellent Digital Hub" style={{ width: "130px" }} />
+                    {
+                      hasLightBg
+                      ? <img src={grayLogo} alt="Edcellent Digital Hub" style={{ width: "130px" }} />
+                      : <img src={whiteLogo} alt="Edcellent Digital Hub" style={{ width: "130px" }} />
+                    }
                   </Link>
                 </div>
                 {/* Hamburger menu */}
@@ -57,18 +63,18 @@ const Navbar = class extends React.Component {
                   </div>
                 <div id="navMenu" className={`${this.state.navBarActiveClass}`} >
                     <div className="nav-items">
-                        <Link className="nav-item" to="/about">
+                        <Link className={`nav-item ${hasLightBg && 'black'}`} to="/about">
                           ABOUT
                         </Link>
-                        <Link className="nav-item" to="/blog">
+                        {/* <Link className="nav-item" to="/blog">
                           BLOG
+                        </Link> */}
+                        <Link className={`nav-item ${hasLightBg && 'black'}`} to="/contact">
+                          CONTACT US
                         </Link>
-                        <Link className="nav-item" to="/contact">
-                          CONTENT
-                        </Link>
-                        <Link className="nav-item" to="/contact/examples">
+                        {/* <Link className="nav-item" to="/contact/examples">
                           PREMIUM
-                        </Link>
+                        </Link> */}
                         <Link className="nav-item-box" to="/contact/examples">
                           PORTAL LOGIN
                         </Link>
