@@ -9,23 +9,6 @@
   align-items: center;
 }
 
-// hardcoded quick dirty fix:
-
-#team {
-  @media (max-width: 767px) {
-    margin-top: 253px;
-  }
-  @media (max-width: 570px) {
-    margin-top: 227px;
-  }
-  @media (max-width: 504px) {
-    margin-top: 29vw;
-  }
-  @media (max-width: 437px) {
-    margin-top: 80px;
-  }
-}
-
 @media (min-width: 1440px) {
   #mission {
     display: flex;
@@ -498,5 +481,34 @@
         width: 100%;
       }
     }
+  }
+}
+
+// hardcoded quick dirty fix:
+
+.about-section #team {
+  @media (min-width: 768px) {
+    margin-top: 270px;
+  }
+  @media (max-width: 467px) {
+    margin-top: 400px;
+  }
+  @media (max-width: 370px) {
+    margin-top: 712px;
+  }
+}
+
+#carlyn-quick-fix {
+  @media (max-width: 767px) {
+    margin-top: 253px;
+  }
+  @media (max-width: 570px) {
+    margin-top: 227px;
+  }
+  @media (max-width: 504px) {
+    margin-top: 29vw;
+  }
+  @media (max-width: 437px) {
+    margin-top: 80px;
   }
 }
