@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import Contact from '../components/Contact'
@@ -21,7 +21,7 @@ export const IndexPageTemplate = (
   }
 ) => (
   <>
-    <Navbar />
+    <Navbar currentPage="home"/>
     <HeroVideo />
     <section style={{ marginTop: '100vh' }} className="landing-about-us">
       <div className="landing-about-us-philo">
@@ -49,7 +49,10 @@ export const IndexPageTemplate = (
             visceral and organic pedagogy, we educators are empowering studetns
             to build empathy, critical thinking and strategic life-skills.
           </p>
-          <button className="nobox-btn">LEARN MORE &nbsp; &#10230;</button>
+          <Link className="nobox-btn" to="/about">
+          LEARN MORE ABOUT US &nbsp; &#10230;
+          </Link>
+          {/* <button className="nobox-btn">LEARN MORE ABOUT US &nbsp; &#10230;</button> */}
         </div>
       </div>
       <div className="section-horizontal-line" />

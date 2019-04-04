@@ -14,6 +14,13 @@
   &.black {
     color: black;
   }
+
+  &.active {
+    span {
+      border-bottom: solid 2px $bright-gold;
+      padding: 0 3px 1px 3px;
+    }
+  }
 }
 
 @media (min-width: 1025px) {

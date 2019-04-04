@@ -16,7 +16,7 @@ class AboutPageTemplate extends React.Component {
   render() {
     return (
       <div>
-        <Navbar hasLightBg />
+        <Navbar hasLightBg currentPage='about' />
         <section className="about-section">
           <div className="container">
             <div className="about-container">
