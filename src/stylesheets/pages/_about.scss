@@ -1,0 +1,77 @@
+.about-section {
+    margin-top: 70px;
+    padding-top: 30px;
+    display: flex;
+}
+
+.about-container {
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.mission-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 2000px;
+}
+
+.team-img-container {
+    width: 90vw;
+    height: 50%;
+}
+
+.team-img {
+    width: 100%;
+    height: auto;
+}
+
+.mission-section {
+    background-color: white;
+    width: 65vw;
+    padding: 10%;
+    position: absolute;
+    top: 450px;
+}
+
+.mission-title {
+    display: block;
+    text-align: center;
+}
+
+#objective {
+    background-color: $light-grey;
+    padding: 2%;
+
+    .title{
+        text-align: center;
+    }
+    .container {
+        border: 1px solid $black;
+        padding: 15%;
+    }
+    .outer-row{
+        flex-direction: row;
+        margin-bottom: 15px;
+        height: 90px;
+    }
+    .number{
+        display: inline-block;
+        text-align: right;
+        background-color: transparent;
+
+        min-width: 0.5em;
+        padding: 0;
+    }
+    .inner-row{
+        width: 70%;
+    }
+    .line {
+        border-bottom: 1px solid black;
+        width: 100%; 
+        position: relative;
+        bottom: -3px;
+        margin: 10px 0;
+        height: 2px;
+      }
+    }

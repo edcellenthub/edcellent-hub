@@ -62,18 +62,18 @@ export default class StudentForm extends React.Component {
                       <input
                         className="firstname input"
                         type={'text'}
-                        name={'name'}
+                        name={'first-name'}
                         onChange={this.handleChange}
-                        id={'name'}
+                        id={'first-name'}
                         required={true}
                         placeholder="First name"
                       />
                       <input
                         className="lastname input"
                         type={'text'}
-                        name={'name'}
+                        name={'last-name'}
                         onChange={this.handleChange}
-                        id={'name'}
+                        id={'last-name'}
                         required={true}
                         placeholder="Last name"
                       />
@@ -86,9 +86,9 @@ export default class StudentForm extends React.Component {
                     <input
                       className="input"
                       type={'text'}
-                      name={'name'}
+                      name={'school-name'}
                       onChange={this.handleChange}
-                      id={'name'}
+                      id={'school-name'}
                       required={true}
                       placeholder="School name"
                     />
