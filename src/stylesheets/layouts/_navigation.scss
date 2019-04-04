@@ -2,14 +2,33 @@
   display: inline-block;
 }
 
+.nav-main {
+  background-color: transparent;
+  // height: 30px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  padding: 0 50px;
+  z-index: 3;
+}
+
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav-item, .nav-item-box {
-  font-size: .8em;
+.nav-item,
+.nav-item-box {
+  font-size: 0.8em;
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 2px;
+}
+
+.nav-item {
+  padding: 20px 30px;
 
   &.black {
     color: black;
@@ -21,159 +40,54 @@
       padding: 0 3px 1px 3px;
     }
   }
+
+  &:hover {
+    background-color: $bright-gold;
+    color: $black;
+  }
 }
 
-@media (min-width: 1025px) {
-  .nav-main {
-    background-color: transparent;
-    // height: 30px;
+.nav-item-box {
+  padding: 20px 20px;
+  background-color: rgba(66, 70, 80, 0.75);
+
+  &:hover {
+    background-color: $bright-gold;
+    color: $black;
+  }
+}
+
+#nav-dropdown {
+  display: none;
+  position: relative;
+
+  .navbar-burger.white {
+    color: white;
+  }
+
+  .dropdown-container {
     position: absolute;
-    top: 30px;
-    left: 0;
-    width: 100%;
-    padding: 0 50px;
-    z-index: 3;
-  }
-  .navbar-burger {
-    display: none;
-    justify-content: flex-end;
-  }
-  .nav-item {
-    color: #FFF;
-    font-family: 'Nunito', sans-serif;
-    letter-spacing: 2px;
-    padding: 20px 30px;
-  }
-  .nav-item-box {
-    color: #FFF;
-    font-family: 'Nunito', sans-serif;
-    letter-spacing: 2px;
-    padding: 20px 20px;
-    background-color: rgba(66, 70, 80, 0.75);
+    top: 52px;
+    right: 0;
+    background: $dark-grey;
+
+    width: 400px;
+    max-width: 80vw;
+    transition: 0.4s;
+
+    .navbar-dropdown {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .nav-main {
-    background-color: transparent;
-    // height: 30px;
-    position: absolute;
-    top: 30px;
-    left: 0;
-    width: 100%;
-    padding: 0 50px;
-    z-index: 3;
-  }
-  .navbar-burger {
-    color: #fff;
-    display: inline-block;
+@media (max-width: 833px) {
+  .nav-items {
+    display: none;
   }
 
-  .navbar-burger .is-active {
-    align-self: flex-end;
-  }
-
-  .is-active .nav-items {
-    background-color: $dark-grey;
-    width: 100vw;
-    top: 0;
-  }
-  .is-active .nav-item {
-    text-align: center;
-    font-family: 'Nunito', sans-serif;
-    letter-spacing: 2px;
-    padding: 20px 30px;
-    color: #FFF;
-    z-index: 3;
-    width: 100vw;
+  #nav-dropdown  {
     display: block;
   }
-  .is-active .nav-item-box {
-    text-align: center;
-    color: #FFF;
-    font-family: 'Nunito', sans-serif;
-    letter-spacing: 2px;
-    padding: 20px 20px;
-    background-color: #373A41;
-    z-index: 3;
-    display: block;
-  }
-  .not-active .nav-items {
-    display: none;
-  }
-  .not-active .nav-item {
-    display: none;
-  }
-  .not-active .nav-item-box {
-    display: none;
-  }
 }
-
-@media (min-width: 320px) and (max-width: 767px) {
-  .nav-main {
-    background-color: transparent;
-    // height: 30px;
-    position: absolute;
-    top: 30px;
-    left: 0;
-    width: 100%;
-    padding: 0 25px;
-    z-index: 3;
-  }
-  .navbar-burger {
-    color: #fff;
-    display: inline-block;
-  }
-
-  .navbar-burger .is-active {
-    align-self: flex-end;
-  }
-
-  .is-active .nav-items {
-    background-color: $dark-grey;
-    width: 100vw;
-    top: 0;
-  }
-  .is-active .nav-item {
-    text-align: center;
-    font-family: 'Nunito', sans-serif;
-    letter-spacing: 2px;
-    padding: 20px 30px;
-    color: #FFF;
-    z-index: 3;
-    width: 100vw;
-    display: block;
-  }
-  .is-active .nav-item-box {
-    text-align: center;
-    color: #FFF;
-    font-family: 'Nunito', sans-serif;
-    letter-spacing: 2px;
-    padding: 20px 20px;
-    background-color: #373A41;
-    z-index: 3;
-    display: block;
-  }
-  .not-active .nav-items {
-    display: none;
-  }
-  .not-active .nav-item {
-    display: none;
-  }
-  .not-active .nav-item-box {
-    display: none;
-  }
-}
-
-
-.nav-item:hover {
-  background-color: $bright-gold;
-  color: $black;
-}
-
-.nav-item-box:hover {
-  background-color: $bright-gold;
-  color: $black;
-}
-
-

@@ -5,36 +5,17 @@ import whiteLogo from '../img/logo-white.png'
 import grayLogo from '../img/logo-gray.png'
 
 const Navbar = class extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      active: false,
-      navBarActiveClass: 'not-active'
-    }
+  state = {
+    dropdown: false
   }
 
-  toggleHamburger = () => {
-    // toggle the active boolean in the state
-    this.setState(
-      {
-        active: !this.state.active
-      },
-      // after state has been updated,
-      () => {
-        // set the class in state for the navbar accordingly
-        this.state.active
-          ? this.setState({
-              navBarActiveClass: 'is-active'
-            })
-          : this.setState({
-              navBarActiveClass: 'not-active'
-            })
-      }
-    )
+  toggleDropdown = () => {
+    this.setState({ dropdown: !this.state.dropdown })
   }
 
   render() {
     const { hasLightBg, currentPage } = this.props
+    const { dropdown } = this.state
     return (
       <nav className="nav-main" role="navigation" aria-label="main-navigation">
         <div className="nav-container">
@@ -55,49 +36,81 @@ const Navbar = class extends React.Component {
               )}
             </Link>
           </div>
-          {/* Hamburger menu */}
-          <div
-            className={`navbar-burger ${this.state.navBarActiveClass}`}
-            data-target="navMenu"
-            onClick={() => this.toggleHamburger()}
-          >
-            <span />
-            <span />
-            <span />
-          </div>
-          <div id="navMenu" className={`${this.state.navBarActiveClass}`}>
-            <div className="nav-items">
-              <Link
-                className={`nav-item ${hasLightBg && 'black'} ${currentPage ===
-                  'home' && 'active'}`}
-                to="/"
-              >
-                <span>HOME</span>
-              </Link>
-              <Link
-                className={`nav-item ${hasLightBg && 'black'} ${currentPage ===
-                  'about' && 'active'}`}
-                to="/about"
-              >
-                <span>ABOUT</span>
-              </Link>
-              {/* <Link className="nav-item" to="/blog">
-                          BLOG
-                        </Link> */}
-              <Link
-                className={`nav-item ${hasLightBg && 'black'} ${currentPage ===
-                  'contact' && 'active'}`}
-                to="/contact"
-              >
-                <span>CONTACT US</span>
-              </Link>
-              {/* <Link className="nav-item" to="/contact/examples">
-                          PREMIUM
-                        </Link> */}
-              <Link className="nav-item-box" to="/" onClick={() => alert('Coming Soon!')}>
-                PORTAL LOGIN
-              </Link>
+
+          <div id="nav-dropdown">
+            <div
+              onClick={this.toggleDropdown}
+              className={`navbar-burger ${dropdown &&
+                'is-active'} ${!hasLightBg && 'white'}`}
+            >
+              <span />
+              <span />
+              <span />
             </div>
+            {dropdown && (
+              <div className="dropdown-container">
+                <div className="navbar-dropdown">
+                  <Link
+                    className={`nav-item ${currentPage === 'home' && 'active'}`}
+                    to="/"
+                  >
+                    <span>HOME</span>
+                  </Link>
+                  <Link
+                    className={`nav-item ${currentPage === 'about' &&
+                      'active'}`}
+                    to="/about"
+                  >
+                    <span>ABOUT</span>
+                  </Link>
+                  <Link
+                    className={`nav-item ${currentPage === 'contact' &&
+                      'active'}`}
+                    to="/contact"
+                  >
+                    <span>CONTACT US</span>
+                  </Link>
+                  <Link
+                    className="nav-item"
+                    to="/"
+                    onClick={() => alert('Coming Soon!')}
+                  >
+                    PORTAL LOGIN
+                  </Link>
+                </div>
+              </div>
+            )}
+          </div>
+
+          <div className="nav-items">
+            <Link
+              className={`nav-item ${hasLightBg && 'black'} ${currentPage ===
+                'home' && 'active'}`}
+              to="/"
+            >
+              <span>HOME</span>
+            </Link>
+            <Link
+              className={`nav-item ${hasLightBg && 'black'} ${currentPage ===
+                'about' && 'active'}`}
+              to="/about"
+            >
+              <span>ABOUT</span>
+            </Link>
+            <Link
+              className={`nav-item ${hasLightBg && 'black'} ${currentPage ===
+                'contact' && 'active'}`}
+              to="/contact"
+            >
+              <span>CONTACT US</span>
+            </Link>
+            <Link
+              className="nav-item-box"
+              to="/"
+              onClick={() => alert('Coming Soon!')}
+            >
+              PORTAL LOGIN
+            </Link>
           </div>
         </div>
       </nav>
