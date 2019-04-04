@@ -38,10 +38,17 @@ export default class Index extends React.Component {
     return (
       <Layout>
         <Navbar hasLightBg />
-        <section style={{ marginTop: '70px' }} className="section">
+        <section
+          id="get-in-touch"
+          style={{ marginTop: '80px' }}
+          className="section"
+        >
+          <div className="container margin-bottom-2">
+            <h2 className="f-arnopro-b">Get in touch with us</h2>
+            <p className="f-nunito">Contact us to enquire about our range of personalised and differentiated VCE / IB educational products and services.</p>
+          </div>
           <div className="container">
             <div className="content">
-              <h1>Contact</h1>
               <form
                 name="contact"
                 method="post"
@@ -59,7 +66,7 @@ export default class Index extends React.Component {
                   </label>
                 </div>
                 <div className="field">
-                  <label className="label" htmlFor={'name'}>
+                  <label className="label f-arnopro-si" htmlFor={'name'}>
                     Your name
                   </label>
                   <div className="control">
@@ -74,7 +81,7 @@ export default class Index extends React.Component {
                   </div>
                 </div>
                 <div className="field">
-                  <label className="label" htmlFor={'email'}>
+                  <label className="label f-arnopro-si" htmlFor={'email'}>
                     Email
                   </label>
                   <div className="control">
@@ -89,7 +96,7 @@ export default class Index extends React.Component {
                   </div>
                 </div>
                 <div className="field">
-                  <label className="label" htmlFor={'message'}>
+                  <label className="label f-arnopro-si" htmlFor={'message'}>
                     Message
                   </label>
                   <div className="control">
@@ -103,8 +110,8 @@ export default class Index extends React.Component {
                   </div>
                 </div>
                 <div className="field">
-                  <button className="button is-link" type="submit">
-                    Send
+                  <button className="text-md submit-btn f-arnopro-r" type="submit">
+                    Contact Us
                   </button>
                 </div>
               </form>

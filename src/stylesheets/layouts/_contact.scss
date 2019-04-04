@@ -1,10 +1,10 @@
 @media (min-width: 1025px) {
-    .visitor-student-container {        
+    .visitor-student-container {
         text-align: center;
         display: inline-block;
     }
 
-    .visitor-school-container {        
+    .visitor-school-container {
         display: inline-block;
         text-align: center;
     }
@@ -12,18 +12,18 @@
     .visitor-redirect-info, .visitor-redirect-links {
         width: 65%;
         justify-content: space-around;
-        margin: 30px 0;     
+        margin: 30px 0;
         display: flex;
-    } 
+    }
 }
 
 @media (min-width: 768px) and (max-width:1024px) {
-    .visitor-student-container {        
+    .visitor-student-container {
         text-align: center;
         display: inline-block;
     }
 
-    .visitor-school-container {        
+    .visitor-school-container {
         display: inline-block;
         text-align: center;
     }
@@ -31,30 +31,30 @@
     .visitor-redirect-info, .visitor-redirect-links {
         width: 90%;
         justify-content: space-around;
-        margin: 30px 0;     
+        margin: 30px 0;
         display: flex;
-    } 
+    }
 
 }
 
 @media (min-width: 320px) and (max-width:767px) {
-    .visitor-student-container {        
+    .visitor-student-container {
         text-align: center;
         display: block;
         margin-bottom: 30px;
     }
 
-    .visitor-school-container {        
+    .visitor-school-container {
         display: block;
         text-align: center;
     }
 
     .visitor-redirect-info, .visitor-redirect-links {
         width: 75%;
-        margin: 30px 0;     
-        
-    }  
-        
+        margin: 30px 0;
+
+    }
+
 }
 
 .visitor-redirect {
@@ -67,10 +67,36 @@
 .visitor-redirect-container {
     border: solid 1px white;
     height: 80%;
-    width: 100%;  
-    padding: 5%;     
+    width: 100%;
+    padding: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#get-in-touch {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 3em 4em;
+
+  h2 {
+    font-size: 2em;
+  }
+
+  label {
+    color: #8a8a8a;
+  }
+
+  button.submit-btn {
+    background: #f5cf78;
+    padding: 0.7em 1.2em;
+    border: none;
+    color: black;
+    justify-content: center;
+    align-items: center;
+
+  }
 }
