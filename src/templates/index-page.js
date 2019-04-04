@@ -73,10 +73,10 @@ export const IndexPageTemplate = (
                   One-to-one & small group coaching
                 </h3>
                 <div className="f-arnopro-r">
-                  <p>• VCE English / EAL</p>
-                  <p>• VCE English Language</p>
-                  <p>• VCE English Literature</p>
-                  <p>• IB Language & Literature</p>
+                  <p><span className="dot">•</span> <span>VCE English / EAL</span></p>
+                  <p><span className="dot">•</span> <span>VCE English Language</span></p>
+                  <p><span className="dot">•</span> <span>VCE English Literature</span></p>
+                  <p><span className="dot">•</span> <span>IB Language & Literature</span></p>
                 </div>
               </div>
             </div>

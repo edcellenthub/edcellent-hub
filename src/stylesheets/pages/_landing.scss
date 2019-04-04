@@ -169,6 +169,12 @@ section.landing-about-us {
     padding: 10%;
     align-self: center;
 
+    @media (max-width: 350px) {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
     &.back {
       background-color: $dark-gold;
       color: white;
@@ -179,13 +185,24 @@ section.landing-about-us {
       justify-content: center;
       text-align: left;
 
+      .dot {
+        margin-right: 3px;
+      }
+
       h3 {
-        font-size: 2.3em;
-        margin-bottom: 1em;
+        font-size: 2em;
+        margin-bottom: .7em;
+        @media (max-width: 350px) {
+          font-size: 1.5em;
+        }
       }
       p {
-        font-size: 1.3em;
-        margin-bottom: .3em;
+        display: flex;
+        font-size: 1.2em;
+        margin-bottom: .2em;
+        @media (max-width: 350px) {
+          font-size: 1em;
+        }
       }
     }
   }
