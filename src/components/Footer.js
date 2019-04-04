@@ -38,7 +38,7 @@ const Footer = class extends React.Component {
                 <p className=" spaced f-nunito gold-color margin-bottom-1">
                   EMAIL
                 </p>
-                <p className="text-m f-arnopro-r">carlynk@edcellent.com</p>
+                <p className="text-m f-arnopro-r">support@edcellent.com</p>
               </div>
             </div>
           </div>

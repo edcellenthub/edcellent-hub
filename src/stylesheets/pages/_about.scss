@@ -67,7 +67,7 @@
     .outer-row {
       display: flex;
       margin-bottom: 15px;
-      height: 90px;
+      min-height: 90px;
     }
     .number {
       display: inline-block;
@@ -187,7 +187,7 @@
     .outer-row {
       display: flex;
       margin-bottom: 15px;
-      height: 90px;
+      min-height: 90px;
     }
     .number {
       display: inline-block;
@@ -307,7 +307,7 @@
     .outer-row {
       display: flex;
       margin-bottom: 15px;
-      height: 90px;
+      min-height: 90px;
     }
     .number {
       display: inline-block;
@@ -428,7 +428,7 @@
     .outer-row {
       display: flex;
       margin-bottom: 15px;
-      height: 120px;
+      min-height: 120px;
     }
     .number {
       display: inline-block;

@@ -1,7 +1,8 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
-import Contact from '../../components/Contact';
+import Contact from '../../components/Contact'
+import Navbar from '../../components/Navbar'
 
 function encode(data) {
   return Object.keys(data)
@@ -27,8 +28,8 @@ export default class StudentForm extends React.Component {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
         'form-name': form.getAttribute('name'),
-        ...this.state,
-      }),
+        ...this.state
+      })
     })
       .then(() => navigate(form.getAttribute('action')))
       .catch(error => alert(error))
@@ -37,11 +38,14 @@ export default class StudentForm extends React.Component {
   render() {
     return (
       <Layout>
+        <Navbar hasLightBg />
         <section className="section">
           <div className="form-container">
             <div className="form-content">
               <h1 className="f-arnopro-b text-medium">Let's get started</h1>
-              <p className="f-nunito text-medium-small margin-bottom-2">Fill in the details to enroll in our classes</p>
+              <p className="f-nunito text-medium-small margin-bottom-2">
+                Fill in the details to enroll in our classes
+              </p>
               <form
                 name="contact"
                 method="post"
@@ -59,29 +63,27 @@ export default class StudentForm extends React.Component {
                   </label>
                 </div>
                 <div classname="name-field">
-                      <input
-                        className="firstname input"
-                        type={'text'}
-                        name={'first-name'}
-                        onChange={this.handleChange}
-                        id={'first-name'}
-                        required={true}
-                        placeholder="First name"
-                      />
-                      <input
-                        className="lastname input"
-                        type={'text'}
-                        name={'last-name'}
-                        onChange={this.handleChange}
-                        id={'last-name'}
-                        required={true}
-                        placeholder="Last name"
-                      />
+                  <input
+                    className="firstname input"
+                    type={'text'}
+                    name={'first-name'}
+                    onChange={this.handleChange}
+                    id={'first-name'}
+                    required={true}
+                    placeholder="First name"
+                  />
+                  <input
+                    className="lastname input"
+                    type={'text'}
+                    name={'last-name'}
+                    onChange={this.handleChange}
+                    id={'last-name'}
+                    required={true}
+                    placeholder="Last name"
+                  />
                 </div>
                 <div className="field">
-                  <label className="label" htmlFor={'schoolname'}>
-                    
-                  </label>
+                  <label className="label" htmlFor={'schoolname'} />
                   <div className="control">
                     <input
                       className="input"
@@ -113,9 +115,7 @@ export default class StudentForm extends React.Component {
                   </div>
                 </div>
                 <div className="field  margin-bottom-2">
-                  <label className="label" htmlFor={'email'}>
-                    
-                  </label>
+                  <label className="label" htmlFor={'email'} />
                   <div className="control">
                     <input
                       className="input"
@@ -131,10 +131,10 @@ export default class StudentForm extends React.Component {
                 <div className="marketing-field">
                   <div className="select hear margin-bottom-2">
                     <select className="input">
-                    <option>How did you hear about us?</option>
-                    <option>Google</option>
-                    <option>Word of mouth</option>
-                    <option>Social Media</option>
+                      <option>How did you hear about us?</option>
+                      <option>Google</option>
+                      <option>Word of mouth</option>
+                      <option>Social Media</option>
                     </select>
                   </div>
                   <input
@@ -145,7 +145,7 @@ export default class StudentForm extends React.Component {
                     required={true}
                     placeholder="Others (please specify)"
                   />
-                </div>  
+                </div>
                 <div className="control margin-bottom-2">
                   <textarea
                     className="textarea"

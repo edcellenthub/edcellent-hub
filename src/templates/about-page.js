@@ -78,7 +78,7 @@ class AboutPageTemplate extends React.Component {
                       </div>
                       <div className="outer-row">
                         <div className="number f-arnopro-r text-x-large">2</div>
-                        <div classname="inner-row">
+                        <div className="inner-row">
                           <div className="line" />
                           <p className="text-m">
                             To develop critical and contrarian thinking as a
@@ -88,7 +88,7 @@ class AboutPageTemplate extends React.Component {
                       </div>
                       <div className="outer-row">
                         <div className="number f-arnopro-r text-x-large">3</div>
-                        <div classname="inner-row">
+                        <div className="inner-row">
                           <div className="line" />
                           <p className="text-m">
                             To generate and engage creative pathways as a means
@@ -99,7 +99,7 @@ class AboutPageTemplate extends React.Component {
                       </div>
                       <div className="outer-row">
                         <div className="number f-arnopro-r text-x-large">4</div>
-                        <div classname="inner-row">
+                        <div className="inner-row">
                           <div className="line" />
                           <p className="text-m">
                             To enable empathy-as-life-skill investigation
@@ -110,7 +110,7 @@ class AboutPageTemplate extends React.Component {
                       </div>
                       <div className="outer-row">
                         <div className="number f-arnopro-r text-x-large">5</div>
-                        <div classname="inner-row">
+                        <div className="inner-row">
                           <div className="line" />
                           <p className="text-m">
                             To inspire curiosity and connection with the

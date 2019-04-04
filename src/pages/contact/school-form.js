@@ -1,7 +1,8 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
-import Contact from '../../components/Contact';
+import Contact from '../../components/Contact'
+import Navbar from '../../components/Navbar'
 
 function encode(data) {
   return Object.keys(data)
@@ -27,8 +28,8 @@ export default class StudentForm extends React.Component {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
         'form-name': form.getAttribute('name'),
-        ...this.state,
-      }),
+        ...this.state
+      })
     })
       .then(() => navigate(form.getAttribute('action')))
       .catch(error => alert(error))
@@ -37,11 +38,15 @@ export default class StudentForm extends React.Component {
   render() {
     return (
       <Layout>
+        <Navbar hasLightBg />
         <section className="section">
           <div className="form-container">
             <div className="form-content">
               <h1 className="f-arnopro-b text-medium">Get in touch with us</h1>
-              <p className="f-nunito text-medium-small margin-bottom-2">Contact us to enquire about our range of personalised and differentiated VCE / IB educational products and services.</p>
+              <p className="f-nunito text-medium-small margin-bottom-2">
+                Contact us to enquire about our range of personalised and
+                differentiated VCE / IB educational products and services.
+              </p>
               <form
                 name="contact"
                 method="post"
@@ -59,29 +64,27 @@ export default class StudentForm extends React.Component {
                   </label>
                 </div>
                 <div classname="name-field">
-                      <input
-                        className="firstname input"
-                        type={'text'}
-                        name={'first-name'}
-                        onChange={this.handleChange}
-                        id={'first-name'}
-                        required={true}
-                        placeholder="First name"
-                      />
-                      <input
-                        className="lastname input"
-                        type={'text'}
-                        name={'last-name'}
-                        onChange={this.handleChange}
-                        id={'last-name'}
-                        required={true}
-                        placeholder="Last name"
-                      />
+                  <input
+                    className="firstname input"
+                    type={'text'}
+                    name={'first-name'}
+                    onChange={this.handleChange}
+                    id={'first-name'}
+                    required={true}
+                    placeholder="First name"
+                  />
+                  <input
+                    className="lastname input"
+                    type={'text'}
+                    name={'last-name'}
+                    onChange={this.handleChange}
+                    id={'last-name'}
+                    required={true}
+                    placeholder="Last name"
+                  />
                 </div>
                 <div className="field">
-                  <label className="label" htmlFor={'schoolname'}>
-                    
-                  </label>
+                  <label className="label" htmlFor={'schoolname'} />
                   <div className="control">
                     <input
                       className="input"
@@ -95,48 +98,47 @@ export default class StudentForm extends React.Component {
                   </div>
                 </div>
                 <div className="email-role-field">
-                    <div className="email">
-                    <input
-                        className="input"
-                        type={'email'}
-                        name={'email'}
-                        onChange={this.handleChange}
-                        id={'email'}
-                        required={true}
-                        placeholder="School email"
-                    />
-                    </div>
-                    <div className="select role">
-                        <select className="input">
-                        <option>Role</option>
-                        <option>School Teacher</option>
-                        <option>Private Tutor</option>
-                        </select>
-                    </div>
-                </div>
-
-                  <div className="password-field">
+                  <div className="email">
                     <input
                       className="input"
-                      type={'text'}
-                      name={'password'}
+                      type={'email'}
+                      name={'email'}
                       onChange={this.handleChange}
-                      id={'password'}
+                      id={'email'}
                       required={true}
-                      placeholder="Password must be at least 8 characters"
-                    />
-                    <input
-                      className="input"
-                      type={'text'}
-                      name={'confirm-password'}
-                      onChange={this.handleChange}
-                      id={'confirm-password'}
-                      required={true}
-                      placeholder="Confirm password"
+                      placeholder="School email"
                     />
                   </div>
+                  <div className="select role">
+                    <select className="input">
+                      <option>Role</option>
+                      <option>School Teacher</option>
+                      <option>Private Tutor</option>
+                    </select>
+                  </div>
+                </div>
 
-                
+                <div className="password-field">
+                  <input
+                    className="input"
+                    type={'text'}
+                    name={'password'}
+                    onChange={this.handleChange}
+                    id={'password'}
+                    required={true}
+                    placeholder="Password must be at least 8 characters"
+                  />
+                  <input
+                    className="input"
+                    type={'text'}
+                    name={'confirm-password'}
+                    onChange={this.handleChange}
+                    id={'confirm-password'}
+                    required={true}
+                    placeholder="Confirm password"
+                  />
+                </div>
+
                 <div className="field">
                   <button className="btn-gold" type="submit">
                     SUBMIT
