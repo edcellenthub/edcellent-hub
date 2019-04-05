@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1920px) {
   #mission {
     display: flex;
     align-items: center;
@@ -28,7 +28,127 @@
       width: 65vw;
       padding: 10%;
       position: absolute;
-      top: 450px;
+      top: 750px;
+    }
+    .title {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  #objective {
+    background-color: $light-grey;
+    padding: 2%;
+
+    .title {
+      text-align: center;
+    }
+    .container {
+      border: 1px solid $black;
+      padding: 15%;
+    }
+    .outer-row {
+      display: flex;
+      margin-bottom: 15px;
+      min-height: 90px;
+    }
+    .number {
+      display: inline-block;
+      text-align: right;
+      background-color: transparent;
+
+      min-width: 0.5em;
+      padding: 0;
+    }
+    .line {
+      border-bottom: 1px solid black;
+      width: 100%;
+      position: relative;
+      bottom: -3px;
+      margin: 10px 0;
+      height: 2px;
+    }
+  }
+
+  #team {
+    margin-top: 10vw;
+    .title-container {
+      display: flex;
+    }
+    #carlyn {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .text-container {
+        width: 75%;
+        background-color: $bright-gold;
+        color: $black;
+        padding: 7%;
+      }
+
+      .photo-container {
+        position: absolute;
+        width: 30%;
+        right: 0;
+      }
+
+      .bio-btn {
+        margin-left: 30%;
+      }
+    }
+    #cameron {
+      display: flex;
+      margin-top: 5rem;
+      margin-bottom: 2rem;
+
+      .text-container {
+        width: 70%;
+        margin-left: 50px;
+      }
+      .photo-container {
+        width: 30%;
+        display: inline-block;
+      }
+    }
+    #tom {
+      display: flex;
+      flex-direction: row-reverse;
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+
+      .text-container {
+        width: 70%;
+        margin-right: 50px;
+      }
+      .photo-container {
+        width: 30%;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+  #mission {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 1800px;
+    .team-img-container {
+      width: 90vw;
+      height: 50%;
+    }
+    .team-img {
+      width: 100%;
+      height: auto;
+    }
+    .text-container {
+      background-color: white;
+      width: 65vw;
+      padding: 10%;
+      position: absolute;
+      top: 480px;
     }
     .title {
       display: block;
@@ -148,7 +268,7 @@
       width: 65vw;
       padding: 10%;
       position: absolute;
-      top: 370px;
+      top: 450px;
     }
     .title {
       display: block;
@@ -249,6 +369,132 @@
   }
 }
 
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (orientation: portrait) {
+    #mission {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      height: 1800px;
+      .team-img-container {
+        width: 80vw;
+        height: 50%;
+      }
+      .team-img {
+        width: 100%;
+        height: auto;
+      }
+      .text-container {
+        background-color: white;
+        width: 65vw;
+        padding: 10%;
+        position: absolute;
+        top: 370px;
+      }
+      .title {
+        display: block;
+        text-align: center;
+      }
+    }
+  
+    #objective {
+      background-color: $light-grey;
+      padding: 2%;
+  
+      .title {
+        text-align: center;
+      }
+      .container {
+        border: 1px solid $black;
+        padding: 15%;
+      }
+      .outer-row {
+        display: flex;
+        margin-bottom: 15px;
+        min-height: 90px;
+      }
+      .number {
+        display: inline-block;
+        text-align: right;
+        background-color: transparent;
+  
+        min-width: 0.5em;
+        padding: 0;
+      }
+      .line {
+        border-bottom: 1px solid black;
+        width: 100%;
+        position: relative;
+        bottom: -3px;
+        margin: 10px 0;
+        height: 2px;
+      }
+    }
+  
+    #team {
+      padding: 5%;
+      .title-container {
+        display: flex;
+      }
+      #carlyn {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+  
+        .text-container {
+          width: 70%;
+          background-color: $bright-gold;
+          color: $black;
+          padding: 7%;
+        }
+  
+        .photo-container {
+          position: absolute;
+          width: 30%;
+          right: 45px;
+        }
+  
+        .bio-btn {
+          margin-left: 30%;
+        }
+      }
+      #cameron {
+        display: flex;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+  
+        .text-container {
+          width: 70%;
+          margin-left: 50px;
+        }
+        .photo-container {
+          width: 30%;
+          display: inline-block;
+        }
+      }
+      #tom {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+  
+        .text-container {
+          width: 70%;
+          margin-right: 50px;
+        }
+        .photo-container {
+          width: 30%;
+          display: inline-block;
+        }
+      }
+    }
+
+  }
+  
+
 @media (min-width: 768px) and (max-width: 1023px) {
   #mission {
     display: flex;
@@ -268,7 +514,7 @@
       width: 65vw;
       padding: 7%;
       position: absolute;
-      top: 350px;
+      top: 300px;
     }
     .title {
       display: block;
@@ -370,12 +616,14 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+
+
+@media (min-width: 320px) and (max-width: 374px) {
   #mission {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 1400px;
+    height: 1600px;
     .team-img-container {
       width: 90vw;
       height: 50%;
@@ -390,6 +638,120 @@
       padding: 10% 5%;
       position: absolute;
       top: 120px;
+    }
+    .title {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  #objective {
+    background-color: $light-grey;
+    padding: 2%;
+
+    .title {
+      text-align: center;
+    }
+    .container {
+      border: 1px solid $black;
+      padding: 10%;
+    }
+    .outer-row {
+      display: flex;
+      margin-bottom: 15px;
+      min-height: 120px;
+    }
+    .number {
+      display: inline-block;
+      text-align: right;
+      background-color: transparent;
+      min-width: 0.3em;
+      padding: 0;
+    }
+    .line {
+      border-bottom: 1px solid black;
+      width: 100%;
+      position: relative;
+      bottom: -3px;
+      margin: 10px 0;
+      height: 2px;
+    }
+  }
+
+  #team {
+    margin-top: 225px;
+    padding: 7%;
+
+    .title-container {
+      display: flex;
+      height: 20px;
+    }
+    #carlyn {
+      align-items: center;
+
+      .text-container {
+        width: 100%;
+        background-color: $bright-gold;
+        color: $black;
+        padding: 7%;
+      }
+
+      .photo-container {
+        margin: 0;
+        height: 275px;
+      }
+
+      .bio-btn {
+        display: none;
+      }
+    }
+    #cameron {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+
+      .text-container {
+        margin-top: 1rem;
+        width: 100%;
+      }
+      .photo-container {
+        width: 100%;
+      }
+    }
+    #tom {
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+
+      .text-container {
+        margin-top: 1rem;
+        width: 100%;
+      }
+      .photo-container {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  #mission {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 1500px;
+    .team-img-container {
+      width: 90vw;
+      height: 50%;
+    }
+    .team-img {
+      width: 100%;
+      height: auto;
+    }
+    .text-container {
+      background-color: white;
+      width: 80vw;
+      padding: 10% 5%;
+      position: absolute;
+      top: 140px;
     }
     .title {
       display: block;
