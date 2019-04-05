@@ -229,6 +229,10 @@ section.landing-about-us {
     letter-spacing: 0.1em;
     font-weight: 700;
   }
+  .landing-gold-subtitle {
+    color: $bright-gold;
+    font-size: 2.2rem;
+  }
   .landing-philo-bait {
     width: 40%;
     display: inline-block;
@@ -290,7 +294,10 @@ section.landing-about-us {
     font-size: 2.8rem;
     color: $bright-gold;
   }
-
+  .landing-gold-subtitle {
+    color: $bright-gold;
+    font-size: 1.5rem;
+  }
   .landing-philo-bait {
     width: 40%;
     display: inline-block;
@@ -356,7 +363,10 @@ section.landing-about-us {
     font-size: 2rem;
     color: $bright-gold;
   }
-
+  .landing-gold-subtitle {
+    color: $bright-gold;
+    font-size: 1rem;
+  }
   .landing-darkgold-title {
     padding-top: 50px;
     letter-spacing: 4px;
