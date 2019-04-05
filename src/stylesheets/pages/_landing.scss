@@ -14,11 +14,12 @@
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.65);
+    overflow: hidden;
   }
 
   video {
     background: $dark-grey;
-    object-fit: fill;
+    object-fit: cover;
 
     @media (max-width: 1024px) {
       object-fit: cover;
