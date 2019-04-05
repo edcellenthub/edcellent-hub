@@ -23,7 +23,8 @@ export default class HeroVideo extends React.Component {
           ref={vid => (this.video = vid)}
           onClick={this.stopVideo}
           controls={isPlaying}
-          src="https://s3-ap-southeast-1.amazonaws.com/liren-permission-test/WHY+EDCELLENT+(without+Logo).mp4"
+          src="/vid/Ed_Sound.mp4"
+          // src="https://s3-ap-southeast-1.amazonaws.com/liren-permission-test/WHY+EDCELLENT+(without+Logo).mp4"
           autoPlay
           playsInline
           loop
@@ -37,17 +38,15 @@ export default class HeroVideo extends React.Component {
             className="landing-top-banner-info-box text-center f-arnopro-r"
           >
             <h1 className="f-arnopro-b landing-gold-title">edcellent</h1>
+            <div className="landing-gold-subtitle f-arnopro-r margin-bottom-1">| ɛd:s(ə)l(ə)nt |</div>
             <div className="margin-bottom-2">
               <p className="nunito-text-small">adjective</p>
-              <p>organic, holistic, global</p>
+              <p>authentic, holistic, global</p>
             </div>
             <div className="margin-bottom-2">
-              <p className="nunito-text-small">noun</p>
-              <p>authenticity, inspiration, insight</p>
-            </div>
-            <div className="margin-bottom-2">
-              <p className="nunito-text-small">verb</p>
-              <p>engage, empower, educate</p>
+              <p className="nunito-text-small">
+                An edcellent education that inspires a critical and contrarian thinking as a primary life-skill. 
+              </p>
             </div>
             <button className="play-video-btn" onClick={this.playVideo}>
               <span>WATCH VIDEO</span>
