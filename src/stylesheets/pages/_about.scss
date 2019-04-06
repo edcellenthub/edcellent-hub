@@ -96,6 +96,10 @@
       .bio-btn {
         margin-left: 30%;
       }
+      .hidden-btn {
+        display: none;
+      }
+    
     }
     #cameron, #claire {
       display: flex;
@@ -216,6 +220,9 @@
       .bio-btn {
         margin-left: 30%;
       }
+      .hidden-btn {
+        display: none;
+      }
     }
     #cameron, #claire {
       display: flex;
@@ -335,6 +342,9 @@
 
       .bio-btn {
         margin-left: 30%;
+      }
+      .hidden-btn {
+        display: none;
       }
     }
     #cameron, #claire {
@@ -460,6 +470,9 @@
         .bio-btn {
           margin-left: 30%;
         }
+        .hidden-btn {
+          display: none;
+        }
       }
       #cameron, #claire {
         display: flex;
@@ -582,6 +595,9 @@
 
       .bio-btn {
         margin-left: 30%;
+      }
+      .hidden-btn {
+        display: none;
       }
     }
     #cameron, #claire {
@@ -818,6 +834,7 @@
       .bio-btn {
         display: none;
       }
+      
     }
     #cameron, #claire {
       margin-top: 2rem;

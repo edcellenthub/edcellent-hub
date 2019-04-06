@@ -207,6 +207,13 @@ class AboutPageTemplate extends React.Component {
                         learning, through cultivating creative and critical
                         thinking skills as a primary life-skill.
                       </p>
+                      <div className="hidden-btn">
+                      <Link to="/about/carlyn-kang/">
+                        <button className="white-nobox-btn">
+                          READ HER BIO &nbsp; &#10230;
+                        </button>
+                      </Link>
+                    </div>
                     </div>
                   </div>
                 </div>
