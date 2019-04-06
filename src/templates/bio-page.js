@@ -16,7 +16,7 @@ export const BioPageTemplate = ({
 }) => {
     return (
       <div>
-          <Navbar />
+           <Navbar hasLightBg currentPage='bio' />
           <section className="about-section">
           {helmet || ''}
           <div id="bio">
