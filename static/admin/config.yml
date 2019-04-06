@@ -19,6 +19,20 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
+  - name: "bio"
+    lable: "Bio"
+    folder: "src/pages/about"
+    create: true
+    identifier_field: name
+    slug: "{{name}}"
+    fields:
+      - {label: "Template Key", name:"templateKey", widget: "hidden", default: "bio-page"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Position", name: "position", widget: "string"}
+      - {label: "Avatar", name: "avatar", widget: "image"}
+      - {label: "Biography", name: "biography", widget: "text"}
+      - {label: "Ethos", name: "ethos", widget: "text"}
+
   - name: "pages"
     label: "Pages"
     files:
