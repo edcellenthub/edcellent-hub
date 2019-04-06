@@ -45,8 +45,7 @@ export default class HeroVideo extends React.Component {
             </div>
             <div className="margin-bottom-2">
               <p className="nunito-text-small">
-                An edcellent education that inspires a critical and contrarian thinking as a primary life-skill. 
-              </p>
+              An edcellent education is inspired to empower critical and creative thinking beyond the classroom.              </p>
             </div>
             <button className="play-video-btn" onClick={this.playVideo}>
               <span>WATCH VIDEO</span>

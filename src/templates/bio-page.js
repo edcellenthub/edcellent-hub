@@ -31,7 +31,7 @@ export const BioPageTemplate = ({
               <p className="text-small justified">
                {biography}
               </p>
-              <Link to="/about">
+              <Link to="/about/#team">
                 <button className="nobox-btn">
                     &nbsp; &#10229;  BACK TO TEAM 
                 </button>
