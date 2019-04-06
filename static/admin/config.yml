@@ -31,7 +31,7 @@ collections:
       - {label: Position, name: position, widget: string}
       - {label: Image, name: image, widget: image}
       - {label: Biography, name: biography, widget: text}
-      - {label: Ethos, name: ethos, widget: text}
+      # - {label: Ethos, name: ethos, widget: text}
 
   - name: "pages"
     label: "Pages"

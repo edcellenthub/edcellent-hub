@@ -12,13 +12,12 @@ export const BioPageTemplate = ({
   name,
   position,
   biography,
-  ethos,
   helmet,
 }) => {
     return (
       <div>
-           <Navbar hasLightBg currentPage='bio' />
-          <section className="about-section">
+          <Navbar hasLightBg currentPage='bio' />
+          <section className="section">
           {helmet || ''}
           <div id="bio">
               <div className="photo-container">
@@ -31,9 +30,6 @@ export const BioPageTemplate = ({
               </div>
               <p className="text-small justified">
                {biography}
-              </p>
-              <p className="text-small justified">
-               {ethos}
               </p>
               <Link to="/about">
                 <button className="nobox-btn">
@@ -53,7 +49,7 @@ BioPageTemplate.propTypes = {
     position: PropTypes.string,
     image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     biography: PropTypes.string,
-    ethos: PropTypes.string,
+    // ethos: PropTypes.string,
     helmet: PropTypes.object,
 }
 
@@ -66,7 +62,7 @@ const BioPage = ({ data }) => {
         name={frontmatter.name}
         position={frontmatter.position}
         biography={frontmatter.biography}
-        ethos={frontmatter.ethos}
+        // ethos={frontmatter.ethos}
         image={image}
         helmet={
             <Helmet titleTemplate="%s | Bio">
@@ -109,7 +105,7 @@ BioPage.propTypes = {
               }
           }
           biography
-          ethos
+
         }
       }
     }

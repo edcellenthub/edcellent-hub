@@ -18,17 +18,7 @@ biography: >-
   textbook development and to American University Alumni on teacher training.
   Recently, he returned to Australia where he continues his research and
   teaching in language and literature.
-ethos: >-
-  Language is obviously amongst the most profound and necessary of the forces
-  that shape our lives and thought. Language, as has so often been said, is
-  power. A critical examination of the ways in which it is constructed and used
-  is essential, both as a defence against the blandishments of bogus ideas and
-  as a source of intellectual pleasure in itself. This pleasure can be a
-  stimulus to intellectual curiosity and achievement, and perhaps even to a more
-  empathetic identification with its manifold users.  With thirty years as a
-  teacher and researcher, Dr Hoy is a communicator who has a passion for and a
-  pleasure in language.  His aim is to inspire his students to share that
-  passion and pleasure - firstly, so that they can improve their grades but,
-  more importantly, for the enrichment of their lives and thinking.
+
+ 
 ---
 
