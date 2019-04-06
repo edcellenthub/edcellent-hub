@@ -5,12 +5,8 @@ import Layout from '../components/Layout'
 import Helmet from 'react-helmet'
 import Contact from '../components/Contact'
 import Navbar from '../components/Navbar'
-import Content, { HTMLContent } from '../components/Content'
-
 
 export const BioPageTemplate = ({
-  content,
-  contentComponent,
   image,
   name,
   position,
@@ -20,6 +16,7 @@ export const BioPageTemplate = ({
 }) => {
     return (
       <div>
+          <Navbar />
           <section className="about-section">
           {helmet || ''}
           <div id="bio">
@@ -51,28 +48,24 @@ export const BioPageTemplate = ({
 }
 
 BioPageTemplate.propTypes = {
-    content: PropTypes.node.isRequired,
-    contentComponent: PropTypes.func,
     name: PropTypes.string,
     position: PropTypes.string,
     image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     biography: PropTypes.string,
     ethos: PropTypes.string,
     helmet: PropTypes.object,
-  }
+}
 
 const BioPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-
+  console.log(frontmatter)
   return (
     <Layout>
       <BioPageTemplate
-        contentComponent={frontmatter.content}
         name={frontmatter.name}
         position={frontmatter.position}
         biography={frontmatter.biography}
         ethos={frontmatter.ethos}
-        content={frontmatter.html}
         image={frontmatter.image}
         helmet={
             <Helmet titleTemplate="%s | Bio">
@@ -90,9 +83,11 @@ const BioPage = ({ data }) => {
 
 BioPage.propTypes = {
     data: PropTypes.shape({
-      markdownRemark: PropTypes.object,
+        markdownRemark: PropTypes.shape({
+            frontmatter: PropTypes.object,
+        }),
     }),
-  }
+}
   
   export default BioPage
   
@@ -106,11 +101,11 @@ BioPage.propTypes = {
           name
           position
           image {
-            childImageSharp {
-              fluid(maxWidth: 1075, quality: 72) {
-                ...GatsbyImageSharpFluid
+              childImageSharp {
+                  fluid(maxWidth: 526, quality: 92) {
+                      ...GatsbyImageSharpFluid
+                  }
               }
-            }
           }
           biography
           ethos
