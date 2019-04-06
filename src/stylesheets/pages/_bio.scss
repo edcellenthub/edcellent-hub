@@ -1,13 +1,8 @@
-.about-section {
-    display: flex;
-}
-
+@media (min-width: 768px){
 #bio {
-    align-items: center;
     padding: 10%;
     display: flex;
     flex-direction: row;
-    align-items: center;
     .photo-container {
         width: 350px;
         height: 350px;
@@ -15,5 +10,23 @@
     .text-container {
         width: 60%;
         margin-left: 35px;
+    }
+    img {
+        top: 0;
+    }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    #bio {
+        margin-top: 3rem;
+        .photo-container {
+            width: 100%;
+            height: 100%;
+        }
+        .text-container {
+            margin-top: 2rem;
+            width: 100%;
+        }
     }
 }

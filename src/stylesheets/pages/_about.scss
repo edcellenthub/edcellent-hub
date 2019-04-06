@@ -96,8 +96,12 @@
       .bio-btn {
         margin-left: 30%;
       }
+      .hidden-btn {
+        display: none;
+      }
+    
     }
-    #cameron {
+    #cameron, #claire {
       display: flex;
       margin-top: 5rem;
       margin-bottom: 2rem;
@@ -216,8 +220,11 @@
       .bio-btn {
         margin-left: 30%;
       }
+      .hidden-btn {
+        display: none;
+      }
     }
-    #cameron {
+    #cameron, #claire {
       display: flex;
       margin-top: 5rem;
       margin-bottom: 2rem;
@@ -336,8 +343,11 @@
       .bio-btn {
         margin-left: 30%;
       }
+      .hidden-btn {
+        display: none;
+      }
     }
-    #cameron {
+    #cameron, #claire {
       display: flex;
       margin-top: 5rem;
       margin-bottom: 2rem;
@@ -460,8 +470,11 @@
         .bio-btn {
           margin-left: 30%;
         }
+        .hidden-btn {
+          display: none;
+        }
       }
-      #cameron {
+      #cameron, #claire {
         display: flex;
         margin-top: 5rem;
         margin-bottom: 2rem;
@@ -583,8 +596,11 @@
       .bio-btn {
         margin-left: 30%;
       }
+      .hidden-btn {
+        display: none;
+      }
     }
-    #cameron {
+    #cameron, #claire {
       display: flex;
       margin-top: 5rem;
       margin-bottom: 2rem;
@@ -705,7 +721,7 @@
         display: none;
       }
     }
-    #cameron {
+    #cameron, #claire {
       margin-top: 2rem;
       margin-bottom: 2rem;
 
@@ -818,8 +834,9 @@
       .bio-btn {
         display: none;
       }
+      
     }
-    #cameron {
+    #cameron, #claire {
       margin-top: 2rem;
       margin-bottom: 2rem;
 

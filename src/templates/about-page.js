@@ -10,7 +10,8 @@ class AboutPageTemplate extends React.Component {
     banner: '/img/Team-Formal.jpg',
     carlyn: '/img/Carlyn-Formal.jpg',
     cameron: '/img/Cameron-Formal.jpg',
-    tom: '/img/Tom-Formal.jpg'
+    tom: '/img/Tom-Formal.jpg',
+    claire: '/img/Claire-Formal.jpg',
   }
 
   render() {
@@ -146,10 +147,10 @@ class AboutPageTemplate extends React.Component {
                       }}
                     />
                     <div className="bio-btn">
-                      <Link to="/about/carlyn/">
-                        {/* <button className="nobox-btn">
+                      <Link to="/about/carlyn-kang/">
+                        <button className="nobox-btn">
                           READ HER BIO &nbsp; &#10230;
-                        </button> */}
+                        </button>
                       </Link>
                     </div>
                   </div>
@@ -206,6 +207,13 @@ class AboutPageTemplate extends React.Component {
                         learning, through cultivating creative and critical
                         thinking skills as a primary life-skill.
                       </p>
+                      <div className="hidden-btn">
+                      <Link to="/about/carlyn-kang/">
+                        <button className="white-nobox-btn">
+                          READ HER BIO &nbsp; &#10230;
+                        </button>
+                      </Link>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -257,10 +265,10 @@ class AboutPageTemplate extends React.Component {
                       speaking, listening, reading and writing will be empowered
                       to inspire future generations.
                     </p>
-                    <Link to="/about/cameron/">
-                      {/* <button className="nobox-btn">
+                    <Link to="/about/cameron-sievers/">
+                      <button className="nobox-btn">
                         READ HIS BIO &nbsp; &#10230;
-                      </button> */}
+                      </button>
                     </Link>
                   </div>
                 </div>
@@ -304,14 +312,70 @@ class AboutPageTemplate extends React.Component {
                       that they can improve their grades but, more importantly,
                       for the enrichment of their lives and thinking.{' '}
                     </p>
-                    <Link to="/about/tom/">
-                      {/* <button className="nobox-btn">
+                    <Link to="/about/tom-hoy/">
+                      <button className="nobox-btn">
                         READ HIS BIO &nbsp; &#10230;
-                      </button> */}
+                      </button>
                     </Link>
                   </div>
                 </div>
+                <div id="claire">
+                <div className="photo-container">
+                  <img
+                    src={this.state.claire}
+                    alt="claire-photo"
+                    onMouseEnter={() => {
+                      this.setState({
+                        claire: '/img/Claire-Fun.jpg'
+                      })
+                    }}
+                    onMouseOut={() => {
+                      this.setState({
+                        claire: '/img/Claire-Formal.jpg'
+                      })
+                    }}
+                  />
+                </div>
+                <div className="text-container">
+                  <div className="f-arnopro-b text-medium">
+                    Claire Nicholls
+                  </div>
+                  <div className="f-arnopro-r text-medium-small margin-bottom-1">
+                    Senior English Coordinator at Edcellent Education
+                  </div>
+                  <p className="blahblah justified">
+                  Claire is passionate in engaging students in the study of 
+                  Shakespeare through imaginative and physical engagement 
+                  with the work. It is her firm belief that dramatic texts 
+                  need to be encountered dramatically: via physical, verbal 
+                  and aural learning. As a professional, classically trained 
+                  actor, the unique angle Claire offers as an educator is 
+                  the ability to unlock and expand the learning and 
+                  comprehension of Shakespeare (and other dramatic texts) 
+                  from an internal perspective, encountering the characters, 
+                  themes and worlds of the plays at an intimate and detailed 
+                  level. The depth and breadth of  knowledge students gain 
+                  from this mode of study enhances both thinking and writing 
+                  skills, and leads to insightful, original essay, SAC and 
+                  exam responses.
+                  </p><br />
+                  <p className="f-arnopro-i text-md">
+                  ‘The study of Shakespeare is not only the most viscerally 
+                  immediate way to encounter the English language, but also 
+                  vitally important in building empathy, intelligence, compassion, 
+                  confidence and power of expression in young people.’ 
+                  </p>
+                  <p className="f-arnopro-i text-m">
+                  Claire
+                  </p>
+                  <Link to="/about/claire-nicholls/">
+                    <button className="nobox-btn">
+                      READ HER BIO &nbsp; &#10230;
+                    </button>
+                  </Link>
+                </div>
               </div>
+                </div>
             </div>
           </div>
         </section>
