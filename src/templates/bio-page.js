@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import Helmet from 'react-helmet'
 import Contact from '../components/Contact'
 import Navbar from '../components/Navbar'
+import Img from "gatsby-image"
 
 export const BioPageTemplate = ({
   image,
@@ -21,7 +22,7 @@ export const BioPageTemplate = ({
           {helmet || ''}
           <div id="bio">
               <div className="photo-container">
-                <img src={image} alt="carlyn-photo"/>
+                <img src={image} alt={name}/>
               </div>
               <div className="text-container">
               <div className="f-arnopro-b text-medium">{name}</div>
@@ -58,7 +59,7 @@ BioPageTemplate.propTypes = {
 
 const BioPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-  console.log(frontmatter)
+  const image = frontmatter.image.childImageSharp.fluid.src
   return (
     <Layout>
       <BioPageTemplate
@@ -66,7 +67,7 @@ const BioPage = ({ data }) => {
         position={frontmatter.position}
         biography={frontmatter.biography}
         ethos={frontmatter.ethos}
-        image={frontmatter.image}
+        image={image}
         helmet={
             <Helmet titleTemplate="%s | Bio">
             <title>{`${frontmatter.name}`}</title>
@@ -102,7 +103,7 @@ BioPage.propTypes = {
           position
           image {
               childImageSharp {
-                  fluid(maxWidth: 526, quality: 92) {
+                  fluid(maxWidth: 1200, quality: 100) {
                       ...GatsbyImageSharpFluid
                   }
               }
