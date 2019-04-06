@@ -11,7 +11,7 @@ import Content, { HTMLContent } from '../components/Content'
 export const BioPageTemplate = ({
   content,
   contentComponent,
-  avatar,
+  image,
   name,
   position,
   biography,
@@ -24,7 +24,7 @@ export const BioPageTemplate = ({
           {helmet || ''}
           <div id="bio">
               <div className="photo-container">
-                <img src={avatar} alt="carlyn-photo"/>
+                <img src={image} alt="carlyn-photo"/>
               </div>
               <div className="text-container">
               <div className="f-arnopro-b text-medium">{name}</div>
@@ -55,6 +55,7 @@ BioPageTemplate.propTypes = {
     contentComponent: PropTypes.func,
     name: PropTypes.string,
     position: PropTypes.string,
+    image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     biography: PropTypes.string,
     ethos: PropTypes.string,
     helmet: PropTypes.object,
@@ -72,7 +73,7 @@ const BioPage = ({ data }) => {
         biography={frontmatter.biography}
         ethos={frontmatter.ethos}
         content={frontmatter.html}
-        avatar={frontmatter.avatar}
+        image={frontmatter.image}
         helmet={
             <Helmet titleTemplate="%s | Bio">
             <title>{`${frontmatter.name}`}</title>
@@ -104,7 +105,13 @@ BioPage.propTypes = {
           date(formatString: "MMMM DD, YYYY")
           name
           position
-          avatar
+          image {
+            childImageSharp {
+              fluid(maxWidth: 1075, quality: 72) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           biography
           ethos
         }

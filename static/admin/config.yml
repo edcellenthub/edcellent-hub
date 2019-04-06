@@ -26,12 +26,12 @@ collections:
     identifier_field: name
     slug: "{{name}}"
     fields:
-      - {label: "Template Key", name:"templateKey", widget: "hidden", default: "bio-page"}
-      - {label: "Name", name: "name", widget: "string"}
-      - {label: "Position", name: "position", widget: "string"}
-      - {label: "Avatar", name: "avatar", widget: "image"}
-      - {label: "Biography", name: "biography", widget: "text"}
-      - {label: "Ethos", name: "ethos", widget: "text"}
+      - {label: "Template Key", name:"templateKey", widget: hidden, default: "bio-page"}
+      - {label: "Name", name: "name", widget: string}
+      - {label: "Position", name: "position", widget: string}
+      - {label: "image", name: "iamge", widget: image}
+      - {label: "Biography", name: "biography", widget: text}
+      - {label: "Ethos", name: "ethos", widget: text}
 
   - name: "pages"
     label: "Pages"
