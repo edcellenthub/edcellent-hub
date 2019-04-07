@@ -5,7 +5,6 @@ import Layout from '../components/Layout'
 import Helmet from 'react-helmet'
 import Contact from '../components/Contact'
 import Navbar from '../components/Navbar'
-import Img from "gatsby-image"
 
 export const BioPageTemplate = ({
   image,
@@ -63,7 +62,6 @@ const BioPage = ({ data }) => {
         name={frontmatter.name}
         position={frontmatter.position}
         biography={frontmatter.biography}
-        // ethos={frontmatter.ethos}
         image={image}
         helmet={
             <Helmet titleTemplate="%s | Bio">
@@ -106,7 +104,6 @@ BioPage.propTypes = {
               }
           }
           biography
-
         }
       }
     }
