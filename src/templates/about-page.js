@@ -266,7 +266,7 @@ class AboutPageTemplate extends React.Component {
                       to inspire future generations.
                     </p>
                     <Link to="/about/cameron-sievers/">
-                      <button className="nobox-btn margin-buttom-1">
+                      <button className="nobox-btn">
                         READ CAMERON'S BIO &nbsp; &#10230;
                       </button>
                     </Link>
@@ -291,7 +291,7 @@ class AboutPageTemplate extends React.Component {
                   </div>
                   <div className="text-container">
                     <div className="f-arnopro-b text-medium">Tom Hoy</div>
-                    <div className="f-arnopro-r text-medium-small margin-bottom-1">
+                    <div className="f-arnopro-r text-medium-small">
                       Senior English Language and Literature at Edcellent
                       Education
                     </div>
@@ -313,7 +313,7 @@ class AboutPageTemplate extends React.Component {
                       for the enrichment of their lives and thinking.{' '}
                     </p>
                     <Link to="/about/tom-hoy/">
-                      <button className="nobox-btn margin-bottom-1">
+                      <button className="nobox-btn">
                         READ TOM'S BIO &nbsp; &#10230;
                       </button>
                     </Link>
@@ -369,7 +369,7 @@ class AboutPageTemplate extends React.Component {
                   Claire 
                   </p>
                   <Link to="/about/claire-nicholls/">
-                    <button className="nobox-btn margin-bottom-1">
+                    <button className="nobox-btn">
                       READ CLAIRE'S BIO &nbsp; &#10230;
                     </button>
                   </Link>
