@@ -38,12 +38,14 @@ export default class HeroVideo extends React.Component {
             className="landing-top-banner-info-box text-center f-arnopro-r"
           >
             <h1 className="f-arnopro-b landing-gold-title">edcellent</h1>
-            <div className="landing-gold-subtitle f-arnopro-r margin-bottom-1">| ɛd:s(ə)l(ə)nt |</div>
-            <div className="margin-bottom-2">
+            <div className="landing-gold-subtitle f-arnopro-r margin-bottom-1">
+              | ɛd:s(ə)l(ə)nt |
+            </div>
+            <div className="margin-bottom-1">
               <p className="nunito-text-small">adjective</p>
               <p>authentic, holistic, global</p>
             </div>
-            <div className="margin-bottom-2">
+            <div className="margin-bottom-1">
               <p className="nunito-text-small">
               An edcellent education is inspired to empower critical and creative thinking beyond the classroom.              </p>
             </div>
