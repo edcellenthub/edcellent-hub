@@ -15,21 +15,106 @@ content .taglist {
   }
 }
 
-.blog-img-container {   
-  padding-left: 30px;    
-  height: 55%;
-  position: absolute;
-  overflow: hidden;     
-  background-size: cover;
-  background-position: center;     
+.blog-post {
+  &-img-container {
+    padding-left: 30px;    
+    height: 55%;
+    position: absolute;
+    overflow: hidden;     
+    background-size: cover;
+    background-position: center;  
+  }
+
+  .featured-img {
+    background-image: url('../../static/img/home-jumbotron.jpg');
+    background-cover: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100vw;
+  }
+  
+  .blog-flex {
+    display: flex;
+    justify-content: center;
+
+    .blog-content {
+      position: relative;
+      top: -100px;
+      width: 80%;
+      max-width: 1200px;
+      padding: 5%;
+      background-color: white;
+
+      .social-share {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin-top: 2.5rem;
+
+        a {
+          i {
+            font-size: 1.2rem;
+            color: grey;
+            margin: 0 10px;
+          }
+
+          i:hover {
+            color: $dark-gold;
+          }
+        }
+
+      }
+
+      .taglist {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style: none;
+        
+        li {
+          margin-right: 15px;
+          line-height: 1.2rem;
+          margin: 0;
+
+          a {
+            color: black;
+          }
+
+          a:hover {
+            color: $dark-gold;
+          }
+
+          .tag-divider {
+            margin: 0 15px;
+          }
+        }
+      }
+    }
+  }
 }
 
-.blog-item-image { 
+
+.text-spacing {
+  margin: 0 100px;
+}
+
+.blog-item-image {
   object-fit: cover;
   width: auto;
   height: 100%;
 }
 
+.blog-item-details {
+  background-color: $light-grey;
+  height: 250px;
+  width: 90%;
+  position: absolute;
+  top: 200px;
+  left: 0;
+  padding: 30px;
+}
 
 @media (min-width: 1025px) {
   .blog-item-details {
@@ -54,4 +139,5 @@ content .taglist {
       padding: 30px;
   }
 }
+
 
