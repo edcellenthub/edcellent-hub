@@ -18,6 +18,7 @@ export const BlogPostTemplate = ({
   helmet,
   author,
   authorLink,
+  date,
   featuredImage
 }) => {
   const PostContent = contentComponent || Content
@@ -31,7 +32,7 @@ export const BlogPostTemplate = ({
             <div className="blog-content content">
               <div className="columns">
                 <div className="column is-10 is-offset-1">
-                  <p className="text-center margin-bottom-4">BY <Link to={`/about/${authorLink}/`}><strong className="gold-color">{author.toUpperCase()}</strong></Link> <span className="text-spacing gold-color">|</span> <strong>31 MARCH 2019</strong></p>
+                  <p className="text-center margin-bottom-4">BY <Link to={`/about/${authorLink}/`}><strong className="gold-color">{author.toUpperCase()}</strong></Link> <span className="text-spacing gold-color">|</span> <strong>{date.toUpperCase()}</strong></p>
                   <h1 className="text-xlarge text-center f-arnopro-r">
                     {title}
                   </h1>
@@ -96,6 +97,7 @@ const BlogPost = ({ data }) => {
         author={post.frontmatter.author}
         featuredImage={post.frontmatter.featuredImage}
         authorLink={post.frontmatter.author.toLowerCase().split(" ").join("-")}
+        date={post.frontmatter.date}
       />
     </Layout>
   )
@@ -115,7 +117,7 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "DD MMM YYYY")
         title
         description
         tags
