@@ -55,7 +55,8 @@ BioPageTemplate.propTypes = {
 
 const BioPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-  const image = frontmatter.image.childImageSharp.fluid.src
+  console.log(frontmatter)
+  const image = frontmatter.image.childImageSharp.fluid.src || "/img/coffe.png"
   return (
     <Layout>
       <BioPageTemplate
