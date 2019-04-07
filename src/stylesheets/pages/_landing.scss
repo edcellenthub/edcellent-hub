@@ -352,12 +352,12 @@ section.landing-about-us {
 @media (min-width: 375px) and (max-width: 767px) {
   .landing-top-banner-info-box {
     position: absolute;
-    top: 50%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 0.8rem;
     color: white;
-    padding: 40px 50px;
+    padding: 10px 30px;
     outline: solid 1px $bright-gold;
   }
   .landing-gold-title {
@@ -465,12 +465,12 @@ section.landing-about-us {
 @media (min-width: 320px) and (max-width: 374px) {
   .landing-top-banner-info-box {
     position: absolute;
-    top: 55%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 0.8rem;
     color: white;
-    padding: 20px 30px;
+    padding: 10px 35px;
     outline: solid 1px $bright-gold;
   }
   .landing-gold-title {
