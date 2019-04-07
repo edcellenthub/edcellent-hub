@@ -149,7 +149,7 @@ class AboutPageTemplate extends React.Component {
                     <div className="bio-btn">
                       <Link to="/about/carlyn-kang/">
                         <button className="nobox-btn">
-                          READ HER BIO &nbsp; &#10230;
+                          READ CARLYN'S BIO &nbsp; &#10230;
                         </button>
                       </Link>
                     </div>
@@ -165,7 +165,7 @@ class AboutPageTemplate extends React.Component {
                       Founder of Edcellent Education
                     </div>
                     <div className="ethos">
-                      <p className="blahblah">
+                      <p className="blahblah justified">
                         As parents, teachers and students, how often do we ask
                         ourselves these questions:
                       </p>
@@ -209,8 +209,8 @@ class AboutPageTemplate extends React.Component {
                       </p>
                       <div className="hidden-btn">
                       <Link to="/about/carlyn-kang/">
-                        <button className="white-nobox-btn">
-                          READ HER BIO &nbsp; &#10230;
+                        <button className="white-nobox-btn margin-buttom-1">
+                          READ CARLYN'S BIO &nbsp; &#10230;
                         </button>
                       </Link>
                     </div>
@@ -266,8 +266,8 @@ class AboutPageTemplate extends React.Component {
                       to inspire future generations.
                     </p>
                     <Link to="/about/cameron-sievers/">
-                      <button className="nobox-btn">
-                        READ HIS BIO &nbsp; &#10230;
+                      <button className="nobox-btn margin-buttom-1">
+                        READ CAMERON'S BIO &nbsp; &#10230;
                       </button>
                     </Link>
                   </div>
@@ -313,8 +313,8 @@ class AboutPageTemplate extends React.Component {
                       for the enrichment of their lives and thinking.{' '}
                     </p>
                     <Link to="/about/tom-hoy/">
-                      <button className="nobox-btn">
-                        READ HIS BIO &nbsp; &#10230;
+                      <button className="nobox-btn margin-bottom-1">
+                        READ TOM'S BIO &nbsp; &#10230;
                       </button>
                     </Link>
                   </div>
@@ -341,7 +341,7 @@ class AboutPageTemplate extends React.Component {
                     Claire Nicholls
                   </div>
                   <div className="f-arnopro-r text-medium-small margin-bottom-1">
-                    Senior English Coordinator at Edcellent Education
+                    VCE Dramatic English Texts Analyst
                   </div>
                   <p className="blahblah justified">
                   Claire is passionate in engaging students in the study of 
@@ -366,11 +366,11 @@ class AboutPageTemplate extends React.Component {
                   confidence and power of expression in young people.’ 
                   </p>
                   <p className="f-arnopro-i text-m">
-                  Claire
+                  Claire 
                   </p>
                   <Link to="/about/claire-nicholls/">
-                    <button className="nobox-btn">
-                      READ HER BIO &nbsp; &#10230;
+                    <button className="nobox-btn margin-bottom-1">
+                      READ CLAIRE'S BIO &nbsp; &#10230;
                     </button>
                   </Link>
                 </div>

@@ -701,6 +701,10 @@
     .title-container {
       display: flex;
       height: 20px;
+      margin-bottom: 3rem;
+    }
+    .title-horizontal-line{
+      display: none;
     }
     #carlyn {
       align-items: center;
@@ -815,6 +819,9 @@
     .title-container {
       display: flex;
       height: 20px;
+    }
+    .title-horizontal-line{
+      display: none;
     }
     #carlyn {
       align-items: center;
