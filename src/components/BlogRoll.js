@@ -6,6 +6,7 @@ class BlogRoll extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
+    console.log(data)
 
     return (
           <div className="items-container">
@@ -14,7 +15,7 @@ class BlogRoll extends React.Component {
                   <div className="image-container">
                     <img
                       className="image"
-                      src={post.frontmatter.featuredImage || "/img/landing-blog-image-1.jpg" }
+                      src={post.frontmatter.featured_image || "/img/landing-blog-image-1.jpg" }
                       alt="blog image"
                     />
                   </div>
@@ -23,7 +24,7 @@ class BlogRoll extends React.Component {
                       <div className="date-horizontal-line" />
                       <p className="f-arnopro-s text-small">{post.frontmatter.date.toUpperCase()}</p>
                     </div>
-                    <Link to={post.frontmatter.slug}>
+                    <Link to={post.fields.slug}>
                         <h4 className="title f-arnopro-b margin-bottom-2">
                             {post.frontmatter.title}
                         </h4>
@@ -64,7 +65,8 @@ export default () => (
                 title
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
-                featured-image
+                featured_image
+                author
               }
             }
           }
