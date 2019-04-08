@@ -123,8 +123,14 @@ export const pageQuery = graphql`
         description
         tags
         author
-        featured_image
-      }
+        featured_image {
+            childImageSharp {
+                fluid(maxWidth: 1440, quality: 100) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+     }
     }
   }
 `
