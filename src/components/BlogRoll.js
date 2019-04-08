@@ -6,37 +6,34 @@ class BlogRoll extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
+    console.log(data)
 
     return (
-      <div className="columns is-multiline">
-        {posts &&
-          posts.map(({ node: post }) => (
-            <div className="is-parent column is-6" key={post.id}>
-              <article className="tile is-child box notification">
-                <p>
-                  <Link
-                    className="title has-text-primary is-size-4"
-                    to={post.fields.slug}
-                  >
-                    {post.frontmatter.title}
-                  </Link>
-                  <span> &bull; </span>
-                  <span className="subtitle is-size-5 is-block">
-                    {post.frontmatter.date}
-                  </span>
-                </p>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
-                </p>
-              </article>
-            </div>
-          ))}
-      </div>
+          <div className="items-container">
+              {posts && posts.map(({node: post}) => (
+                <div className="item" key={post.id}>
+                  <div className="image-container">
+                    <img
+                      className="image"
+                      src={post.frontmatter.featured_image || "/img/landing-blog-image-1.jpg" }
+                      alt="blog image"
+                    />
+                  </div>
+                  <div className="blog-item-details padding-5 flex-column">
+                    <div className="landing-blog-date flex-row">
+                      <div className="date-horizontal-line" />
+                      <p className="f-arnopro-s text-small">{post.frontmatter.date.toUpperCase()}</p>
+                    </div>
+                    <Link to={post.fields.slug}>
+                        <h4 className="title f-arnopro-b margin-bottom-2">
+                            {post.frontmatter.title}
+                        </h4>
+                     </Link>
+                    <p className="f-nunito text-small">READ MORE</p>
+                  </div>
+                </div>
+              ))}
+          </div>
     )
   }
 }
@@ -68,6 +65,7 @@ export default () => (
                 title
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
+                featured_image
               }
             }
           }

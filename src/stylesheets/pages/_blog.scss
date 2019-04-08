@@ -17,12 +17,12 @@ content .taglist {
 
 .blog-post {
   &-img-container {
-    padding-left: 30px;    
+    padding-left: 30px;
     height: 55%;
     position: absolute;
-    overflow: hidden;     
+    overflow: hidden;
     background-size: cover;
-    background-position: center;  
+    background-position: center;
   }
 
   .featured-img {
@@ -32,7 +32,7 @@ content .taglist {
     height: 600px;
     width: 100vw;
   }
-  
+
   .blog-flex {
     display: flex;
     justify-content: center;
@@ -72,7 +72,7 @@ content .taglist {
         justify-content: flex-start;
         align-items: center;
         list-style: none;
-        
+
         li {
           margin-right: 15px;
           line-height: 1.2rem;
@@ -117,6 +117,50 @@ content .taglist {
 }
 
 @media (min-width: 1025px) {
+  .blog-index {
+      margin-top: 5rem;
+      padding: 2rem;
+
+      .title-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+
+        .title {
+            font-size: 3.5rem;
+        }
+      }
+
+      .items-container {
+
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+
+        .item {
+            width: 30%;
+            position: relative;
+            height: 460px;
+            margin-right: 30px;
+            display: inline-block;
+            margin: 1.5%;
+
+            .image-container {
+
+                .image {
+                    width: 100%;
+                    max-height: 300px;
+                }
+            }
+        }
+
+        .title {
+           font-size: 1.8rem;
+        }
+      }
+   }
+
   .blog-item-details {
       background-color: $light-grey;
       height: 250px;
@@ -126,7 +170,11 @@ content .taglist {
       left: 0;
       padding: 30px;
   }
+
+
+
 }
+
 
 @media (min-width: 320px) and (max-width: 1024px) {
   .blog-item-details {
@@ -138,6 +186,25 @@ content .taglist {
       left: 0;
       padding: 30px;
   }
+
+
+  .landing-blog-title-container {
+    width: 70%;
+  }
+
+  .landing-blog-title {
+    font-size: 1.3rem;
+  }
+
+  .landing-blog-item {
+    width: 42%;
+    position: relative;
+    height: 400px;
+    margin-right: 30px;
+    display: inline-block;
+  }
+
+  .landing-blog-title {
+    font-size: 1.3rem;
+  }
 }
-
-
