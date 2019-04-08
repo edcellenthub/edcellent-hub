@@ -10,7 +10,7 @@ const Contact = class extends React.Component {
             <p>
               Contact us to enquire about our range of personalised and
               differentiated VCE/IB educational products and services that
-              engage studetns through visual and physical learning
+              engage students through visual and physical learning
             </p>
           </div>
           <div className="visitor-redirect-links">
