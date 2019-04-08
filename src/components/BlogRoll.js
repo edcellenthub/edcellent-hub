@@ -9,7 +9,13 @@ class BlogRoll extends React.Component {
     console.log(data)
 
     return (
+      <div className="blog-index-container">
+        <div id="blog-index">
           <div className="items-container">
+            <div className="landing-blog-title-container flex-row">
+              <h4 className="subtitle-h4 f-arnopro-b">LATEST FROM OUR BLOG</h4>
+              <div className="title-horizontal-line" />
+            </div>
               {posts && posts.map(({node: post}) => (
                 <div className="item" key={post.id}>
                   <div className="image-container">
@@ -20,7 +26,7 @@ class BlogRoll extends React.Component {
                     />
                   </div>
                   <div className="blog-item-details padding-5 flex-column">
-                    <div className="landing-blog-date flex-row">
+                    <div className="blog-date flex-row">
                       <div className="date-horizontal-line" />
                       <p className="f-arnopro-s text-small">{post.frontmatter.date.toUpperCase()}</p>
                     </div>
@@ -34,6 +40,8 @@ class BlogRoll extends React.Component {
                 </div>
               ))}
           </div>
+        </div>
+      </div>
     )
   }
 }
