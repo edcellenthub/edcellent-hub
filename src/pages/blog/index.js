@@ -7,9 +7,6 @@ import Navbar from '../../components/Navbar'
 
 export default class BlogIndexPage extends React.Component {
   render() {
-    const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
-
     return (
       <Layout>
         <Navbar  hasLightBg currentPage='blog-index'/>
