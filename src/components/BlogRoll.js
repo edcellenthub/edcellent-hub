@@ -24,12 +24,12 @@ class BlogRoll extends React.Component {
                       <div className="date-horizontal-line" />
                       <p className="f-arnopro-s text-small">{post.frontmatter.date.toUpperCase()}</p>
                     </div>
+                    <h4 className="title f-arnopro-b margin-bottom-2">
+                        {post.frontmatter.title}
+                    </h4>
                     <Link to={post.fields.slug}>
-                        <h4 className="title f-arnopro-b margin-bottom-2">
-                            {post.frontmatter.title}
-                        </h4>
-                     </Link>
-                    <p className="f-nunito text-small">READ MORE</p>
+                        <p className="f-nunito text-small">READ MORE</p>
+                    </Link>
                   </div>
                 </div>
               ))}

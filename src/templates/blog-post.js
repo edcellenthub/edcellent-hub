@@ -22,12 +22,13 @@ export const BlogPostTemplate = ({
   featuredImage
 }) => {
   const PostContent = contentComponent || Content
+  const bgImage = featuredImage || "/img/landing-blog-image-1.jpg"
   return (
     <div>
       <Navbar currentPage='blog-post' />
       <section className="blog-post">
         {helmet || ''}
-        <div className="featured-img"></div>
+        <div className="featured-img" style={{backgroundImage: `url('${bgImage}')`}}></div>
         <div className="blog-flex">
             <div className="blog-content content">
               <div className="columns">
@@ -95,7 +96,7 @@ const BlogPost = ({ data }) => {
         title={post.frontmatter.title}
         date={post.frontmatter.date}
         author={post.frontmatter.author}
-        featuredImage={post.frontmatter.featuredImage}
+        featuredImage={post.frontmatter.featured_image}
         authorLink={post.frontmatter.author.toLowerCase().split(" ").join("-")}
         date={post.frontmatter.date}
       />
