@@ -14,7 +14,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 1800px;
     .team-img-container {
       width: 90vw;
       height: 50%;
@@ -27,8 +26,7 @@
       background-color: white;
       width: 65vw;
       padding: 10%;
-      position: absolute;
-      top: 750px;
+      margin-top: -100px;
     }
     .title {
       display: block;
@@ -138,7 +136,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 1800px;
     .team-img-container {
       width: 90vw;
       height: 50%;
@@ -151,8 +148,7 @@
       background-color: white;
       width: 65vw;
       padding: 10%;
-      position: absolute;
-      top: 480px;
+      margin-top: -70px;
     }
     .title {
       display: block;
@@ -261,7 +257,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 1800px;
+    margin-bottom: 3rem;
     .team-img-container {
       width: 80vw;
       height: 50%;
@@ -274,8 +270,7 @@
       background-color: white;
       width: 65vw;
       padding: 10%;
-      position: absolute;
-      top: 450px;
+      margin-top: -70px;
     }
     .title {
       display: block;
@@ -388,7 +383,6 @@
       display: flex;
       align-items: center;
       flex-direction: column;
-      height: 1800px;
       .team-img-container {
         width: 80vw;
         height: 50%;
@@ -401,8 +395,7 @@
         background-color: white;
         width: 65vw;
         padding: 10%;
-        position: absolute;
-        top: 370px;
+        margin-top: -70px;
       }
       .title {
         display: block;
@@ -513,7 +506,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 1800px;
+
     .team-img-container {
       width: 90vw;
       height: 50%;
@@ -525,9 +518,8 @@
     .text-container {
       background-color: white;
       width: 65vw;
-      padding: 7%;
-      position: absolute;
-      top: 300px;
+      padding: 10%;
+      margin-top: -70px;
     }
     .title {
       display: block;
@@ -639,7 +631,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 1600px;
     .team-img-container {
       width: 90vw;
       height: 50%;
@@ -651,9 +642,8 @@
     .text-container {
       background-color: white;
       width: 80vw;
-      padding: 10% 5%;
-      position: absolute;
-      top: 120px;
+      padding: 10%;
+      margin-top: -40px;
     }
     .title {
       display: block;
@@ -756,7 +746,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 1700px;
     .team-img-container {
       width: 90vw;
       height: 50%;
@@ -767,10 +756,9 @@
     }
     .text-container {
       background-color: white;
-      width: 80vw;
-      padding: 10% 5%;
-      position: absolute;
-      top: 140px;
+      width: 75vw;
+      padding: 10%;
+      margin-top: -50px;
     }
     .title {
       display: block;
@@ -871,17 +859,17 @@
 
 // hardcoded quick dirty fix:
 
-.about-section #team {
-  @media (min-width: 768px) {
-    margin-top: 270px;
-  }
-  @media (max-width: 467px) {
-    margin-top: 400px;
-  }
-  @media (max-width: 370px) {
-    margin-top: 712px;
-  }
-}
+// .about-section #team {
+  // @media (min-width: 768px) {
+  //   margin-top: 270px;
+  // }
+  // @media (max-width: 467px) {
+  //   margin-top: 400px;
+  // }
+  // @media (max-width: 370px) {
+  //   margin-top: 712px;
+  // }
+// }
 
 #carlyn-quick-fix {
   @media (max-width: 767px) {
