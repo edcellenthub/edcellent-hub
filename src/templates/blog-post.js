@@ -23,6 +23,7 @@ export const BlogPostTemplate = ({
 }) => {
   const PostContent = contentComponent || Content
   const bgImage = featuredImage.match(/\/img\/D+\.D+/) || "/img/landing-blog-image-1.jpg"
+  console.log("bgImage: ", bgImage )
   return (
     <div>
       <Navbar currentPage='blog-post' />
