@@ -22,7 +22,8 @@ export const BlogPostTemplate = ({
   featuredImage
 }) => {
   const PostContent = contentComponent || Content
-  const bgImage = featuredImage.match(/\/img\/D+\.D+/) || "/img/landing-blog-image-1.jpg"
+  const bgImage = featuredImage.childImageSharp.fluid.src || "/img/landing-blog-image-1.jpg"
+  console.log("bgImage: ", bgImage )
   return (
     <div>
       <Navbar currentPage='blog-post' />
@@ -123,7 +124,13 @@ export const pageQuery = graphql`
         description
         tags
         author
-        featured_image
+        featured_image {
+          childImageSharp {
+              fluid(maxWidth: 1440, quality: 100) {
+                  ...GatsbyImageSharpFluid
+              }
+          }
+        }
      }
     }
   }
