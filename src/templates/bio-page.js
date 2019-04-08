@@ -32,7 +32,7 @@ export const BioPageTemplate = ({
               </p>
               <Link to="/about/#team">
                 <button className="nobox-btn">
-                    &nbsp; &#10229;  BACK TO TEAM 
+                    &nbsp; &#10229;  BACK TO TEAM
                 </button>
               </Link>
               </div>
@@ -84,16 +84,15 @@ BioPage.propTypes = {
         }),
     }),
 }
-  
+
   export default BioPage
-  
+
   export const bioPageQuery = graphql`
     query BioPageByID($id: String!) {
       markdownRemark(id: { eq: $id }) {
         id
         html
         frontmatter {
-          date(formatString: "MMMM DD, YYYY")
           name
           position
           image {
