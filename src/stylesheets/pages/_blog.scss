@@ -26,9 +26,9 @@ content .taglist {
   }
 
   .featured-img {
-    background-image: url('../../static/img/home-jumbotron.jpg');
-    background-cover: cover;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     height: 600px;
     width: 100vw;
   }

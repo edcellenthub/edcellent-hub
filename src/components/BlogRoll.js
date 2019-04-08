@@ -15,7 +15,7 @@ class BlogRoll extends React.Component {
                   <div className="image-container">
                     <img
                       className="image"
-                      src={post.frontmatter.featured_image || "/img/landing-blog-image-1.jpg" }
+                      src={post.frontmatter.featured_image.match(/\/img\/\D+\.\D+/)|| "/img/landing-blog-image-1.jpg" }
                       alt="blog image"
                     />
                   </div>
@@ -24,12 +24,12 @@ class BlogRoll extends React.Component {
                       <div className="date-horizontal-line" />
                       <p className="f-arnopro-s text-small">{post.frontmatter.date.toUpperCase()}</p>
                     </div>
+                    <h4 className="title f-arnopro-b margin-bottom-2">
+                        {post.frontmatter.title}
+                    </h4>
                     <Link to={post.fields.slug}>
-                        <h4 className="title f-arnopro-b margin-bottom-2">
-                            {post.frontmatter.title}
-                        </h4>
-                     </Link>
-                    <p className="f-nunito text-small">READ MORE</p>
+                        <p className="f-nunito text-small">READ MORE</p>
+                    </Link>
                   </div>
                 </div>
               ))}
