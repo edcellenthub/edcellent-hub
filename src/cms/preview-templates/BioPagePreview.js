@@ -4,8 +4,9 @@ import { BioPageTemplate } from '../../templates/bio-page'
 
 const BioPagePreview = ({ entry, widgetFor }) => (
   <BioPageTemplate
-    title={entry.getIn(['data', 'title'])}
-    content={widgetFor('body')}
+    name={entry.getIn(['data', 'name'])}
+    position={entry.getIn(['data', 'position'])}
+    biography={entry.getIn(['data', 'biography'])}
   />
 )
 
