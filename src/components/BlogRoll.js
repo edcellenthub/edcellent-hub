@@ -15,7 +15,7 @@ class BlogRoll extends React.Component {
                   <div className="image-container">
                     <img
                       className="image"
-                      src={post.frontmatter.featured_image.match(/\/img\/\D+\.\D+/)|| "/img/landing-blog-image-1.jpg" }
+                      src={post.frontmatter.featured_image.childImageSharp.fluid.src|| "/img/landing-blog-image-1.jpg" }
                       alt="blog image"
                     />
                   </div>
@@ -65,7 +65,13 @@ export default () => (
                 title
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
-                featured_image
+                featured_image {
+                  childImageSharp {
+                      fluid(maxWidth: 1440, quality: 100) {
+                          ...GatsbyImageSharpFluid
+                      }
+                  }
+                }
               }
             }
           }
