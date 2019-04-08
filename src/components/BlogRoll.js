@@ -15,7 +15,7 @@ class BlogRoll extends React.Component {
                   <div className="image-container">
                     <img
                       className="image"
-                      src={post.frontmatter.featured_image || "/img/landing-blog-image-1.jpg" }
+                      src={post.frontmatter.featured_image.match(/\/img\/\D+\.\D+/)|| "/img/landing-blog-image-1.jpg" }
                       alt="blog image"
                     />
                   </div>
