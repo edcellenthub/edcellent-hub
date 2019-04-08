@@ -91,3 +91,15 @@
     display: block;
   }
 }
+
+@media (max-width: 767px){
+  .nav-main {
+    background-color: transparent;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    padding: 0 20px;
+    z-index: 3;
+  }
+}
