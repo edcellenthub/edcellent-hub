@@ -3,6 +3,7 @@ templateKey: blog-post
 title: ' The Flaws of the System'
 featured_image: /img/landing-blog-image-1.jpg
 date: 2019-04-08T06:12:10.882Z
+tags: ["education"]
 description: >-
   The impetus behind Edcellent is not merely to assist students of VCE English;
   it is to communicate and attempt to amend what often transpires as a learning
