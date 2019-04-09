@@ -2,7 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 
+
 class BlogRoll extends React.Component {
+
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
@@ -12,10 +14,6 @@ class BlogRoll extends React.Component {
       <div className="blog-index-container">
         <div id="blog-index">
           <div className="items-container">
-            <div className="landing-blog-title-container flex-row">
-              <h4 className="subtitle-h4 f-arnopro-b">LATEST FROM OUR BLOG</h4>
-              <div className="title-horizontal-line" />
-            </div>
               {posts && posts.map(({node: post}) => (
                 <div className="item" key={post.id}>
                   <div className="image-container">

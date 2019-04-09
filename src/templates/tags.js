@@ -2,16 +2,40 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import Navbar from '../components/Navbar'
+import TagsNav from '../components/TagsNav';
 
 class TagRoute extends React.Component {
   render() {
-    const posts = this.props.data.allMarkdownRemark.edges
-    const postLinks = posts.map(post => (
-      <li key={post.node.fields.slug}>
-        <Link to={post.node.fields.slug}>
-          <h2 className="is-size-2">{post.node.frontmatter.title}</h2>
-        </Link>
-      </li>
+    const { data } = this.props
+    const { edges: posts } = data.allMarkdownRemark
+    
+    const postLinks = posts.map(({node: post}) => (
+      <div id="blog-index">
+        <div className="items-container">
+          <div className="item" key={post.fields.slug}>
+            <div className="image-container">
+              <img
+                className="image"
+                src={post.frontmatter.featured_image.childImageSharp.fluid.src|| "/img/landing-blog-image-1.jpg" }
+                alt="blog image"
+              />
+            </div>
+            <div className="blog-item-details padding-5 flex-column">
+              <div className="blog-date flex-row">
+                <div className="date-horizontal-line" />
+                <p className="f-arnopro-s text-small">{post.frontmatter.date.toUpperCase()}</p>
+              </div>
+              <h4 className="title f-arnopro-b margin-bottom-2">
+                  {post.frontmatter.title}
+              </h4>
+              <Link to={post.fields.slug}>
+                  <p className="f-nunito text-small black">READ MORE</p>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
     ))
     const tag = this.props.pageContext.tag
     const title = this.props.data.site.siteMetadata.title
@@ -20,24 +44,14 @@ class TagRoute extends React.Component {
       totalCount === 1 ? '' : 's'
     } tagged with “${tag}”`
 
+
     return (
       <Layout>
-        <section className="section">
+        <Navbar  hasLightBg currentPage='blog-index'/>
+        <TagsNav currentPage={`${tag}`} />
+        <section className="blog-index-container">
           <Helmet title={`${tag} | ${title}`} />
-          <div className="container content">
-            <div className="columns">
-              <div
-                className="column is-10 is-offset-1"
-                style={{ marginBottom: '6rem' }}
-              >
-                <h3 className="title is-size-4 is-bold-light">{tagHeader}</h3>
-                <ul className="taglist">{postLinks}</ul>
-                <p>
-                  <Link to="/tags/">Browse all tags</Link>
-                </p>
-              </div>
-            </div>
-          </div>
+            <div className="taglist">{postLinks}</div>
         </section>
       </Layout>
     )
@@ -61,11 +75,22 @@ export const tagPageQuery = graphql`
       totalCount
       edges {
         node {
+          excerpt(pruneLength: 400)
+          id
           fields {
             slug
           }
           frontmatter {
             title
+            templateKey
+                date(formatString: "MMMM DD, YYYY")
+                featured_image {
+                  childImageSharp {
+                      fluid(maxWidth: 1440, quality: 100) {
+                          ...GatsbyImageSharpFluid
+                      }
+                  }
+                }
           }
         }
       }
