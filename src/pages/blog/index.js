@@ -11,7 +11,7 @@ export default class BlogIndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <Navbar  hasLightBg currentPage='blog-index'/>
+        <Navbar  hasLightBg currentPage='blog'/>
           <TagsNav currentPage="blog" />
           <BlogRoll />
           <Contact />

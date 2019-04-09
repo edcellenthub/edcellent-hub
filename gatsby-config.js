@@ -37,9 +37,10 @@ module.exports = {
         plugins: [
           {
             resolve: 'gatsby-remark-relative-images',
-            options: {
-              name: 'uploads',
-            },
+            // commented out below to make image query works
+            //options: {
+              //name: 'uploads',
+            //},
           },
           {
             resolve: 'gatsby-remark-images',
