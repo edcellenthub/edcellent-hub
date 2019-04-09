@@ -5,7 +5,6 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-import jumbotron from '../../static/img/home-jumbotron.jpg'
 import Contact from '../components/Contact'
 import Navbar from '../components/Navbar'
 
@@ -99,7 +98,6 @@ const BlogPost = ({ data }) => {
         author={post.frontmatter.author}
         featuredImage={post.frontmatter.featured_image}
         authorLink={post.frontmatter.author.toLowerCase().split(" ").join("-")}
-        date={post.frontmatter.date}
       />
     </Layout>
   )
