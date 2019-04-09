@@ -1,161 +1,98 @@
-@media (min-width: 768px) {
-  #blog-post {
-    .img-overlay {
-      height: 450px;
-      width: 100vw;
-      background-color: rgba(66, 70, 80, 0.5);
-      position: absolute;
-    }
-
-    .featured-img {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 450px;
-      width: 100vw;
-      overflow: hidden;
-    }
-    .text-spacing {
-      margin: 0 40px;
-    }
-    .break {
-      display: none;
-    }
-
-    .blog-flex {
-      display: flex;
-      justify-content: center;
-
-      .blog-content {
-        position: relative;
-        top: -100px;
-        width: 80%;
-        max-width: 1200px;
-        padding: 5%;
-        background-color: white;
-
-        .credentials {
-          margin-bottom: 2rem;
-        }
-
-        .post-content::first-letter {
-          color: $dark-gold;
-          font-family: 'arnopro-smbd', serif;
-          font-size: 3.2rem;
-          float: left;
-          position: relative;
-          margin: -15px 10px -15px 0;
-        }
-      }
-    }
+content .taglist {
+  list-style: none;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 1.5rem;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  content .taglist li {
+    padding: 0 2rem 1rem 0;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
-  #blog-post {
-    .img-overlay {
-      height: 350px;
-      width: 100vw;
-      background-color: rgba(66, 70, 80, 0.5);
-      position: absolute;
-    }
-
-    .featured-img {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 350px;
-      width: 100vw;
-      overflow: hidden;
-      
-    }
-    
-
-    .blog-flex {
-      display: flex;
-      justify-content: center;
-
-      .blog-content {
-        position: relative;
-        top: -100px;
-        width: 90%;
-        max-width: 1200px;
-        padding: 12% 3%;
-        background-color: white;
-
-        .text-spacing {
-          display: none;
-        }
-
-        .break {
-          margin-bottom: -15px;
-        }
-        .credentials {
-          margin-bottom: 2rem;
-          line-height: 1.5rem;
-        }
-        .post-content::first-letter {
-          color: $dark-gold;
-          font-family: 'arnopro-smbd', serif;
-          font-size: 3.2rem;
-          float: left;
-          position: relative;
-          margin: -15px 10px -15px 0;
-        }
-      }
-    }
+.blog-post {
+  &-img-container {
+    padding-left: 30px;
+    height: 55%;
+    position: absolute;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
   }
-}
 
-#blog-post {
-    .social-share {
+  .featured-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    width: 100vw;
+  }
+
+  .blog-flex {
     display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    margin-top: 2.5rem;
+    justify-content: center;
 
-    a {
-      i {
-        font-size: 1.2rem;
-        color: grey;
-        margin: 0 10px;
+    .blog-content {
+      position: relative;
+      top: -100px;
+      width: 80%;
+      max-width: 1200px;
+      padding: 5%;
+      background-color: white;
+
+      .social-share {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin-top: 2.5rem;
+
+        a {
+          i {
+            font-size: 1.2rem;
+            color: grey;
+            margin: 0 10px;
+          }
+
+          i:hover {
+            color: $dark-gold;
+          }
+        }
+
       }
 
-      i:hover {
-        color: $dark-gold;
-      }
-    }
-  }
+      .taglist {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style: none;
 
-  .taglist {
-    width: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    list-style: none;
+        li {
+          margin-right: 15px;
+          line-height: 1.2rem;
+          margin: 0;
 
-    li {
-      margin-right: 15px;
-      line-height: 1.2rem;
-      margin: 0;
+          a {
+            color: black;
+          }
 
-      a {
-        color: $mid-grey;
-        font-size: 0.9rem;
-      }
+          a:hover {
+            color: $dark-gold;
+          }
 
-      a:hover {
-        color: $dark-gold;
-      }
-
-      .tag-divider {
-        margin: 0 15px;
-        color: $mid-grey;
+          .tag-divider {
+            margin: 0 15px;
+          }
+        }
       }
     }
   }
 }
-
 
 

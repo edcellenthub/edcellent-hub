@@ -3,10 +3,13 @@ templateKey: blog-post
 title: ' The Flaws of the System'
 featured_image: /img/landing-blog-image-1.jpg
 date: 2019-04-08T06:12:10.882Z
-tags: ["education", "teaching tips"]
+tags: ["education"]
 description: >-
- 
-author: Cameron Sievers
+  The impetus behind Edcellent is not merely to assist students of VCE English;
+  it is to communicate and attempt to amend what often transpires as a learning
+  gap in this subject between the middle school (Years 9 and 10) and the senior
+  years.
+author: Carlyn Kang
 ---
 The impetus behind Edcellent is not merely to assist students of VCE English; it is to communicate and attempt to amend what often transpires as a learning gap in this subject between the middle school (Years 9 and 10) and the senior years.
 
@@ -30,3 +33,4 @@ Finally, to return to reading: there is not a single text that does not require 
 
 At Edcellent, we address the aforesaid deficiencies that students experience in the English subject, and bridge the gap between the middle years and VCE.
 
+As a writer, CAMERON SIEVERS has been shortlisted, long-listed, and staged by professional UK theatres, including the Bush Theatre, the Southwark Playhouse, and the Tristan Bates Theatre in Covent Garden. In 2013, he completed an MA in Theatre Directing in London. He has brought more than a dozen plays to full production in sixteen shows in Australia; including Harold Pinter’s, _The Birthday Party_, for Melbourne University. In March 2018, at the Melbourne International Comedy Festival for La Mama Theatre, he staged the satirical sketch show, _A Song for Simon Birmingham_. More recently, he staged the devised piece, _Medea – A Reasonable Woman_, at the same venue. He is currently working on a film series with Underground Media. He founded Uninvited Theatre in 2015. He is the Senior English Coordinator at Edcellent Education.
