@@ -6,10 +6,9 @@ import Layout from '../components/Layout'
 import Contact from '../components/Contact'
 import HeroVideo from '../components/HeroVideo'
 import Navbar from '../components/Navbar'
-import IndexBlogRoll from '../components/IndexBlogRoll'
 
 export const IndexPageTemplate = (
-  ///{
+  {
     // image,
     // title,
     // heading,
@@ -19,7 +18,7 @@ export const IndexPageTemplate = (
     // testimonials,
     // fullImage,
     // pricing
-  //}
+  }
 ) => (
   <>
     <Navbar currentPage="home"/>
@@ -196,7 +195,6 @@ export const IndexPageTemplate = (
           </div>
           <button className="nobox-btn">VIEW ALL &nbsp; &#10230;</button>
   </section> */}
-    <IndexBlogRoll />
     <Contact />
   </>
 )

@@ -64,13 +64,6 @@ const Navbar = class extends React.Component {
                     <span>ABOUT</span>
                   </Link>
                   <Link
-                    className={`nav-item ${currentPage === 'blog' &&
-                      'active'}`}
-                    to="/blog"
-                  >
-                    <span>BLOG</span>
-                  </Link>
-                  <Link
                     className={`nav-item ${currentPage === 'contact' &&
                       'active'}`}
                     to="/contact"
@@ -103,13 +96,6 @@ const Navbar = class extends React.Component {
               to="/about"
             >
               <span>ABOUT</span>
-            </Link>
-            <Link
-              className={`nav-item ${hasLightBg && 'black'} ${currentPage === 'blog' &&
-                'active'}`}
-              to="/blog"
-            >
-              <span>BLOG</span>
             </Link>
             <Link
               className={`nav-item ${hasLightBg && 'black'} ${currentPage ===
