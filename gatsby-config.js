@@ -37,9 +37,11 @@ module.exports = {
         plugins: [
           {
             resolve: 'gatsby-remark-relative-images',
-            options: {
-              name: 'uploads',
-            },
+          // commented out the following and the image handling is now working.
+          // referring to guide provide in https://www.gatsbyjs.org/packages/gatsby-remark-relative-images/
+          //  options: {
+          //    name: 'uploads',
+          //  },
           },
           {
             resolve: 'gatsby-remark-images',
