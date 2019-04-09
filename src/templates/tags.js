@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Navbar from '../components/Navbar'
+import TagsNav from '../components/TagsNav';
 
 class TagRoute extends React.Component {
   render() {
@@ -43,16 +44,14 @@ class TagRoute extends React.Component {
       totalCount === 1 ? '' : 's'
     } tagged with “${tag}”`
 
+
     return (
       <Layout>
-        <Navbar  hasLightBg currentPage='tag-index'/>
+        <Navbar  hasLightBg currentPage='blog-index'/>
+        <TagsNav currentPage={`${tag}`} />
         <section className="blog-index-container">
           <Helmet title={`${tag} | ${title}`} />
-            <h4 className="text-m f-arnopro-b">{tagHeader}</h4>
             <div className="taglist">{postLinks}</div>
-            <p>
-              <Link to="/tags/">Browse all tags</Link>
-            </p>
         </section>
       </Layout>
     )
