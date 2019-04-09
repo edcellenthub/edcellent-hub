@@ -34,7 +34,7 @@ class BlogRoll extends React.Component {
                         {post.frontmatter.title}
                     </h4>
                     <Link to={post.fields.slug}>
-                        <p className="f-nunito text-small">READ MORE</p>
+                        <p className="f-nunito text-small black">READ MORE</p>
                     </Link>
                   </div>
                 </div>

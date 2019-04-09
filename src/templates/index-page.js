@@ -150,7 +150,7 @@ export const IndexPageTemplate = (
                 <h4 className="title f-arnopro-b margin-bottom-2">
                   The struggle of the VCE English teacher
                 </h4>
-                <p className="f-nunito text-small">READ MORE</p>
+                <p className="f-nunito text-small black">READ MORE</p>
               </div>
             </div>
               <div className="item">
@@ -169,7 +169,7 @@ export const IndexPageTemplate = (
                   <h4 className="title f-arnopro-b margin-bottom-2">
                     Rear Window Film Analysis: Part 1
                   </h4>
-                  <p className="f-nunito text-small margin-bottom-2">WATCH NOW</p>
+                  <p className="f-nunito text-small black margin-bottom-2">WATCH NOW</p>
                 </div>
               </div>
               <div className="item">
@@ -188,7 +188,7 @@ export const IndexPageTemplate = (
                   <h4 className="title f-arnopro-b margin-bottom-2">
                     Rear Window Film Analysis: Part 1
                   </h4>
-                  <p className="f-nunito text-small margin-bottom-2">WATCH NOW</p>
+                  <p className="f-nunito text-small black margin-bottom-2">WATCH NOW</p>
                 </div>
               </div>
             </div>
