@@ -47,7 +47,7 @@ class TagRoute extends React.Component {
 
     return (
       <Layout>
-        <Navbar  hasLightBg currentPage='blog-index'/>
+        <Navbar  hasLightBg currentPage='blog'/>
         <TagsNav currentPage={`${tag}`} />
         <section className="blog-index-container">
           <Helmet title={`${tag} | ${title}`} />
