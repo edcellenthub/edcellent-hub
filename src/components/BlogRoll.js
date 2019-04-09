@@ -4,9 +4,9 @@ import { Link, graphql, StaticQuery } from 'gatsby'
 
 class BlogRoll extends React.Component {
   render() {
-    const { data, currentPage } = this.props
+    const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
-    console.log(this.props)
+    console.log(data)
 
     return (
       <div className="blog-index-container">
