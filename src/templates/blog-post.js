@@ -26,25 +26,19 @@ export const BlogPostTemplate = ({
   return (
     <div>
       <Navbar currentPage='blog-post' />
-      <section id="blog-post">
+      <section className="blog-post">
         {helmet || ''}
-        <div className="img-overlay"></div>
-          <div className="featured-img" style={{backgroundImage: `url('${bgImage}')`}}></div>
-        
+        <div className="featured-img" style={{backgroundImage: `url('${bgImage}')`}}></div>
         <div className="blog-flex">
             <div className="blog-content content">
-                  <p className="credentials text-small text-center spaced">BY &nbsp;
-                    <Link to={`/about/${authorLink}/`}>
-                      <strong className="text-small gold-color spaced">{author.toUpperCase()}</strong>
-                    </Link><div className="break"><br /></div>
-                      <span className="text-spacing gold-color">|</span> 
-                        <strong>{date.toUpperCase()}</strong>
-                  </p>
-                  <div className="text-x-large text-center f-arnopro-r margin-bottom-2">
+              <div className="columns">
+                <div className="column is-10 is-offset-1">
+                  <p className="text-center margin-bottom-4">BY <Link to={`/about/${authorLink}/`}><strong className="gold-color">{author.toUpperCase()}</strong></Link> <span className="text-spacing gold-color">|</span> <strong>{date.toUpperCase()}</strong></p>
+                  <h1 className="text-xlarge text-center f-arnopro-r">
                     {title}
-                  </div>
+                  </h1>
                   <p>{description}</p>
-                  <PostContent className="post-content justified" content={content} />
+                  <PostContent content={content} />
                   <div className="social-share">
                       <a href="#" target="_blank"> <i className="fab fa-facebook"></i></a>
                       <a href="#" target="_blank"><i className="fab fa-linkedin"></i></a>
@@ -64,6 +58,8 @@ export const BlogPostTemplate = ({
                   ) : null}
                 </div>
             </div>
+          </div>
+        </div>
       </section>
       <Contact />
     </div>
