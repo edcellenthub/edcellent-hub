@@ -51,6 +51,7 @@ class TagRoute extends React.Component {
         <TagsNav currentPage={`${tag}`} />
         <section className="blog-index-container">
           <Helmet title={`${tag} | ${title}`} />
+            <div className="f-arnopro-s text-m">{tagHeader}</div>
             <div className="taglist">{postLinks}</div>
         </section>
       </Layout>
