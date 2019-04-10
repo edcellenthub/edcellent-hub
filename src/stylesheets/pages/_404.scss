@@ -1,0 +1,26 @@
+@media (min-width: 768px){
+    .error-container {
+        display: flex;
+        padding: 13% 4% 0% 4%;
+        justify-content: center;
+        height: 60vh;
+        .error-text{
+            text-align: center;
+            width: 55vw;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .error-container {
+        display: flex;
+        padding: 15% 4% 0% 4%;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        .error-text{
+            text-align: center;
+            width: 85vw;
+        }
+    }
+}

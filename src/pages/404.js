@@ -1,12 +1,19 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import Navbar from '../components/Navbar'
+import Contact from '../components/Contact'
 
 const NotFoundPage = () => (
   <Layout>
-    <div>
-      <h1>NOT FOUND</h1>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-    </div>
+  <Navbar hasLightBg />
+    <section className="error-container">
+      <div className="error-text">
+        <div className="text-large f-arnopro-r">
+          It seems like the page you're looking for isn't found. 
+        </div>
+      </div>
+    </section>  
+    <Contact />
   </Layout>
 )
 
