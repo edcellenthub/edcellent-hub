@@ -94,8 +94,8 @@ export const IndexPageTemplate = (
                   Personalised school program
                 </h3>
                 <div className="f-arnopro-r">
-                  <p>• Incursion on VCE / IB texts</p>
-                  <p>• Workshops for students and teachers</p>
+                  <p><span className="dot">•</span> <span>Incursion on VCE / IB texts</span></p>
+                  <p><span className="dot">•</span> <span>Workshops for students and teachers</span></p>
                 </div>
               </div>
             </div>
