@@ -41,6 +41,20 @@ collections:
       - {label: Biography, name: biography, widget: text}
       # - {label: Ethos, name: ethos, widget: text}
 
+  - name: "content"
+    label: "Content"
+    folder: "src/pages/content"
+    create: true
+    identifier_field: title
+    slug: "{{title}}"
+    widget: "list"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: hidden, default: "content-page"}
+      - {label: Description, name: description, widget: text}
+      - {label: Category, name: category, widget: string}
+      - {label: Title, name: title, widget: string}
+      - {label: Author, name: author, widget: string}
+
   - name: "pages"
     label: "Pages"
     files:

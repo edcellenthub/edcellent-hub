@@ -126,76 +126,7 @@ export const IndexPageTemplate = (
           </div>
         </div>
       </div>
-    </section> */}
-
-    {/* <section className="landing-blog">
-          <div className="landing-blog-title-container flex-row">
-            <h4 className="subtitle-h4 f-arnopro-b">LATEST FROM OUR BLOG</h4>
-            <div className="title-horizontal-line" />
-          </div>
-          <div id="landing-blog-index">
-          <div className="items-container">
-            <div className="item">
-              <div className="image-container">
-                <img
-                  className="image"
-                  src="/img/landing-blog-image-1.jpg"
-                  alt="blog image"
-                />
-              </div>
-              <div className="blog-item-details padding-5 flex-column">
-                <div className="blog-date flex-row">
-                  <div className="date-horizontal-line" />
-                  <p className="f-arnopro-s text-small">22 MAR 2019</p>
-                </div>
-                <h4 className="title f-arnopro-b margin-bottom-2">
-                  The struggle of the VCE English teacher
-                </h4>
-                <p className="f-nunito text-small black">READ MORE</p>
-              </div>
-            </div>
-              <div className="item">
-                <div className="image-container">
-                  <img
-                    className="image"
-                    src="/img/landing-blog-image-2.jpg"
-                    alt="blog image"
-                  />
-                </div>
-                <div className="blog-item-details flex-column">
-                  <div className="blog-date flex-row">
-                    <div className="date-horizontal-line" />
-                    <p className="f-arnopro-s text-small">22 MAR 2019</p>
-                  </div>
-                  <h4 className="title f-arnopro-b margin-bottom-2">
-                    Rear Window Film Analysis: Part 1
-                  </h4>
-                  <p className="f-nunito text-small black margin-bottom-2">WATCH NOW</p>
-                </div>
-              </div>
-              <div className="item">
-                <div className="image-container">
-                  <img
-                    className="image"
-                    src="/img/landing-blog-image-2.jpg"
-                    alt="blog image"
-                  />
-                </div>
-                <div className="blog-item-details flex-column">
-                  <div className="blog-date flex-row">
-                    <div className="date-horizontal-line" />
-                    <p className="f-arnopro-s text-small">22 MAR 2019</p>
-                  </div>
-                  <h4 className="title f-arnopro-b margin-bottom-2">
-                    Rear Window Film Analysis: Part 1
-                  </h4>
-                  <p className="f-nunito text-small black margin-bottom-2">WATCH NOW</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button className="nobox-btn">VIEW ALL &nbsp; &#10230;</button>
-  </section> */}
+    </section> */}    
     <IndexBlogRoll />
     <Contact />
   </>
