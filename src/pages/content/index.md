@@ -6,5 +6,4 @@ category: Text Response
 title: Rear Window  
 author: Alfred Hitchcock
 
-
 ---
