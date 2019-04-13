@@ -122,7 +122,7 @@ section.landing-about-us {
     background-size: cover;
     height: 400px;
     margin: 50px 35px;
-    width: 40%;
+    width: 42%;
     perspective: 1000px;
 
     @media (max-width: 768px) {
@@ -187,7 +187,8 @@ section.landing-about-us {
       text-align: left;
 
       .dot {
-        margin-right: 3px;
+        margin: 0 3px 3px 0;
+        
       }
 
       h3 {
