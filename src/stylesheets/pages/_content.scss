@@ -1,6 +1,8 @@
 @media (min-width: 768px) {
+    .content-index-section {
+        padding: 15% 3% 0 3%;
+        text-align: center;
     #content-index{
-        padding: 10% 3% 0 3%;
         align-items: center;
         display: flex;
         flex-wrap: wrap;
@@ -37,10 +39,14 @@
         }
     }
 }
+}
 
 @media (min-width: 320px) and (max-width:767px) {
+    .content-index-section {
+        padding: 30% 7% 0 7%;
+        text-align: center;
     #content-index{
-        padding-top: 25%;
+        
         align-items: center;
         display: flex;
         flex-wrap: wrap;
@@ -76,6 +82,7 @@
             }
         }
     }
+}
 }
 
 .content-box-1 {

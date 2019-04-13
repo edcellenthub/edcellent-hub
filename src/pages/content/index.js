@@ -1,11 +1,7 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { Link, graphql, StaticQuery } from 'gatsby'
 import Layout from '../../components/Layout'
 import Navbar from '../../components/Navbar'
 import Contact from '../../components/Contact'
-
-import { ContentPage } from '../../templates/content-page';
 
 
 export default class Content extends React.Component {
@@ -13,11 +9,7 @@ export default class Content extends React.Component {
     expand: false
   }
 
-  toggleExpandTR = () => {
-    this.setState({ expand: !this.state.expand })
-  }
-
-  toggleExpandCTR = () => {
+  toggleExpand = () => {
     this.setState({ expand: !this.state.expand })
   }
 
@@ -26,19 +18,19 @@ export default class Content extends React.Component {
     return (
       <Layout>
         <Navbar  hasLightBg currentPage='content'/>
-        <section className="section">
-          <div id="content-index">
+        <section className="content-index-section">
           <h2 className="f-arnopro-s text-medium dark-gold margin-bottom-2">
           The text we offer students in 2019 includes
           </h2>
-            <div onClick={this.toggleExpandTR} className="content-box-1" >
+          <div id="content-index">
+            <div onClick={this.toggleExpand} className="content-box-1" >
               <div className="overlay">
                 <div className="border">
                 <h3 className="f-arnopro-s text-md-md">TEXT RESPONSE</h3>
                 </div>  
               </div> 
             </div>
-            <div onClick={this.toggleExpandCTR} className="content-box-2" >
+            <div onClick={this.toggleExpand} className="content-box-2" >
               <div className="overlay">
                 <div className="border">
                 <h3 className="f-arnopro-s text-md-md">COMPRATIVE TEXT RESPONSE</h3>
