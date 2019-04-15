@@ -15,13 +15,12 @@ const ContentCard = ({
                             <tr >
                                 <td onClick={ e => toggleExpand() } colspan="3" className="category f-arnopro-b spaced text-md"> {boxType === "non-comparative" ? "TEXT RESPONSE" : "COMPARATIVE TEXT RESPONSE" } </td>
                             </tr>
-                            {content.filter(node => node.type === "Text Response")[0].school.map( blob => {
+                            {content.filter(node => node.type === ( boxType === "non-comparative" ? "Text Response" : "Comparative Text Response"))[0].school.map( blob => {
                                 return(
                                     <>
                                     <tr>
                                         <td colspan="3" className="subtitle text-small">{blob.header}</td>
                                     </tr>
-                                    <tr className="row">
                                         {chunk(blob.blurbs).map( row => {
                                             return(
                                                 <tr class="row">
@@ -36,7 +35,6 @@ const ContentCard = ({
                                                 </tr> 
                                             )
                                         })} 
-                                    </tr>
                                     </>
                                 )
                             })}
