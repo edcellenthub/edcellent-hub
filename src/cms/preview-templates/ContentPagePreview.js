@@ -1,12 +1,10 @@
+import React from 'react'
 import PropTypes from 'prop-types'
 import { ContentPageTemplate } from '../../templates/content-page'
 
 const ContentPagePreview = ({ entry, widgetFor }) => (
   <ContentPageTemplate
-    description={entry.getIn(['data', 'description'])}
-    category={entry.getIn(['data', 'category'])}
-    title={entry.getIn(['data', 'title'])}
-    author={entry.getIn(['data', 'author'])}
+    name={entry.getIn(['data', 'name'])}
   />
 )
 

@@ -5,150 +5,143 @@ import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
 import Contact from '../components/Contact'
 import Navbar from '../components/Navbar'
+import ContentCard from '../components/ContentCard'
 
-const ContentPageTemplate = ({
-  description,
-  category,
-  title,
-  author,
-  helmet,
-  }) => {
+export class ContentPageTemplate extends React.Component {
+  state = {
+    expand: false,
+    boxType: '',
+  }
+
+  toggleExpand = (box = '') => {
+    this.setState({
+      expand: !this.state.expand,
+      boxType: box,
+    })
+  }
+
+  chunk = (array) => {
+    const output = []
+    for(let i = 0; i < array.length; i += 3){
+      output.push([array[i], array[i+1], array[i+2]].filter(i => i !== undefined))
+    }
+    return output
+  }
+
+  render() {
+    const { helmet, content } = this.props
+
+    console.log(this.chunk(content[0].school[0].blurbs))
     return(
       <div>
-      <Navbar hasLightBg currentPage="content"/>
-        <section className="section">
-          {helmet || ''}
-            <div id="content-pg">
-              <div className="tr-container">
-                <h2 className="f-arnopro-s text-medium dark-gold margin-bottom-2">
-                The text we offer students in 2019 includes
-                </h2>
-                  <table className="table">
-                    <div className="table-container">
-                      <tr >
-                        <td colspan="3" className="category f-arnopro-b spaced text-md">TEXT RESPONSE</td>
-                      </tr>    
-                      <tr>
-                        <td colspan="3" className="subtitle text-small">Senior High School Year 11 & 12</td>
-                      </tr>
-                      <tbody>
-                        <tr className="row">
-                          <td className='col'>
-                            <div className="f-arnopro-r text-md-md">Rear Window</div><br/>
-                            <span className="f-nunito text-small">Alfred Hitchcock</span>
-                          </td> 
-                          <td className='col'>
-                            <div className="f-arnopro-r text-md-md">Women of Troy</div><br/>
-                            <span className="f-nunito text-small">Euripides</span>
-                          </td> 
-                          <td className='col'>
-                            <div className="f-arnopro-r text-md-md">Measure for Measure</div><br/>
-                            <span className="f-nunito text-small">William Shaespeare</span>
-                          </td> 
-                        </tr>
-                        <tr className="row">
-                          <td className='col'>
-                            <div className="f-arnopro-r text-md-md">The Lieutenent</div><br/>
-                            <span className="f-nunito text-small">Kate Grenville</span>
-                          </td> 
-                          <td className='col'>
-                            <div className="f-arnopro-r text-md-md">Nine Days</div><br/>
-                            <span className="f-nunito text-small">Toni Jordan</span>
-                          </td> 
-                          <td className='col'>
-                            <div className="f-arnopro-r text-md-md">King Lear</div><br/>
-                            <span className="f-nunito text-small">William Shaespeare</span>
-                          </td> 
-                        </tr>
-                        <tr className="row">
-                          <td className='col'>
-                            <div className="f-arnopro-r text-md-md">Medea</div><br/>
-                            <span className="f-nunito text-small">Euripides</span>
-                          </td> 
-                          <td className='col'>
-                            <div className="f-arnopro-r text-md-md">Othello</div><br/>
-                            <span className="f-nunito text-small">William Shaespeare</span>
-                          </td> 
-                        </tr>
-                        <tr className="row">
-                            <td colspan="3" className="subtitle text-small">Middle School</td>
-                        </tr>
-                        <tr className="row">
-                          <td className='col'>
-                            <div className="f-arnopro-r text-md-md">Romeo & Juliet</div><br/>
-                            <span className="f-nunito text-small">William Shaespear</span>
-                          </td> 
-                          <td className='col'>
-                            <div className="f-arnopro-r text-md-md">Macbeth</div><br/>
-                            <span className="f-nunito text-small">William Shaespeare</span>
-                          </td> 
-                          <td className='col'>
-                            <div className="f-arnopro-r text-md-md">Hamlet</div><br/>
-                            <span className="f-nunito text-small">William Shaespeare</span>
-                          </td> 
-                        </tr>
-                      </tbody>
+          { helmet || '' }
+          <Navbar hasLightBg currentPage="content"/>
+          <section className="content-index-section">
+            <h2 className="f-arnopro-s text-medium dark-gold margin-bottom-2">
+              The text we offer students in 2019 includes
+            </h2>
+            <div id="content-index">
+              { !this.state.expand ? 
+                <div>
+                <div onClick={e => this.toggleExpand("non-comparative")} className="content-box-1" >
+                  <div className="overlay">
+                    <div className="border">
+                    <h3 className="f-arnopro-s text-md-md">TEXT RESPONSE</h3>
                     </div>
-                  </table>
+                  </div>
                 </div>
-              </div>
-            </section>
-            <Contact />
+                <div onClick={e => this.toggleExpand("comparative")} className="content-box-2" >
+                  <div className="overlay">
+                    <div className="border">
+                    <h3 className="f-arnopro-s text-md-md">COMPRATIVE TEXT RESPONSE</h3>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                : <ContentCard
+                    toggleExpand = {this.toggleExpand}
+                    boxType={this.state.boxType}
+                    content={content}
+                    chunk={this.chunk}
+                />
+              }
+              <div>
+                  <div className="content-box-3" >
+                    <div className="overlay">
+                      <div className="border">
+                        <h3 className="f-arnopro-s text-md-md">SPEECHES WRITING MASTER CLASS</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="content-box-4" >
+                    <div className="overlay">
+                      <div className="border">
+                        <h3 className="f-arnopro-s text-md-md">ANALYSING ARGUMENTS</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </section>
+          <Contact />
         </div>
       )
   }
+}
 
- ContentPageTemplate.propTypes = {
-      category: PropTypes.string,
-      title: PropTypes.string,
-      author: PropTypes.string,
-      helmet: PropTypes.object,
-  }
-  
-  const ContentPage = ({ data }) => {
-    const { markdownRemark: post } = data
 
-    return (
-      <Layout>
-        <ContentPageTemplate
-          content={post.html}
-          description={post.frontmatter.description}
-          helmet={
-              <Helmet titleTemplate="%s | Content">
-              <title>{`${post.frontmatter.category}`}</title>
-              <meta
-                name="titles"
-                content={`${post.frontmatter.title}`}
-              />
-            </Helmet>
-          }
-          category={post.frontmatter.category}
-          title={post.frontmatter.title}
-          author={post.frontmatter.author}
-        />
-      </Layout>
-    )
-  }
+ContentPageTemplate.propTypes = {
+ // name: PropTypes.string,
+  //position: PropTypes.string,
+  //image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  //biography: PropTypes.string,
+  // ethos: PropTypes.string,
+  //helmet: PropTypes.object,
+}
+
+const ContentPage = ({ data }) => {
+  const { frontmatter } = data.markdownRemark
+  console.log(data)
   
-  ContentPage.propTypes = {
-      data: PropTypes.shape({
-          markdownRemark: PropTypes.shape({
-              frontmatter: PropTypes.object,
-          }),
+  return (
+    <Layout>
+      <ContentPageTemplate
+        helmet={
+            <Helmet titleTemplate="%s | Content"></Helmet>
+        }
+        content={frontmatter.content}
+      />
+    </Layout>
+  )
+}
+
+ContentPage.propTypes = {
+  data: PropTypes.shape({
+      markdownRemark: PropTypes.shape({
+          frontmatter: PropTypes.object,
       }),
-  }
-  
-    export default ContentPage
-  
-    export const contentPageQuery = graphql`
-        query ContentPageTemplate {
-            markdownRemark(frontmatter: { templateKey: { eq: "content-page" } }) {
-            frontmatter {
-                description
-                name
-                title
-                author
+  }),
+}
+
+export default ContentPage
+
+export const contentPageQuery = graphql`
+  query contentPageByID($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      id
+      html
+      frontmatter {
+        content {
+          type
+          school {
+            header
+            blurbs {
+              title
+              author
+            }
           }
         }
       }
-    `
+    }
+  }
+`
