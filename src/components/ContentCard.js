@@ -14,24 +14,24 @@ const ContentCard = ({
                 <tr >
                   <td 
                     onClick={ e => toggleExpand() } 
-                    colspan="3" 
+                    colspan = "3"
                     className="category f-arnopro-b spaced text-md"> 
                     {boxType === "non-comparative" ? "TEXT RESPONSE" : "COMPARATIVE TEXT RESPONSE"} 
                   </td>
                 </tr>
                 
-                  {content.filter(node => node.type === (boxType === "non-comparative" ? "Text Response" : "Comparative Text Response"))[0].school.map( blob => {                    
+                  {content.filter(node => node.type === (boxType === "non-comparative" ? "Text Response" : "Comparative Text Response"))[0].school.map( blob => {   
                     return(
                     <> 
-                    <tr>
-                      <td colspan="3" className="subtitle text-small">{blob.header}</td>
+                    <tr style={{ display: boxType==="non-comparative" ? " " : "none" }}>
+                      <td colspan = "3" className="subtitle text-small">{blob.header}</td>
                     </tr>
                         {chunk(blob.blurbs).map( row => {
                         return(
                           <tr className="row">
                             { row.map(item => {
                             return(
-                            <td className='col'>
+                            <td className={ boxType==="non-comparative" ? "col-is-one-third ": "col-is-half" } >
                                 <div className="f-arnopro-r text-md-md">{item.title}</div><br/>
                                 <span className="f-nunito text-small">{item.author}</span>
                             </td>
@@ -42,7 +42,8 @@ const ContentCard = ({
                       })}
                      </>
                     )
-                })}
+                  }
+                )}
               </tbody>
             </div>
           </table>

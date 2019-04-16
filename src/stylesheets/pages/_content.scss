@@ -145,22 +145,36 @@
                 padding: 5%;
                 border: 1px solid white;
                 margin: 1%;
+                
             }
             .category {
                 text-align: center;
                 vertical-align: middle;
                 padding-bottom: 5%;
                 cursor: pointer;
+                
             }
             .subtitle {
                 color: $mid-grey;
                 padding: 2% 0 2% 2%;
             }
-            tbody .col-text {
-                width: 35%;
-                padding: 2%;
-            }
+            tbody .row {
+                width: 100%;
+                
+                
+                
             
+            .col-is-one-third{
+                padding: 2%;
+                width: 35%;
+       
+            }
+            .col-is-half{
+                padding: 2%;
+                width: 70%;
+
+            }
+        }
         }
     }
 }
