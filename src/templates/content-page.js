@@ -31,7 +31,7 @@ export class ContentPageTemplate extends React.Component {
   render() {
     const { helmet, content } = this.props
 
-    console.log(this.chunk(content[0].school[0].blurbs))
+    // console.log(this.chunk(content[0].school[0].blurbs))
     return(
       <div>
           { helmet || '' }
@@ -40,18 +40,23 @@ export class ContentPageTemplate extends React.Component {
             <h2 className="f-arnopro-s text-medium dark-gold margin-bottom-2">
               The text we offer students in 2019 includes
             </h2>
+            <div className="content-container">
             <div id="content-index">
               { !this.state.expand ? 
-                <div>
-                <div onClick={e => this.toggleExpand("non-comparative")} className="content-box-1" >
-                  <div className="overlay">
+                <div className="responsive-content">
+                <div 
+                  onClick={e => this.toggleExpand("non-comparative")} 
+                  className="content-box-1" >
+                  <div className="overlay-click">
                     <div className="border">
                     <h3 className="f-arnopro-s text-md-md">TEXT RESPONSE</h3>
                     </div>
                   </div>
                 </div>
-                <div onClick={e => this.toggleExpand("comparative")} className="content-box-2" >
-                  <div className="overlay">
+                <div 
+                  onClick={e => this.toggleExpand("comparative")} 
+                  className="content-box-2" >
+                  <div className="overlay-click">
                     <div className="border">
                     <h3 className="f-arnopro-s text-md-md">COMPRATIVE TEXT RESPONSE</h3>
                     </div>
@@ -65,7 +70,7 @@ export class ContentPageTemplate extends React.Component {
                     chunk={this.chunk}
                 />
               }
-              <div>
+              <div className="responsive-content">
                   <div className="content-box-3" >
                     <div className="overlay">
                       <div className="border">
@@ -81,6 +86,7 @@ export class ContentPageTemplate extends React.Component {
                     </div>
                   </div>
                 </div>
+            </div>
             </div>
           </section>
           <Contact />

@@ -32,20 +32,23 @@ content:
             author: William Shaespeare
   - type: "Comparative Text Response"
     school: 
-      - header: Senior High School Year 11 & 12
+      - header: 
         blurbs:
-          - title: Nine Days
-            author: Toni Jordan
-          - title: King Lear
-            author: William Shaespeare
-          - title: Medea
-            author: Euripides
-          - title: Othello
-            author: William Shaespeare
-      - header: Middle School
-        blurbs:
-          - title: Macbeth
-            author: William Shaespear
-          - title: Hamlet
-            author: William Shaespeare
+          - title: Invictus
+            author: Clint Eastwood
+          - title: Ransom 
+            author: David Malouf
+          - title: The Crucible
+            author: Arthur Miller
+          - title: Year of Wonders
+            author: Geraldine Brooks
+          - title: Black Diggers
+            author: Tom Wright
+          - title: The Longest Memory
+            author: Fred D'Aguiar
+          - title: I am Malala
+            author: Malala Yousafzai, Christina Lamb
+          - title: Made in Dagenham 
+            author: Nigel Cole
+      
 ---
