@@ -5,7 +5,7 @@ import BioPagePreview from './preview-templates/BioPagePreview'
 import BlogPostPreview from './preview-templates/BlogPostPreview'
 import ProductPagePreview from './preview-templates/ProductPagePreview'
 import IndexPagePreview from './preview-templates/IndexPagePreview'
-import ContentPagePreview from './preview-template/ContentPagePreview'
+import ContentPagePreview from './preview-templates/ContentPagePreview'
 
 CMS.registerPreviewTemplate('index', IndexPagePreview)
 CMS.registerPreviewTemplate('about', AboutPagePreview)
