@@ -3,7 +3,7 @@ templateKey: blog-post
 title: ' The Flaws of the System'
 featured_image: /img/screen-shot-2019-04-22-at-2.42.53-pm.png
 date: 2019-04-08T06:12:10.882Z
-description: VCE EAL English 2018 examiners report analysed! What students miss?
+description: 2018 VCE English / EAL examiners' report analysed! What students miss?
 tags:
   - education
   - teaching tips
