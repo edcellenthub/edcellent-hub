@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-
 import Layout from '../components/Layout'
 import Contact from '../components/Contact'
 import HeroVideo from '../components/HeroVideo'
 import Navbar from '../components/Navbar'
 import IndexBlogRoll from '../components/IndexBlogRoll'
+import TestimonialVideo from '../components/TestimonialVid'
 
 export const IndexPageTemplate = (
   {
@@ -126,7 +126,8 @@ export const IndexPageTemplate = (
           </div>
         </div>
       </div>
-    </section> */}    
+    </section> */}  
+    <TestimonialVideo />  
     <IndexBlogRoll />
     <Contact />
   </>

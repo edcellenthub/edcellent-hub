@@ -52,6 +52,62 @@
   }
 }
 
+#testimonial-video {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  .vid-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &,
+    video {
+      width: 100vw;
+      height: 100vh;
+      max-height: 100vh;
+      overflow: hidden;
+      background: $dark-grey;
+      object-fit: cover;
+      position: absolute;
+
+      .video-overlay {
+        background-color: rgba(66, 70, 80, 0.8);
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+      }
+      
+    .testimonial-title {
+      color: $bright-gold;
+      font-size: 1.8rem;
+      line-height: 2rem;
+      margin-bottom: 1rem;
+    }
+      
+    @-webkit-keyframes fadeOut {
+      0% { opacity: 1;}
+      99% { opacity: 0.01;width: 100%; height: 100%;}
+      100% { opacity: 0;width: 0; height: 0;}
+    }
+    @keyframes fadeOut {
+        0% { opacity: 1;}
+        99% { opacity: 0.01;width: 100%; height: 100%;}
+        100% { opacity: 0;width: 0; height: 0;}
+    }
+
+    .hide-overlay {
+        display: block;
+        -webkit-animation: fadeOut 1s;
+        animation: fadeOut 1s;
+        animation-fill-mode: forwards;
+    }
+    }
+  }
+}
+
+
 .landing-top-banner-info-box {
   .play-video-btn {
     cursor: pointer;
@@ -64,7 +120,7 @@
     border: solid 1px $bright-gold;
     color: $bright-gold;
     text-align: center;
-
+    letter-spacing: 3px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -141,10 +197,10 @@ section.landing-about-us {
   }
 
   .offer-1 {
-    background-image: url('../../static/img/landing-blog-image-1.jpg');
+    background-image: url('../../static/img/landing-blog-image-2.jpg');
   }
   .offer-2 {
-    background-image: url('../../static/img/landing-blog-image-2.jpg');
+    background-image: url('../../static/img/landing-blog-image-1.jpg');
   }
 
   .offer-inner {
