@@ -9,6 +9,7 @@ tags:
   - etymology
   - AFL
   - education
+  - teaching tips
 author: Tom Hoy
 ---
 The footy season has been with us for a month now and I’m pleased to say that Collingwood – the Mighty Maggies, the Pies, the Woods, the Woodsmen – have made a very promising start to the season. So, I sat down to watch the boys in action last night against the Brisbane Lions. And they smashed them. Double the score. 
