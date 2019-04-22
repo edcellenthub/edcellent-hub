@@ -1,11 +1,12 @@
 ---
 templateKey: blog-post
 title: ' The Flaws of the System'
-featured_image: /img/landing-blog-image-1.jpg
+featured_image: /img/screen-shot-2019-04-22-at-1.58.17-pm.png
 date: 2019-04-08T06:12:10.882Z
-tags: ["education", "teaching tips"]
-description: >-
- 
+description: VCE EAL English 2018 examiners report analysed! What students miss
+tags:
+  - education
+  - teaching tips
 author: Cameron Sievers
 ---
 The impetus behind Edcellent is not merely to assist students of VCE English; it is to communicate and attempt to amend what often transpires as a learning gap in this subject between the middle school (Years 9 and 10) and the senior years.
