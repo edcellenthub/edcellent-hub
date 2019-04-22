@@ -7,6 +7,7 @@ import Contact from '../components/Contact'
 import Navbar from '../components/Navbar'
 import ContentCard from '../components/ContentCard'
 
+import enterIcon from '../img/enter.svg'
 export class ContentPageTemplate extends React.Component {
   state = {
     expand: false,
@@ -54,6 +55,10 @@ export class ContentPageTemplate extends React.Component {
                         <h3 className="f-arnopro-s text-md-md">
                           TEXT RESPONSE
                         </h3>
+                        <div className="more-info">
+                          <img src={enterIcon} />
+                          <span>More Info</span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -66,6 +71,10 @@ export class ContentPageTemplate extends React.Component {
                         <h3 className="f-arnopro-s text-md-md">
                           COMPRATIVE TEXT RESPONSE
                         </h3>
+                        <div className="more-info">
+                          <img src={enterIcon} />
+                          <span>More Info</span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -78,12 +87,13 @@ export class ContentPageTemplate extends React.Component {
                       </div>
                     </div>
                   </div>
-                  <div className="content-box-4" />
-                  <div className="overlay">
-                    <div className="border">
-                      <h3 className="f-arnopro-s text-md-md">
-                        ANALYSING ARGUMENTS
-                      </h3>
+                  <div className="content-box-4">
+                    <div className="overlay">
+                      <div className="border">
+                        <h3 className="f-arnopro-s text-md-md">
+                          ANALYSING ARGUMENTS
+                        </h3>
+                      </div>
                     </div>
                   </div>
                 </div>

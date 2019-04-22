@@ -6,10 +6,12 @@ const ContentCard = ({ toggleExpand, boxType, content, chunk }) => (
       <div className="outer">
         <div className="inner">
           <div
-            onClick={e => toggleExpand()}
-            colspan="3"
-            className="category f-arnopro-b spaced text-md"
+            onClick={toggleExpand}
+            className="f-nunito back-btn"
           >
+            Back
+          </div>
+          <div colspan="3" className="category f-arnopro-b spaced text-md">
             {boxType === 'non-comparative'
               ? 'TEXT RESPONSE'
               : 'COMPARATIVE TEXT RESPONSE'}

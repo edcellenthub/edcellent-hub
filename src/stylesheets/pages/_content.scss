@@ -90,6 +90,20 @@
         background-repeat: no-repeat;
         background-size: cover;
         margin: 3% 0;
+
+        .overlay-click {
+          width: 100%;
+          height: 100%;
+          background-color: rgba(66, 70, 80, 0.8);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          color: $bright-gold;
+          &:hover {
+            background-color: $dark-grey;
+          }
+        }
       }
 
       .overlay {
@@ -101,16 +115,16 @@
         justify-content: center;
         text-align: center;
         color: $bright-gold;
-        .border {
-          border: solid 1px white;
-          align-self: center;
-          width: 95%;
-          height: 95%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 5%;
-        }
+      }
+      .border {
+        border: solid 1px white;
+        align-self: center;
+        width: 95%;
+        height: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5%;
       }
     }
   }
@@ -127,6 +141,24 @@
 }
 .content-box-4 {
   background-image: url('../../static/img/analysing-arg.jpg');
+}
+
+.content-index-section {
+
+  .border {
+    flex-direction: column;
+
+    .more-info {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      span { color: #d4d4d4; }
+      img {
+        height: 1em;
+        margin-right: 7px;
+      }
+    }
+  }
 }
 
 #content-pg {
@@ -147,11 +179,20 @@
         border: 1px solid white;
         margin: 1%;
       }
+
+      .back-btn {
+        margin-bottom: 1em;
+        font-size: .8em;
+        color: #d4d4d4;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
       .category {
         text-align: center;
         vertical-align: middle;
         margin-bottom: 1em;
-        cursor: pointer;
       }
       .subtitle {
         color: $mid-grey;
@@ -166,7 +207,7 @@
         margin: 0;
 
         &:not(:last-child) {
-          border-bottom: solid 1px #dbdbdb
+          border-bottom: solid 1px #dbdbdb;
         }
         .column {
           margin: 1em 0;
