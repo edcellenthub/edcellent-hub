@@ -11,9 +11,7 @@ class TagRoute extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
     
     const postLinks = posts.map(({node: post}) => (
-      <div id="blog-index">
-        <div className="items-container">
-          <div className="item" key={post.fields.slug}>
+          <div className="tag-item" key={post.fields.slug}>
             <div className="image-container">
               <img
                 className="image"
@@ -34,8 +32,6 @@ class TagRoute extends React.Component {
               </Link>
             </div>
           </div>
-        </div>
-      </div>
     ))
     const tag = this.props.pageContext.tag
     const title = this.props.data.site.siteMetadata.title
@@ -51,7 +47,7 @@ class TagRoute extends React.Component {
         <TagsNav currentPage={`${tag}`} />
         <section className="blog-index-container">
           <Helmet title={`${tag} | ${title}`} />
-            <div className="f-arnopro-s text-m">{tagHeader}</div>
+            <div className="taghead f-arnopro-s text-m">{tagHeader}</div>
             <div className="taglist">{postLinks}</div>
         </section>
       </Layout>
