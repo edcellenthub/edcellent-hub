@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Scunging A Goal
-featured_image: /img/screen-shot-2019-04-22-at-1.12.06-pm.png
+featured_image: /img/screen-shot-2019-04-22-at-1.21.09-pm.png
 date: 2019-04-22T02:31:44.622Z
 description: 'Origins of Words '
 tags:
