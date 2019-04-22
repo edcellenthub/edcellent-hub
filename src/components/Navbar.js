@@ -50,12 +50,13 @@ const Navbar = class extends React.Component {
             {dropdown && (
               <div className="dropdown-container">
                 <div className="navbar-dropdown">
-                  <Link
+                  {/* <Link
                     className={`nav-item ${currentPage === 'home' && 'active'}`}
                     to="/"
                   >
                     <span>HOME</span>
-                  </Link>
+                  </Link> */}
+
                   <Link
                     className={`nav-item ${currentPage === 'about' &&
                       'active'}`}
@@ -63,13 +64,22 @@ const Navbar = class extends React.Component {
                   >
                     <span>ABOUT</span>
                   </Link>
+
                   <Link
-                    className={`nav-item ${currentPage === 'blog' &&
-                      'active'}`}
+                    className={`nav-item ${currentPage === 'blog' && 'active'}`}
                     to="/blog"
                   >
                     <span>BLOG</span>
                   </Link>
+
+                  <Link
+                    className={`nav-item ${currentPage === 'content' &&
+                      'active'}`}
+                    to="/content"
+                  >
+                    <span>CONTENT</span>
+                  </Link>
+
                   <Link
                     className={`nav-item ${currentPage === 'contact' &&
                       'active'}`}
@@ -77,6 +87,7 @@ const Navbar = class extends React.Component {
                   >
                     <span>CONTACT US</span>
                   </Link>
+
                   <Link
                     className="nav-item"
                     to="/"
@@ -90,13 +101,13 @@ const Navbar = class extends React.Component {
           </div>
 
           <div className="nav-items">
-            <Link
+            {/* <Link
               className={`nav-item ${hasLightBg && 'black'} ${currentPage ===
                 'home' && 'active'}`}
               to="/"
             >
               <span>HOME</span>
-            </Link>
+            </Link> */}
             <Link
               className={`nav-item ${hasLightBg && 'black'} ${currentPage ===
                 'about' && 'active'}`}
@@ -104,6 +115,7 @@ const Navbar = class extends React.Component {
             >
               <span>ABOUT</span>
             </Link>
+
             <Link
               className={`nav-item ${hasLightBg && 'black'} ${currentPage ===
                 'blog' && 'active'}`}
@@ -111,6 +123,15 @@ const Navbar = class extends React.Component {
             >
               <span>BLOG</span>
             </Link>
+
+            <Link
+              className={`nav-item ${hasLightBg && 'black'} ${currentPage ===
+                'content' && 'active'}`}
+              to="/content"
+            >
+              <span>CONTENT</span>
+            </Link>
+
             <Link
               className={`nav-item ${hasLightBg && 'black'} ${currentPage ===
                 'contact' && 'active'}`}
