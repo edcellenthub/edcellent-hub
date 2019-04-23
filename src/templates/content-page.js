@@ -6,8 +6,8 @@ import Layout from '../components/Layout'
 import Contact from '../components/Contact'
 import Navbar from '../components/Navbar'
 import ContentCard from '../components/ContentCard'
+import plusIcon from '../../static/img/white_plus.svg'
 
-import enterIcon from '../img/enter.svg'
 export class ContentPageTemplate extends React.Component {
   state = {
     expand: false,
@@ -52,12 +52,11 @@ export class ContentPageTemplate extends React.Component {
                   >
                     <div className="overlay-click">
                       <div className="border">
-                        <h3 className="f-arnopro-s text-md-md">
+                        <h3 className="text-container f-arnopro-s text-md-md">
                           TEXT RESPONSE
                         </h3>
                         <div className="more-info">
-                          <img src={enterIcon} />
-                          <span>More Info</span>
+                          <img src={plusIcon} data-tooltip="Click to expand" />
                         </div>
                       </div>
                     </div>
@@ -68,12 +67,12 @@ export class ContentPageTemplate extends React.Component {
                   >
                     <div className="overlay-click">
                       <div className="border">
-                        <h3 className="f-arnopro-s text-md-md">
+                        <h3 className="text-container f-arnopro-s text-md-md">
                           COMPRATIVE TEXT RESPONSE
                         </h3>
                         <div className="more-info">
-                          <img src={enterIcon} />
-                          <span>More Info</span>
+                          <img src={plusIcon} />
+                          
                         </div>
                       </div>
                     </div>
@@ -81,7 +80,7 @@ export class ContentPageTemplate extends React.Component {
                   <div className="content-box-3">
                     <div className="overlay">
                       <div className="border">
-                        <h3 className="f-arnopro-s text-md-md">
+                        <h3 className="text-container f-arnopro-s text-md-md">
                           SPEECHES WRITING MASTER CLASS
                         </h3>
                       </div>
@@ -90,7 +89,7 @@ export class ContentPageTemplate extends React.Component {
                   <div className="content-box-4">
                     <div className="overlay">
                       <div className="border">
-                        <h3 className="f-arnopro-s text-md-md">
+                        <h3 className="text-container f-arnopro-s text-md-md">
                           ANALYSING ARGUMENTS
                         </h3>
                       </div>

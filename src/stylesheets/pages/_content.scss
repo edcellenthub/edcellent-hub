@@ -51,6 +51,7 @@
               justify-content: center;
               text-align: center;
               color: $bright-gold;
+              align-self: center;
             }
             .border {
               border: solid 1px white;
@@ -58,9 +59,18 @@
               width: 95%;
               height: 95%;
               display: flex;
+              flex-direction: row-reverse;
+             
+            .text-container {
+              width: 100%;
+              height: 100%;
+              display: flex;
               align-items: center;
               justify-content: center;
-              padding: 5%;
+              text-align: center;
+              color: $bright-gold;
+              padding: 3%;
+            }
             }
           }
         }
@@ -71,14 +81,14 @@
 
 @media (min-width: 320px) and (max-width: 767px) {
   .content-index-section {
-    padding: 30% 7% 0 7%;
+    padding-top: 30%;
     text-align: center;
     #content-index {
       align-items: center;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-
+      
       .content-box-1,
       .content-box-2,
       .content-box-3,
@@ -144,22 +154,30 @@
 }
 
 .content-index-section {
-
   .border {
     flex-direction: column;
-
+    position: relative;
     .more-info {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: solid 1px white;
+      padding: 3% 1% 0 1%;
       cursor: pointer;
-      display: flex;
-      align-items: center;
-      span { color: #d4d4d4; }
+      
+      &:hover{
+        background-color: $bright-gold;
+      }
       img {
         height: 1em;
-        margin-right: 7px;
       }
+      
     }
   }
 }
+
 
 #content-pg {
   .tr-container {
@@ -172,56 +190,105 @@
     .outer {
       width: 70vw;
       background-color: $dark-grey;
-      color: $bright-gold;
+      color: $bright-gold; 
+      position: relative; 
 
+      &.outer { 
+      @media (min-width: 320px) and (max-width: 767px){
+          width: 95vw;
+          background-color: $dark-grey;
+          color: $bright-gold; 
+          position: relative; 
+        }
+      }
+    
+        .close-container {
+          margin: 1%;
+          position: absolute;          
+          right: 0;
+                    
+          .close-btn {   
+            width: 45px;
+            height: 45px;             
+            border: solid 1px white;        
+            padding: 25% 2% 0 2%;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+              background-color: $bright-gold;
+            }
+
+          img {
+            height: 1em;
+          }
+        }  
+      }
       .inner {
         padding: 5%;
         border: 1px solid white;
         margin: 1%;
       }
-
-      .back-btn {
-        margin-bottom: 1em;
-        font-size: .8em;
-        color: #d4d4d4;
-        cursor: pointer;
-        &:hover {
-          text-decoration: underline;
-        }
-      }
       .category {
         text-align: center;
         vertical-align: middle;
-        margin-bottom: 1em;
+        padding: 1.5em 0 2em 0;
       }
       .subtitle {
         color: $mid-grey;
-        padding: 2% 0 2% 2%;
-        text-align: left;
+        padding: 2%;
+        text-align: left;        
         border-top: solid 1px #dbdbdb;
-        border-bottom: solid 1px #dbdbdb;
-        margin: 1.5em 0;
-      }
-
-      .columns {
-        margin: 0;
-
         &:not(:last-child) {
-          border-bottom: solid 1px #dbdbdb;
+          margin-bottom: 0;
         }
-        .column {
-          margin: 1em 0;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          align-items: center;
+      }
+    }
+  }
+}
 
-          &:not(:last-child) {
-            @media (min-width: 768px) {
-              border-right: solid 1px #dbdbdb;
-            }
-          }
+
+
+@media (min-width: 769px) {
+  .columns {
+    margin: 0;
+    border-top: solid 1px #dbdbdb;
+
+    &:last-child {
+      margin-bottom: 0.2em;
+    }
+    
+    .column {
+      margin: 1em 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      &:not(:last-child) {
+        @media (min-width: 769px) {
+          border-right: solid 1px #dbdbdb;
         }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .columns {
+    margin: 0;
+    border-top: solid 1px #dbdbdb;
+
+    .column {
+      margin: 1em 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      &:not(:first-child) {
+      border-top: solid 1px #dbdbdb;
       }
     }
   }

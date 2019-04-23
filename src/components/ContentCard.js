@@ -1,16 +1,20 @@
 import React from 'react'
+import xIcon from '../../static/img/white_x.svg'
 
 const ContentCard = ({ toggleExpand, boxType, content, chunk }) => (
   <div id="content-pg">
     <div className="tr-container">
       <div className="outer">
-        <div className="inner">
+        <div className="close-container">
           <div
+            className="close-btn"
             onClick={toggleExpand}
-            className="f-nunito back-btn"
           >
-            Back
+            <img src={xIcon} />
           </div>
+        </div>
+        
+        <div className="inner">     
           <div colspan="3" className="category f-arnopro-b spaced text-md">
             {boxType === 'non-comparative'
               ? 'TEXT RESPONSE'
