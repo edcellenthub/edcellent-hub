@@ -40,7 +40,7 @@ export class ContentPageTemplate extends React.Component {
         <Navbar hasLightBg currentPage="content" />
         <section className="content-index-section">
           <h2 className="f-arnopro-s text-medium dark-gold margin-bottom-2">
-            The text we offer students in 2019 includes
+            The texts we offer students in 2019 include
           </h2>
           <div className="content-container">
             <div id="content-index">
@@ -68,7 +68,7 @@ export class ContentPageTemplate extends React.Component {
                     <div className="overlay-click">
                       <div className="border">
                         <h3 className="text-container f-arnopro-s text-md-md">
-                          COMPRATIVE TEXT RESPONSE
+                          COMPARATIVE TEXT RESPONSE
                         </h3>
                         <div className="more-info">
                           <img src={plusIcon} />
@@ -81,7 +81,7 @@ export class ContentPageTemplate extends React.Component {
                     <div className="overlay">
                       <div className="border">
                         <h3 className="text-container f-arnopro-s text-md-md">
-                          SPEECHES WRITING MASTER CLASS
+                          SPEECH WRITING MASTER CLASS
                         </h3>
                       </div>
                     </div>
@@ -90,7 +90,7 @@ export class ContentPageTemplate extends React.Component {
                     <div className="overlay">
                       <div className="border">
                         <h3 className="text-container f-arnopro-s text-md-md">
-                          ANALYSING ARGUMENTS
+                          ARGUMENT ANALYSIS
                         </h3>
                       </div>
                     </div>
