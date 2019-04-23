@@ -298,9 +298,10 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-
-      &:not(:first-child) {
-      border-top: solid 1px #dbdbdb;
+      .is-one-third  {
+        &:not(:first-child) {
+        border-top: solid 1px #dbdbdb;
+        }
       }
     }
   }

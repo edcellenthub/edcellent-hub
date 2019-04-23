@@ -15,7 +15,7 @@ const ContentCard = ({ toggleExpand, boxType, content, chunk }) => (
         </div>
         
         <div className="inner">     
-          <div colspan="3" className="category f-arnopro-b spaced text-md">
+          <div colspan="3" className="category f-arnopro-d spaced text-md-md">
             {boxType === 'non-comparative'
               ? 'TEXT RESPONSE'
               : 'COMPARATIVE TEXT RESPONSE'}
@@ -50,9 +50,9 @@ const ContentCard = ({ toggleExpand, boxType, content, chunk }) => (
                               <div
                                 className={
                                   boxType === 'non-comparative'
-                                    ? 'column is-one-third '
+                                    ? 'column is-one-third'
                                     : 'column is-half'
-                                }
+                                }                      
                               >
                                 <div className="f-arnopro-r text-md-md">
                                   {item.title}

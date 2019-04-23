@@ -43,7 +43,7 @@ export const BlogPostTemplate = ({
                   <div className="text-x-large text-center f-arnopro-r margin-bottom-2">
                     {title}
                   </div>
-                  <p>{description}</p>
+                  <p className="f-arnopro-s text-md-md">{description}</p>
                   <PostContent className="post-content justified" content={content} />
                   <div className="social-share">
                       <a href="#" target="_blank"> <i className="fab fa-facebook"></i></a>

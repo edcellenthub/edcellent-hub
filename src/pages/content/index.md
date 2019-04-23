@@ -11,25 +11,25 @@ content:
           - title: Women of Troy
             author: Euripides
           - title: Measure for Measure
-            author: William Shaespeare
+            author: William Shakespeare
           - title: The Lieutenent
             author: Kate Grenville
           - title: Nine Days
             author: Toni Jordan
           - title: King Lear
-            author: William Shaespeare
+            author: William Shakespeare
           - title: Medea
             author: Euripides
           - title: Othello
-            author: William Shaespeare
+            author: William Shakespeare
       - header: Middle School
         blurbs:
           - title: Romeo & Juliet
-            author: William Shaespear
+            author: William Shakespeare
           - title: Macbeth
-            author: William Shaespear
+            author: William Shakespeare
           - title: Hamlet
-            author: William Shaespeare
+            author: William Shakespeare
   - type: "Comparative Text Response"
     school: 
       - header: 
