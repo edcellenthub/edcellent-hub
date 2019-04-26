@@ -90,7 +90,7 @@ const Footer = class extends React.Component {
               style={{ color: '#b7b7b7' }}
               className="text-small f-nunati spaced-1"
             >
-              &copy; Copyright Edcellent Digital Hub 2019. All rigths reserved.
+              &copy; Copyright Edcellent Digital Hub 2019. All rights reserved.
             </p>
           </div>
         </div>
