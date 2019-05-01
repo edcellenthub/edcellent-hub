@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'Edcellent Digital Hub',
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      'A learning hub that inspires to empower critical & creative thinking beyond the classroom',
   },
   plugins: [
     {
