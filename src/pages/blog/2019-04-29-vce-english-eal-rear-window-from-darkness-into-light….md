@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 'VCE English / EAL: Rear Window From darkness into light…'
+title: 'VCE English/EAL: Rear Window From darkness into light…'
 featured_image: /img/rear-window-facebook-post-.jpg
 date: 2019-04-29T08:33:58.905Z
 description: >
