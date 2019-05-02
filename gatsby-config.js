@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'Edcellent Digital Hub',
     description:
-      'A learning hub that inspires to empower critical & creative thinking beyond the classroom',
+      'An English Learning Hub inspired to empower critical and creative thinking beyond the classroom',
   },
   plugins: [
     {
