@@ -41,6 +41,9 @@ class IndexBlogRoll extends React.Component {
               ))}
           </div>
         </div>
+        <Link className="nobox-btn" to="/blog">
+          VIEW ALL &nbsp; &#10230;
+        </Link>
       </div>
     )
   }
