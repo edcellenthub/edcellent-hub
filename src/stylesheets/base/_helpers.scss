@@ -24,7 +24,7 @@
 
 .date-horizontal-line {
   border-bottom: 1px solid black;
-  width: 25%; 
+  width: 25%;
   position: relative;
   bottom: 15px;
   margin-right: 15px;
@@ -39,6 +39,16 @@
   bottom: 5px;
   margin-top: 5px;
   margin-bottom: 25px;
+}
+
+.content-horizontal-line {
+    border-bottom: 3px solid $mid-grey;
+    width: 100%;
+    height: 10px;
+    position: relative;
+    bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 25px;
 }
 
 

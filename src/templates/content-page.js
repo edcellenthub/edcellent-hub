@@ -39,11 +39,11 @@ export class ContentPageTemplate extends React.Component {
         {helmet || ''}
         <Navbar hasLightBg currentPage="content" />
         <section className="content-index-section">
-            <div className="flex-row flex-center margin-bottom-4">
+            <div className="flex-row flex-center margin-bottom-4 column is-10 is-offset-1">
               <div className="flex-column flex-center blog-content">
                 <div className="text-center">
-                  <h2 className="text-large dark-gold margin-bottom-2 f-arnopro-s">A message from the Edcellent Team </h2>
-                  <div className="blog-horizontal-line dark-gold"></div>
+                  <h2 className="text-large dark-gold margin-bottom-2 f-arnopro-s">A MESSAGE FROM THE EDCELLENT TEAM</h2>
+                  <div className="content-horizontal-line dark-gold"></div>
                   <h2 className="text-medium dark-gold margin-bottom-2 f-arnopro-r">The edcellent way to master VCE / IB English, EAL, Literature:</h2>
                   <br/>
                   <h2 className="text-medium dark-gold margin-bottom-2 f-arnopro-r">It all begins with Analysing Argument (AA)</h2>
