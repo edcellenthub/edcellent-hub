@@ -70,7 +70,7 @@ content:
             author: "Yousafzai, Malala, with Lamb, Christina, *I Am Malala: The Girl Who Stood Up for Education and Was Shot by the Taliban* (3)(EAL)"
           - title: Novel
             author: "Atwood, Margaret, *The Penelopiad: The Myth of Penelope and Odysseus* (3)"
-  - Type: "Speech Writing Master Class"
+  - type: "Speech Writing Master Class"
     problem: Many students do little more than present facts, information and opinion in the absence of human connection. The oversight here is the assumption that having a valid opinion, on its own, makes one persuasive. Opinion is the beginning of persuasion, and if it is not accompanied by a range of psychological factors that endear an audience to the speaker or writer, the opinion will often fail to persuade.
     solution: At Edcellent, we educate our students the value of scarcity. To present an opinion on the same issue as several other classmates risks the prospect of devaluation. The ability to effectively present controversial and under-explored views increases our students’ chances of obtaining strong marks. Our speech writing master class will show you how to present controversial and under-explored views successfully!
   - type: "Argument Analysis"
