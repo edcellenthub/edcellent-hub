@@ -2,6 +2,15 @@
   .content-index-section {
     padding: 15% 3% 10% 3%;
     text-align: center;
+    #message {
+      background-color: $light-grey;
+      padding: 1%;
+      .border {
+        border: 1px solid $dark-grey;
+        padding: 10%;
+      }
+    }
+
     .content-container {
       display: flex;
       align-items: center;
@@ -83,6 +92,14 @@
   .content-index-section {
     padding: 30% 2% 2% 2%;
     text-align: center;
+    #message {
+      background-color: $light-grey;
+      padding: 1%;
+      .border {
+        border: 1px solid $dark-grey;
+        padding: 10%;
+      }
+    }
     #content-index {
       align-items: center;
       display: flex;

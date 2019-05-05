@@ -41,14 +41,15 @@ export class ContentPageTemplate extends React.Component {
         <section className="content-index-section">
             <div className="flex-row flex-center margin-bottom-4 column is-10 is-offset-1">
               <div className="flex-column flex-center blog-content">
-                <div className="text-center">
-                  <h2 className="text-large dark-gold margin-bottom-2 f-arnopro-s">A MESSAGE FROM THE EDCELLENT TEAM</h2>
+                <div id="message" className="text-center">
+                <div className="border">
+                  <h2 className="text-large margin-bottom-2 f-arnopro-r spaced-2">A MESSAGE FROM THE EDCELLENT TEAM</h2>
                   <div className="content-horizontal-line dark-gold"></div>
-                  <h2 className="text-medium dark-gold margin-bottom-2 f-arnopro-r">The edcellent way to master VCE / IB English, EAL, Literature:</h2>
+                  <h2 className="text-md-md margin-bottom-2 f-arnopro-r">The edcellent way to master VCE / IB English, EAL, Literature:</h2>
                   <br/>
                   <h2 className="text-medium dark-gold margin-bottom-2 f-arnopro-r">It all begins with Analysing Argument (AA)</h2>
-    </div>
-                <div className="text-md post-content justified col-md-8 col-lg-8">
+                
+                <div className="text-medium-small post-content justified col-md-8 col-lg-8">
                   Did you know that the Argument Analysis area of study has a far reaching skill-set that goes way beyond the AA SAC? Way beyond the VCE itself?
                   <br/><br/>
                   Okay, let's stay on the ground for now. The skills you learn in VCE AA SAC preparation are also essential in the development of your VCE Oral Presentation SAC.
@@ -71,10 +72,12 @@ export class ContentPageTemplate extends React.Component {
                   Join Edcellent today, and become the AA master.
                   <br/><br/>
                 </div>
+                </div>
+                </div>
               </div>
           </div>
           <h2 className="f-arnopro-s text-medium dark-gold margin-bottom-2">
-                For VCE / IB English and EAL, the texts we offer students in 2019 include:
+                For VCE / IB English and EAL, the texts<br/>we offer students in 2019 include:
           </h2>
           <div className="content-container">
             <div id="content-index">
