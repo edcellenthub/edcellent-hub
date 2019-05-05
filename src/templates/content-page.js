@@ -48,7 +48,7 @@ export class ContentPageTemplate extends React.Component {
                   <br/>
                   <h2 className="text-medium dark-gold margin-bottom-2 f-arnopro-r">It all begins with Analysing Argument (AA)</h2>
     </div>
-                <div className="width-60 text-md post-content justified">
+                <div className="text-md post-content justified col-md-8 col-lg-8">
                   Did you know that the Argument Analysis area of study has a far reaching skill-set that goes way beyond the AA SAC? Way beyond the VCE itself?
                   <br/><br/>
                   Okay, let's stay on the ground for now. The skills you learn in VCE AA SAC preparation are also essential in the development of your VCE Oral Presentation SAC.
@@ -208,7 +208,9 @@ export const contentPageQuery = graphql`
               author
             }
           }
-        }
+          problem
+          solution
+         }
       }
     }
   }

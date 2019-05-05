@@ -6,13 +6,13 @@ class ContentCard extends React.Component {
     boxTitle(boxType){
         switch(boxType){
             case 'comparative':
-                return 'COMPARATIVE TEXT RESPONSE';
+                return 'Comparative Text Response';
             case 'non-comparative':
-                return 'TEXT RESPONSE';
+                return 'Text Response';
             case 'speech':
-                return 'SPEECH WRITING MASTER CLASS';
+                return 'Speech Writing Master Class';
             case 'argument':
-                return 'ARGUMENT ANALYSIS';
+                return 'Argument Analysis';
             default:
                 return
         }
@@ -33,7 +33,7 @@ class ContentCard extends React.Component {
                       return (
                         <>
                           {boxType === 'non-comparative' && (
-                            <div colspan="3" className="subtitle text-small">
+                            <div colSpan="3" className="subtitle text-small">
                               {blob.header}
                             </div>
                           )}
@@ -71,10 +71,16 @@ class ContentCard extends React.Component {
                     )})
             )
         } else {
+            const rowTwo = content.filter(node => node.type === this.boxTitle(boxType))[0]
             return(
                 <>
-                    <div>
-                        There IS NOTHING HERE YET
+                    <div className="margin-bottom-2 justified">
+                        <h3 className="text-md-md f-arnopro-b">Problem:</h3>
+                        <p>{rowTwo.problem}</p>
+                    </div>
+                    <div className="margin-bottom-2 justified">
+                        <h3 className="text-md-md f-arnopro-b">Solution:</h3>
+                        <p>{rowTwo.solution}</p>
                     </div>
                 </>
             )
@@ -98,8 +104,8 @@ class ContentCard extends React.Component {
                     </div>
 
                     <div className="inner">
-                      <div colspan="3" className="category f-arnopro-d spaced text-md-md">
-                          { this.boxTitle(boxType)}
+                      <div colSpan="3" className="category f-arnopro-d spaced text-md-md">
+                          { this.boxTitle(boxType).toUpperCase()}
                       </div>
                       { this.filterBoxContent(boxType, content, chunk) }
                     </div>
