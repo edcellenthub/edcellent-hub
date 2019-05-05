@@ -74,7 +74,7 @@ export class ContentPageTemplate extends React.Component {
               </div>
           </div>
           <h2 className="f-arnopro-s text-medium dark-gold margin-bottom-2">
-            The texts we offer students in 2019 include
+                For VCE / IB English and EAL, the texts we offer students in 2019 include:
           </h2>
           <div className="content-container">
             <div id="content-index">

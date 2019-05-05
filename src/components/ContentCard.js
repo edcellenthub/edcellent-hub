@@ -18,6 +18,10 @@ class ContentCard extends React.Component {
         }
     }
 
+    searchAndItalize(sentence){
+        return sentence.replace(/(\D+)?\*(\D+)\*(\D+)?/, "$1"+"$2".italics()+"$3")
+    }
+
     filterBoxContent(boxType, content, chunk){
         console.log(content)
         if(boxType === "comparative" || boxType === "non-comparative"){
@@ -57,8 +61,7 @@ class ContentCard extends React.Component {
                                           {item.title}
                                         </div>
                                         <br />
-                                        <span className="f-nunito text-small">
-                                          {item.author}
+                                        <span className="f-nunito text-small" dangerouslySetInnerHTML={{__html: this.searchAndItalize(item.author)}}>
                                         </span>
                                       </div>
                                     )
