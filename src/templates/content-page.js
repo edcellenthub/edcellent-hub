@@ -39,6 +39,40 @@ export class ContentPageTemplate extends React.Component {
         {helmet || ''}
         <Navbar hasLightBg currentPage="content" />
         <section className="content-index-section">
+            <div className="flex-row flex-center margin-bottom-4">
+              <div className="flex-column flex-center blog-content">
+                <div className="text-center">
+                  <h2 className="text-large dark-gold margin-bottom-2 f-arnopro-s">A message from the Edcellent Team </h2>
+                  <div className="blog-horizontal-line dark-gold"></div>
+                  <h2 className="text-medium dark-gold margin-bottom-2 f-arnopro-r">The edcellent way to master VCE / IB English, EAL, Literature:</h2>
+                  <br/>
+                  <h2 className="text-medium dark-gold margin-bottom-2 f-arnopro-r">It all begins with Analysing Argument (AA)</h2>
+    </div>
+                <div className="width-60 text-md post-content justified">
+                  Did you know that the Argument Analysis area of study has a far reaching skill-set that goes way beyond the AA SAC? Way beyond the VCE itself?
+                  <br/><br/>
+                  Okay, let's stay on the ground for now. The skills you learn in VCE AA SAC preparation are also essential in the development of your VCE Oral Presentation SAC.
+                  <br/><br/>
+                  For those doing standard English, here is a handsome tip: your VCE Creative SAC can also - you guessed it - utilise the skills developed in AA SAC preparation, because your creative response can easily be a piece of persuasion. Doubling up in this way makes a lot of sense, right? Doing two SACs that are essentially the same (it's almost cheating!)
+                  <br/><br/>
+                  By the way, all the general knowledge you gained from AA can be used to enhance your ability to handle the Text Response AND Comparative Text Response SAC.
+                  <br/><br/>
+                  Then, of course, there's the exam - one third of your entire exam is devoted to the AA area of study. Did we mention how ATAR scores are heavily weighted based on your performance in, that's right, the exam? Exam anyone? Exam everyone!
+                  <br/><br/>
+                  It is clear that AA draws upon a consistent skill-set that is applied to VCE English / EAL across the year.
+                  <br/><br/>
+                  So why wouldn't you want to become a little AA master? An all rounder?
+                  <br/><br/>
+                  As for the 'way beyond the VCE itself' claim? You will always need to enter a room and deliver a compelling point of view, to a potentially hostile audience - no matter what your chosen occupation happens to be.
+                  <br/><br/>
+                  You will also need to be able to discern how that other person, who has just entered the hostile room, is manipulating the audience (like you just did!).
+                  <br/><br/>
+                  Take the stress out of VCE planning with this strategic approach to English / EAL.
+                  Join Edcellent today, and become the AA master.
+                  <br/><br/>
+                </div>
+              </div>
+          </div>
           <h2 className="f-arnopro-s text-medium dark-gold margin-bottom-2">
             The texts we offer students in 2019 include
           </h2>
@@ -72,30 +106,43 @@ export class ContentPageTemplate extends React.Component {
                         </h3>
                         <div className="more-info">
                           <img src={plusIcon} />
-                          
+
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className="content-box-3">
-                    <div className="overlay">
+                  <div
+                    onClick={e => this.toggleExpand('speech')}
+                    className="content-box-3"
+                  >
+                    <div className="overlay-click">
                       <div className="border">
                         <h3 className="text-container f-arnopro-s text-md-md">
-                          SPEECH WRITING MASTER CLASS
+                            SPEECH WRITING MASTER CLASS
                         </h3>
+                        <div className="more-info">
+                          <img src={plusIcon} />
+
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div className="content-box-4">
-                    <div className="overlay">
+                  <div
+                    onClick={e => this.toggleExpand('argument')}
+                    className="content-box-4"
+                  >
+                    <div className="overlay-click">
                       <div className="border">
                         <h3 className="text-container f-arnopro-s text-md-md">
                           ARGUMENT ANALYSIS
                         </h3>
+                        <div className="more-info">
+                          <img src={plusIcon} />
                       </div>
                     </div>
                   </div>
                 </div>
+              </div>
               ) : (
                 <ContentCard
                   toggleExpand={this.toggleExpand}
