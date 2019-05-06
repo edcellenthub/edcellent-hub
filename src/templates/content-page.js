@@ -48,7 +48,7 @@ export class ContentPageTemplate extends React.Component {
                   <h2 className="text-md-md margin-bottom-2 f-arnopro-r">The edcellent way to master VCE / IB English, EAL, Literature:</h2>
                   <br/>
                   <h2 className="text-medium dark-gold margin-bottom-2 f-arnopro-r">It all begins with Analysing Argument (AA)</h2>
-                
+
                 <div className="text-medium-small post-content justified col-md-8 col-lg-8">
                   Did you know that the Argument Analysis area of study has a far reaching skill-set that goes way beyond the AA SAC? Way beyond the VCE itself?
                   <br/><br/>
@@ -76,9 +76,6 @@ export class ContentPageTemplate extends React.Component {
                 </div>
               </div>
           </div>
-          <h2 className="f-arnopro-s text-medium dark-gold margin-bottom-2">
-                For VCE / IB English and EAL, the texts<br/>we offer students in 2019 include:
-          </h2>
           <div className="content-container">
             <div id="content-index">
               {!this.state.expand ? (
