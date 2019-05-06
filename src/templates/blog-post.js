@@ -50,7 +50,7 @@ export const BlogPostTemplate = ({
                   <PostContent className="post-content justified" content={content} />
                   <div className="social-share">
                       <FacebookProvider appId="388374888680676">
-                          <Share href={window.location.href}>
+                          <Share href={window.location.href ? window.location.href : "#"}>
                               {({ handleClick, loading }) => (
                                <i style={{fontSize:"1.2rem"}} className="dark-gold fab fa-facebook" onClick={handleClick}></i>
                                                      )}
