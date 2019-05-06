@@ -4,7 +4,6 @@ import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import { FacebookProvider, Share} from 'react-facebook'
-import window from 'global'
 
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
@@ -50,7 +49,7 @@ export const BlogPostTemplate = ({
                   <PostContent className="post-content justified" content={content} />
                   <div className="social-share">
                       <FacebookProvider appId="388374888680676">
-                          <Share href={window ? window.location.href : "#"}>
+                          <Share href={ typeof window !== 'undefined' ? window.location.href : "#"}>
                               {({ handleClick, loading }) => (
                                <i style={{fontSize:"1.2rem"}} className="dark-gold fab fa-facebook" onClick={handleClick}></i>
                                                      )}
