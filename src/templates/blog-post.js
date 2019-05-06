@@ -4,6 +4,7 @@ import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import { FacebookProvider, Share} from 'react-facebook'
+import window from 'global'
 
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
