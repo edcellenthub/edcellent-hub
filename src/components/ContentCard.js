@@ -12,14 +12,14 @@ class ContentCard extends React.Component {
             case 'speech':
                 return 'Speech Writing Master Class';
             case 'argument':
-                return 'Argument Analysis';
+                return 'Analysing Argument';
             default:
                 return
         }
     }
 
     searchAndItalize(sentence){
-        return sentence.replace(/(\D+)?\*(\D+)\*(\D+)?/, "$1"+"$2".italics()+"$3")
+        return sentence.replace(/(\d+)?\*(\d+\s)\*(\d+)?/, "$1"+"$2".italics()+"$3")
     }
 
     filterBoxContent(boxType, content, chunk){
@@ -57,11 +57,11 @@ class ContentCard extends React.Component {
                                             : 'column is-half'
                                         }
                                       >
-                                        <div className="f-arnopro-r text-md-md">
-                                          {item.title}
+                                        <div className="f-arnopro-r text-md-md" dangerouslySetInnerHTML={{__html: item.title}}>
                                         </div>
                                         <br />
-                                        <span className="f-nunito text-small" dangerouslySetInnerHTML={{__html: this.searchAndItalize(item.author)}}>
+                                        <span className="f-nunito text-small">
+                                            {item.author}
                                         </span>
                                       </div>
                                     )
