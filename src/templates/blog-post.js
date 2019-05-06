@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
+import { FacebookProvider, Share} from 'react-facebook'
+
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import Contact from '../components/Contact'
@@ -30,14 +32,14 @@ export const BlogPostTemplate = ({
         {helmet || ''}
         <div className="img-overlay"></div>
           <div className="featured-img" style={{backgroundImage: `url('${bgImage}')`}}></div>
-        
+
         <div className="blog-flex">
             <div className="blog-content content">
                   <p className="credentials text-small text-center spaced">BY &nbsp;
                     <Link to={`/about/${authorLink}/`}>
                       <strong className="text-small gold-color spaced">{author.toUpperCase()}</strong>
                     </Link><div className="break"><br /></div>
-                      <span className="text-spacing gold-color">|</span> 
+                      <span className="text-spacing gold-color">|</span>
                         <strong>{date.toUpperCase()}</strong>
                   </p>
                   <div className="text-x-large text-center f-arnopro-r margin-bottom-2">
@@ -46,9 +48,13 @@ export const BlogPostTemplate = ({
                   <p className="f-arnopro-s text-md-md">{description}</p>
                   <PostContent className="post-content justified" content={content} />
                   <div className="social-share">
-                      <a href="#" target="_blank"> <i className="fab fa-facebook"></i></a>
-                      <a href="#" target="_blank"><i className="fab fa-linkedin"></i></a>
-                      <a href="#" target="_blank"> <i className="fab fa-twitter"></i></a>
+                      <FacebookProvider appId="388374888680676">
+                          <Share href={window.location.href}>
+                              {({ handleClick, loading }) => (
+                               <i style={{fontSize:"1.2rem"}} className="dark-gold fab fa-facebook" onClick={handleClick}></i>
+                                                     )}
+                  </Share>
+                      </FacebookProvider>
                   </div>
                   <div className="blog-horizontal-line"></div>
                   {tags && tags.length ? (
@@ -94,6 +100,10 @@ const BlogPost = ({ data }) => {
               name="description"
               content={`${post.frontmatter.description}`}
             />
+            <meta property="og:type" content="blog" />
+            <meta property="og:title" content={`${post.frontmatter.title}`} />
+            <meta property="og:description" content={`${post.frontmatter.title}`} />
+            <meta property="og:image" content={`${post.frontmatter.featured_image}`} />
           </Helmet>
         }
         tags={post.frontmatter.tags}
@@ -102,7 +112,6 @@ const BlogPost = ({ data }) => {
         author={post.frontmatter.author}
         featuredImage={post.frontmatter.featured_image}
         authorLink={post.frontmatter.author.toLowerCase().split(" ").join("-")}
-        date={post.frontmatter.date}
       />
     </Layout>
   )
