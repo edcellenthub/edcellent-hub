@@ -47,7 +47,7 @@ export const IndexPageTemplate = (
             is crucial to the growth of contemporary students in VCE
             (English/EAL and Literature), IB (Language and Literature) and
             middle-school English. By assimilating areas of study through a more
-            visceral and organic pedagogy, we educators are empowering studetns
+            visceral and organic pedagogy, we educators are empowering students
             to build empathy, critical thinking and strategic life-skills.
           </p>
           <Link className="nobox-btn" to="/about">
@@ -126,8 +126,8 @@ export const IndexPageTemplate = (
           </div>
         </div>
       </div>
-    </section> */}  
-    <TestimonialVideo />  
+    </section> */}
+    <TestimonialVideo />
     <IndexBlogRoll />
     <Contact />
   </>
