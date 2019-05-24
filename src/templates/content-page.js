@@ -43,7 +43,7 @@ export class ContentPageTemplate extends React.Component {
               <div className="flex-column flex-center blog-content">
                 <div id="message" className="text-center">
                 <div className="border">
-                  <h2 className="text-large margin-bottom-2 f-arnopro-r spaced-2">A MESSAGE FROM THE EDCELLENT TEAM</h2>
+                  <h2 className="text-medium-large margin-bottom-2 f-arnopro-r">A MESSAGE FROM THE EDCELLENT TEAM</h2>
                   <div className="content-horizontal-line dark-gold"></div>
                   <h2 className="text-md-md margin-bottom-2 f-arnopro-r">The edcellent way to master VCE / IB English, EAL, Literature:</h2>
                   <br/>
