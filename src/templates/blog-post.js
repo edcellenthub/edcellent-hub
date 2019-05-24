@@ -16,6 +16,7 @@ export const BlogPostTemplate = ({
   description,
   tags,
   title,
+  subheading,
   helmet,
   author,
   authorLink,
@@ -42,10 +43,11 @@ export const BlogPostTemplate = ({
                       <span className="text-spacing gold-color">|</span>
                         <strong>{date.toUpperCase()}</strong>
                   </p>
-                  <div className="text-x-large text-center f-arnopro-r margin-bottom-2">
+                  <div className="text-large text-center f-arnopro-r margin-bottom-2">
                     {title}
                   </div>
-                  <p className="f-arnopro-s text-md-md">{description}</p>
+                  <p className="f-arnopro-s text-md-md">{description}</p>                  
+                  <p className="f-nunito text-m"><strong>{subheading}</strong></p>
                   <PostContent className="post-content justified" content={content} />
                   <div className="social-share">
                       <FacebookProvider appId="388374888680676">
@@ -80,6 +82,7 @@ BlogPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
+  subheading: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
 }
@@ -87,6 +90,7 @@ BlogPostTemplate.propTypes = {
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
   console.log(post)
+  console.log(post.frontmatter.subtitle)
   return (
     <Layout>
       <BlogPostTemplate
@@ -102,12 +106,13 @@ const BlogPost = ({ data }) => {
             />
             <meta property="og:type" content="blog" />
             <meta property="og:title" content={`${post.frontmatter.title}`} />
-            <meta property="og:description" content={`${post.frontmatter.title}`} />
+            <meta property="og:description" content={`${post.frontmatter.description}`} />
             <meta property="og:image" content={`${post.frontmatter.featured_image.childImageSharp.fluid.src}`} />
           </Helmet>
         }
         tags={post.frontmatter.tags}
-        title={post.frontmatter.title}
+        title={post.frontmatter.title}        
+        subheading={post.frontmatter.subheading}        
         date={post.frontmatter.date}
         author={post.frontmatter.author}
         featuredImage={post.frontmatter.featured_image}
@@ -134,6 +139,7 @@ export const pageQuery = graphql`
         date(formatString: "DD MMM YYYY")
         title
         description
+        subheading
         tags
         author
         featured_image {

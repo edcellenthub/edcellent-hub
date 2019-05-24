@@ -79,7 +79,7 @@ position: relative;
                 height: 460px;
                 margin-right: 3rem;
                 display: inline-block;              
-
+                
 
 
                 .image-container {
@@ -140,7 +140,7 @@ position: relative;
                     max-height: 200px;
                     overflow: hidden;
                     display: flex;
-                    box-shadow: 1px 2px 15px $light-grey;
+                    box-shadow: 1px 2px 15px #ededed;
                     .image {
                         width: auto;
                         object-fit: cover;
@@ -182,6 +182,7 @@ position: relative;
 
             .item {
                 width: 50%;
+                      
                 // height: 460px;
 
                 .blog-item-details {
@@ -194,7 +195,7 @@ position: relative;
                     max-height: 200px;
                     overflow: hidden;
                     display: flex;
-                    box-shadow: 1px 2px 15px $light-grey;
+                    box-shadow: 1px 2px 15px #ededed;
                     .image {
                         width: auto;
                         object-fit: cover;
@@ -238,8 +239,8 @@ position: relative;
 
             .item {
                 width: 100%;
-                border: solid 1px $dark-gold;
-                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.08);
+                
+                box-shadow: 2px 2px 10px #ededed;
 
                 .blog-item-details {
                   width: 100%;
@@ -249,7 +250,7 @@ position: relative;
                     max-height: 200px;
                     overflow: hidden;
                     display: flex;
-                    box-shadow: 1px 2px 15px $light-grey;
+                    
                     .image {
                         width: auto;
                         object-fit: cover;
