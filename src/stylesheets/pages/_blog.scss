@@ -127,22 +127,20 @@
     }
   }
 
-  .taglist {
-    width: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: flex-start;
+  .taglist {    
+    margin: 0;    
     align-items: center;
     list-style: none;
 
     li {
-      margin-right: 15px;
+      margin: 0 5px;
       line-height: 1.2rem;
-      margin: 0;
+      display: inline-block;      
 
       a {
         color: $mid-grey;
         font-size: 0.9rem;
+        
       }
 
       a:hover {
@@ -150,7 +148,7 @@
       }
 
       .tag-divider {
-        margin: 0 15px;
+        margin: 0 5px;
         color: $mid-grey;
       }
     }

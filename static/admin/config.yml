@@ -17,6 +17,7 @@ collections:
       - {label: Featured_image, name: featured_image, widget: image}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
+      - {label: "Subheading", name: "subheading", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
       - label: "Post Author"

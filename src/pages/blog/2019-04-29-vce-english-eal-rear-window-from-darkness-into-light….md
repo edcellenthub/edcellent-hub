@@ -7,7 +7,10 @@ description: >
   Attention all VCE students! Want to glean some fresh insights into analysing
   and unpacking Alfred Hitchcock’s Rear Window? The friendly staff at Edcellent
   are here to help! Today, we’re delving into the visual rhetoric utilised in
-  the introduction of Lisa’s character...
+  the introduction of Lisa’s character...    
+subheading: >
+  Analysing Visual Symbolism in Rear Window: Lisa’s First Appearance
+
 tags:
   - Rear Window
   - VCE English
@@ -16,8 +19,6 @@ tags:
   - SAC
 author: Claire Nicholls
 ---
-**Analysing Visual Symbolism in Rear Window: Lisa’s First Appearance** 	
-
 Film is, obviously, a visual medium. Therefore in order to effectively analyse the themes, characters and underlying messages of a film, we need the skills to effectively dissect and analyse the very specific visual choices a filmmaker makes in the construction of their storytelling and meaning making. Hitchcock’s mode of introducing his female lead makes for particularly rich study in terms of symbolic representation of character, and what he could be telling us about the relationship between his two central dramatis personae! But first off, let’s frame this with some historical context…
 
 
