@@ -49,6 +49,15 @@ position: relative;
     }
 }
 
+.read-btn {
+    color: black;
+    &:hover {
+        color: $dark-gold;
+    }
+}
+
+
+
 @media (min-width: 1024px) {
     .tags-bar {
         padding: 10% 4% 0 4%;

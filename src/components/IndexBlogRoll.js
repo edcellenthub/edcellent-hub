@@ -33,8 +33,8 @@ class IndexBlogRoll extends React.Component {
                     <h4 className="title f-arnopro-b margin-bottom-2">
                         {post.frontmatter.title}
                     </h4>
-                    <Link to={post.fields.slug}>
-                        <p className="f-nunito text-small black">READ MORE</p>
+                    <Link className="read-btn" to={post.fields.slug}>
+                        <p className="read-btn f-nunito text-small">READ MORE</p>
                     </Link>
                   </div>
                 </div>
