@@ -24,6 +24,7 @@ export default class TestimonialVideo extends React.Component {
           ref={vid => (this.video = vid)}
           onClick={this.stopVideo}
           controls={isPlaying}
+          controlsList="nodownload"
           src="/vid/Testimonials.mp4"
           autoPlay
           playsInline
@@ -37,7 +38,7 @@ export default class TestimonialVideo extends React.Component {
             style={{ display: isPlaying ? 'none' : 'block' }}
             className="landing-top-banner-info-box text-center f-arnopro-r"
           >
-          <div className="f-arnopro-s testimonial-title">Hear what our students<br />have to say about us</div>          
+          <div className="f-arnopro-s testimonial-title">Hear what our students<br />have to say about us</div>
           <button className="play-video-btn" onClick={this.playVideo}>
             <span>WATCH VIDEO</span>
             <i class="fas fa-caret-right" />

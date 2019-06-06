@@ -23,6 +23,7 @@ export default class HeroVideo extends React.Component {
           ref={vid => (this.video = vid)}
           onClick={this.stopVideo}
           controls={isPlaying}
+          controlsList="nodownload"
           src="/vid/Ed_Sound.mp4"
           // src="https://s3-ap-southeast-1.amazonaws.com/liren-permission-test/WHY+EDCELLENT+(without+Logo).mp4"
           autoPlay
