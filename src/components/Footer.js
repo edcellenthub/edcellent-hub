@@ -20,7 +20,8 @@ const Footer = class extends React.Component {
               </p>
               <p className="text-m f-arnopro-r">CBD Campus</p>
               <p className="text-m f-arnopro-r margin-bottom-2">
-                Level 4, 180 Bourke Street, Melbourne, Victoria 3000, Australia
+              Level 8, 474 Flinders Street, Melbourne, Victoria 3000, Australia
+              <br/><em>(Enter via Highlander Lane)</em>
               </p>
               <p className="text-m f-arnopro-r">Boxhill Campus</p>
               <p className="text-m f-arnopro-r">
